@@ -1,4 +1,4 @@
-# KleTretenimento
+# 📺 KleTretenimento 📺
 Projeto desenvolvido para o Trainee da [Code Jr](https://codejr.com.br/) que consiste em um blog sobre entretenimentos!
 - Desenvolvimento:
   - Front-end: HTML, CSS, JavaScript
