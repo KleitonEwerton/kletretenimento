@@ -2,37 +2,62 @@
 
 body{
     background-color: #000;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
-.header{
-    display: flexbox;
-    width: 100%;
-    height: 15%;
+header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 50px;
     background-color: #071217;
 }
 
-.header nav{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 15px;
-}
-
 .logo{
-    width: 150px;
-    height: 150px;
+    width: 100px;
+    height: 100px;
+    cursor: pointer;
 }
 
 .nav-itens{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    padding: 10px;
+    list-style: none;
+    
 }
 
-li, a, button{
+.nav-itens li {
+    display: inline-block;
+    padding: 10px 40px;
+}
+
+.nav-itens li a{
+    transition: all 0.5s ease 0s;
+    text-decoration: none;
+}
+
+.nav-itens li a:hover{
+    
+}
+
+button{
+    padding: 10px 50px;
+    background-color: #348771;
+    color: #000;
+    border-radius: 25px;
+    border: none;
+    cursor: pointer;
+    transition: all 0.5s ease 0s;
+}
+
+button{
+    color: #266354;
+}
+
+li, a{
     font-family: "Montserrat", sans-serif;
-    color: #348771
+    color: #348771;
 }
 
 
