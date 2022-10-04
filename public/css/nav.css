@@ -14,17 +14,31 @@ header{
     align-items: center;
     padding: 15px 50px;
     background-color: #071217;
+
+    animation-name: fade-movement;
+    animation-duration: 0.5s;
 }
 
 .logo{
-    width: 100px;
-    height: 100px;
+    width: 75px;
+    height: 75px;
     cursor: pointer;
+
+    animation-name: fade-movement;
+    animation-duration: 0.5s;
+}
+
+.logo:hover{
+    transition: all 0.5s ease 0s;
+    transform: scale(0.8);
+    transform: all 0.2s;
 }
 
 .nav-itens{
     list-style: none;
-    
+
+    animation-name: fade-movement;
+    animation-duration: 0.5s;
 }
 
 .nav-itens li {
@@ -39,6 +53,7 @@ header{
 
 .nav-itens li a:hover{
     color: #266354;
+    transition: all 0.5s ease 0s;
 }
 
 button{
@@ -52,6 +67,16 @@ button{
 }
 
 button{
+    color: #071217;
+
+    animation-name: fade-movement;
+    animation-duration: 0.5s;
+}
+
+button:hover{
+    transform: scale(0.9);
+    transform: all 0.2s;
+    transition: all 0.5s ease 0s;
     color: #266354;
 }
 
@@ -60,6 +85,13 @@ li, a{
     color: #348771;
 }
 
+@keyframes fade-movement{
+    0% {transform: translate(0px, -15px); opacity: 0;}
+    25% {opacity: 0.25;}
+    50% {opacity: 0.5;}
+    75% {opacity: 0.75;}
+    100% {transform: translate(0px, 0px); opacity: 1;}
+}
 
 @media (max-width: 1000px){
 
