@@ -94,5 +94,25 @@ li, a{
 }
 
 @media (max-width: 1000px){
+.nav-itens li{
+    display: none;
+}
+
+.logo{
+    width: 9%;
+    height: 9%;
+}
+
+button{
+    display: none;
+}
+
+.tl-btn{
+    display: inline-block;
+    position: absolute;
+}
+
+
+
 
 }
