@@ -20,8 +20,8 @@ header{
 }
 
 .logo{
-    width: 75px;
-    height: 75px;
+    width: 100px;
+    height: 100px;
     cursor: pointer;
 
     animation-name: fade-movement;
@@ -44,6 +44,10 @@ header{
 .nav-itens li {
     display: inline-block;
     padding: 10px 40px;
+}
+
+.nav-itens li.tl-btn{
+    display: none;
 }
 
 .nav-itens li a{
@@ -99,20 +103,16 @@ li, a{
 }
 
 .logo{
-    width: 9%;
-    height: 9%;
+    width: 12%;
+    height: 12%;
 }
 
-button{
+.login-btn{
     display: none;
 }
 
-.tl-btn{
-    display: inline-block;
-    position: absolute;
+.nav-itens li.tl-btn{
+    display: block;
 }
-
-
-
 
 }
