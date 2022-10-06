@@ -157,11 +157,24 @@ p{
     transition: all 0.5s ease 0s;
 }
 
+.sidebar{
+    display: none;
+}
+
+.sb-itens li{
+    display: none;
+}
+
 @keyframes fade-movement{
     0% {transform: translate(0px, -15px); opacity: 0;}
     25% {opacity: 0.25;}
     50% {opacity: 0.5;}
     75% {opacity: 0.75;}
+    100% {transform: translate(0px, 0px); opacity: 1;}
+}
+
+@keyframes sb-mvment{
+    0% {transform: translate(15px, 0px); opacity: 0;}
     100% {transform: translate(0px, 0px); opacity: 1;}
 }
 
@@ -184,8 +197,8 @@ p{
 }
 
 .Ft-lg{
-    width: 5rem;
-    height: 5rem;
+    width: 12%;
+    height: 12%;
 }
 
 .ft-itens li a i{
@@ -199,6 +212,36 @@ p{
     max-width: 400px;
     line-height: 14px;
 
+}
+
+.sidebar{
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    right: 0;
+    width: 30%;
+    height: 80%;
+    background-color: #071217;
+
+    animation-name: sb-mvment;
+    animation-duration: 0.5s;
+}
+
+.sb-itens{
+    list-style: none;
+}
+
+.sb-itens li{
+    display: block;
+    margin-top: 30px;
+}
+
+.sb-itens li a{
+    text-decoration: none;
+}
+
+.sb-btn{
+    display: block;
 }
 
 }
