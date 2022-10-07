@@ -90,73 +90,6 @@ li, a{
     color: #348771;
 }
 
-footer{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    background-color: #071217;
-
-    animation-name: fade-movement;
-    animation-duration: 0.5s;
-}
-
-.ft-cnt{
-    margin: 0 auto;
-
-    animation-name: fade-movement;
-    animation-duration: 0.5s;
-}
-
-.Ft-lg{
-    width: 150px;
-    height: 150px;
-
-    animation-name: fade-movement;
-    animation-duration: 0.5s;
-}
-
-p{
-    font-family: "Montserrat", sans-serif;
-    color: #348771;
-    font-size: 17px;
-    max-width: 500px;
-    line-height: 28px;
-
-    animation-name: fade-movement;
-    animation-duration: 0.5s;
-}
-
-.ft-itens{
-    display: flex;
-    justify-content: space-around;
-    width: 100%;
-    padding-left: 0px;
-}
-
-.ft-itens li{
-    text-decoration: none;
-    list-style: none;
-    align-self: center;
-
-    animation-name: fade-movement;
-    animation-duration: 0.5s;
-}
-
-.ft-itens li a i{
-    font-size: 25px;
-    cursor: pointer;
-}
-
-.ft-itens li a i:hover{
-    color: #266354;
-    transition: all 0.5s ease 0s;
-}
-
 .sidebar{
     display: none;
 }
@@ -194,24 +127,6 @@ p{
 
 .nav-itens li.tl-btn{
     display: block;
-}
-
-.Ft-lg{
-    width: 12%;
-    height: 12%;
-}
-
-.ft-itens li a i{
-    font-size: 1rem;
-}
-
-.p{
-    font-family: "Montserrat", sans-serif;
-    color: #348771;
-    font-size: 14px;
-    max-width: 400px;
-    line-height: 14px;
-
 }
 
 .sidebar{

@@ -1,3 +1,12 @@
+@import url('https://fonts.googlespis.com/css?family=Montserrat:500');
+
+body{
+    background-color: #000;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
 footer{
     display: flex;
     flex-direction: column;
