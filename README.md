@@ -11,7 +11,7 @@ Desenvolvedores:
 - 
 - 
 - 
-- 
+- Hugo Nogueira Carvalho
 -
 
 Scrum Master:
