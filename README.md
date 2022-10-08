@@ -12,7 +12,7 @@ Desenvolvedores:
 - 
 - 
 - 
--
+- Davi Kirchmaier Paiva
 
 Scrum Master:
 

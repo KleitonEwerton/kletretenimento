@@ -1,0 +1,162 @@
+@import url('https://fonts.googlespis.com/css?family=Montserrat:500');
+
+body{
+    background-color: #000;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 50px;
+    background-color: #071217;
+
+    animation-name: fade-movement;
+    animation-duration: 0.5s;
+}
+
+.logo{
+    width: 100px;
+    height: 100px;
+    cursor: pointer;
+
+    animation-name: fade-movement;
+    animation-duration: 0.5s;
+}
+
+.logo:hover{
+    transition: all 0.5s ease 0s;
+    transform: scale(0.8);
+    transform: all 0.2s;
+}
+
+.nav-itens{
+    list-style: none;
+    padding-left: 0px;
+
+    animation-name: fade-movement;
+    animation-duration: 0.5s;
+}
+
+.nav-itens li {
+    display: inline-block;
+    padding: 10px 40px;
+}
+
+.nav-itens li.tl-btn{
+    display: none;
+}
+
+.nav-itens li a{
+    transition: all 0.5s ease 0s;
+    text-decoration: none;
+}
+
+.nav-itens li a:hover{
+    color: #266354;
+    transition: all 0.5s ease 0s;
+}
+
+button{
+    padding: 10px 50px;
+    background-color: #348771;
+    color: #000;
+    border-radius: 25px;
+    border: none;
+    cursor: pointer;
+    transition: all 0.5s ease 0s;
+}
+
+button{
+    color: #071217;
+
+    animation-name: fade-movement;
+    animation-duration: 0.5s;
+}
+
+button:hover{
+    transform: scale(0.9);
+    transform: all 0.2s;
+    transition: all 0.5s ease 0s;
+    color: #266354;
+}
+
+li, a{
+    font-family: "Montserrat", sans-serif;
+    color: #348771;
+}
+
+.sidebar{
+    display: none;
+}
+
+.sb-itens li{
+    display: none;
+}
+
+@keyframes fade-movement{
+    0% {transform: translate(0px, -15px); opacity: 0;}
+    25% {opacity: 0.25;}
+    50% {opacity: 0.5;}
+    75% {opacity: 0.75;}
+    100% {transform: translate(0px, 0px); opacity: 1;}
+}
+
+@keyframes sb-mvment{
+    0% {transform: translate(15px, 0px); opacity: 0;}
+    100% {transform: translate(0px, 0px); opacity: 1;}
+}
+
+@media (max-width: 1000px){
+.nav-itens li{
+    display: none;
+}
+
+.logo{
+    width: 12%;
+    height: 12%;
+}
+
+.login-btn{
+    display: none;
+}
+
+.nav-itens li.tl-btn{
+    display: block;
+}
+
+.sidebar{
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    right: 0;
+    width: 60%;
+    height: 80%;
+    background-color: #071217;
+
+    animation-name: sb-mvment;
+    animation-duration: 0.5s;
+}
+
+.sb-itens{
+    list-style: none;
+}
+
+.sb-itens li{
+    display: block;
+    margin-top: 30px;
+}
+
+.sb-itens li a{
+    text-decoration: none;
+}
+
+.sb-btn{
+    display: block;
+}
+
+}
