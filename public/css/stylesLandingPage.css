@@ -1,0 +1,223 @@
+
+
+
+  body {
+     animation: gradient 10s ease infinite;
+     background: linear-gradient(-45deg, rgb(13, 63, 36), rgb(0, 0, 0), rgb(10, 63, 36)) no-repeat;
+     background-size: 300% 300%;
+     align-items: center;
+     justify-content:center;
+     height: 200vh;
+
+  }
+
+
+          @keyframes gradient {
+
+           0% {
+             background-position: 0 50%;
+  	
+
+           }
+
+           50% {
+               background-position: 100% 50%;
+               }
+
+                100% {
+                    background-position: 0 50%;
+                }
+
+           }
+
+
+          @keyframes profile-imagem {
+
+              0% {
+                  opacity: 0;
+              }
+
+              100% {
+                  opacity: 1;
+              }
+          }
+
+
+
+
+          h2 {
+              padding-left: 350px;
+              animation-name:profile-imagem;
+              animation-duration: 2s;
+          }
+
+          h3{
+              width: 500px;
+              text-align: center;
+              margin: fill;
+          }
+
+          h4 {
+              border:1px solid rgb(0, 0, 0);
+              box-shadow: 0 0 10px rgb(0, 206, 104);
+              background: rgba(0, 0, 0, 0.44);
+              color: #ffffff;
+              text-align: center;
+              margin-left: 250px;
+              width: 170px;
+              font-size: 150%;
+              animation-name:profile-imagem;
+              animation-duration: 2s;
+
+
+          }
+          .texto1{
+              border:1px solid rgb(0, 0, 0);
+              box-shadow: 0 0 15px rgb(0, 182, 90);
+              background: rgba(0, 0, 0, 0.44);
+              color:white;
+              margin-left:85px;
+              width: 500px;
+              font-size: 120%;
+              animation-name:profile-imagem;
+              animation-duration: 2s;
+              display:flex;
+              height: 300px;
+
+
+
+          }
+
+          .texto2{
+              border:1px solid rgb(0, 0, 0);
+              box-shadow: 0 0 15px rgb(0, 182, 90);
+              background: rgba(0, 0, 0, 0.44);
+              color:white;
+              width: 500px;
+              font-size: 120%;
+              animation-name:profile-imagem;
+              animation-duration: 2s;
+              margin-left: 625px;
+              margin-top: 20px;
+              height: 300px;
+          }
+
+
+          .titulo2{
+              border:1px solid rgb(0, 0, 0);
+              box-shadow: 0 0 10px rgb(0, 178, 89);
+              background: rgba(0, 0, 0, 0.44);
+              color: #ffffff;
+              text-align: center;
+              width: 150px;
+              font-size: 150%;
+              animation-name:profile-imagem;
+              animation-duration: 2s;
+              margin-top: -410px;
+              margin-left: 800px;
+              height: 85px;
+
+          }
+
+.slider{
+    margin:0 auto;
+    width:800px;
+    height:400px;
+    overflow:hidden;
+}
+
+
+.slides{
+    animation-name:profile-imagem;
+    animation-duration: 2s;
+    width:400%;
+    height:400px;
+    display:flex;
+}
+
+.slides input {
+    display:none;
+}
+
+.slide{
+    width: 25%;
+    position:relative;
+}
+
+.slide img{
+    border:1px solid rgb(0, 0, 0);
+    box-shadow: 0 0 0px rgb(0, 178, 89);
+    width: 800px;
+    border-radius: 900px;
+    height: 300px;
+
+}
+
+.manual-navegation{
+    width: 800px;
+    position: absolute;
+    margin-top:-40px;
+    display:flex;
+    justify-content: center;
+}
+
+.manual-btn{
+    box-shadow: 0 0 15px rgb(0, 182, 90);
+    border:2px solid rgb(0, 0, 0);
+    padding:5px;
+    border-radius:10px;
+    cursor:pointer;
+    transition: 0.5s;
+
+}
+
+.manual-btn:not(:last-child){
+    margin-right: 40px;
+}
+
+.manual-btn:hover{
+    background-color:black ;
+}
+
+#radio1:checked~.first{
+    margin-left:0;
+}
+  #radio2:checked~.first {
+      margin-left: -25%;
+  }
+
+  #radio3:checked~.first {
+      margin-left: -50%;
+  }
+
+  .navegation-auto div{
+      border: 2px solid black;
+      padding: 5px;
+      border-radius:10px;
+      cursor:pointer;
+      transition:1s;
+  }
+  .navegation-auto{
+      position:absolute ;
+      width: 800px;
+      margin-top:360px ;
+      display: flex;
+      justify-content: center;
+  }
+
+  .navegation-auto div:not(:last-child){
+      margin-right: 40px;
+  }
+
+  #radio1:checked ~ .navegation-auto .auto-btn1{
+      background-color: white;
+
+  }
+  #radio2:checked ~ .navegation-auto .auto-btn2 {
+      background-color: white;
+  }
+
+  #radio3:checked ~ .navegation-auto .auto-btn3 {
+      background-color: white;
+  }
+
