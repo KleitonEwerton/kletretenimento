@@ -1,30 +1,25 @@
 @import url('https://fonts.googlespis.com/css?family=Montserrat:500');
 
 .body{
-    background-color: #000;
+    background-color: #071217;
     box-sizing: border-box;
+    height: 100vh;
     margin: 0;
     padding: 0;
 }
 
-.tabela{
-    height: 70%;
-    width: 80%;
-    background-color: #071217;
-    border-radius: 25px;
-}
-
 .lista-posts{
     display: flex;
+    height: 80%;
+    width: 100%;
     flex-direction: column;
     align-items: center;
     justify-content: space-evenly;
 }
 
 .tabela{
-    width: 80%;
-    background-color: #000;
-    border-radius: 15px;
+    background-color: #071217;
+    border-radius: 25px;
 }
 
 .lista-posts h1{
