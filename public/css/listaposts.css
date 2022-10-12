@@ -1,11 +1,14 @@
 @import url('https://fonts.googlespis.com/css?family=Montserrat:500');
 
+*{
+    margin: 0;
+    padding: 0;
+}
+
 .body{
     background-color: #071217;
     box-sizing: border-box;
     height: 100vh;
-    margin: 0;
-    padding: 0;
 }
 
 .table-container{
@@ -29,6 +32,15 @@
 
 .tabela td{
     cursor: pointer;
+}
+
+.tabela i{
+    color: #348771;
+}
+
+.tabela i:hover{
+    color: #266354;
+    transition: all 0.5s ease 0s;
 }
 
 .lista-posts{
