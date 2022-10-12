@@ -9,9 +9,12 @@
 }
 
 .table-container{
-    display: flex;
-    width: 70%;
+    width: 80%;
     height: 80%;
+}
+
+.tabela{
+    border-radius: 15px;
 }
 
 .tabela thead{
@@ -21,9 +24,10 @@
 .tabela th {
     font-family: 'Montserrat', sans-serif;
     color: #209b7c;
+    cursor: default;
 }
 
-.tabela tr{
+.tabela td{
     cursor: pointer;
 }
 
