@@ -8,6 +8,25 @@
     padding: 0;
 }
 
+.table-container{
+    display: flex;
+    width: 70%;
+    height: 80%;
+}
+
+.tabela thead{
+    background-color: #173E36;
+}
+
+.tabela th {
+    font-family: 'Montserrat', sans-serif;
+    color: #209b7c;
+}
+
+.tabela tr{
+    cursor: pointer;
+}
+
 .lista-posts{
     display: flex;
     height: 80%;
@@ -15,11 +34,6 @@
     flex-direction: column;
     align-items: center;
     justify-content: space-evenly;
-}
-
-.tabela{
-    background-color: #071217;
-    border-radius: 25px;
 }
 
 .lista-posts h1{
