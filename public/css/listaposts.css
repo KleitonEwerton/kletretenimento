@@ -3,12 +3,13 @@
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 .body{
     background-color: #071217;
-    box-sizing: border-box;
     height: 100vh;
+    width: 100vw;
 }
 
 .serch-bar{
@@ -34,7 +35,7 @@
     margin-top: 15px;
     border-radius: 5px;
     width: 100%;
-    height: 10%;
+    height: 15%;
 
     animation-name: fade-movement;
     animation-duration: 0.5s;
@@ -72,6 +73,7 @@
 
 .tabela{
     border-radius: 15px;
+    margin-top: 10px;
 
     animation-name: fade-movement;
     animation-duration: 0.5s;
@@ -131,8 +133,8 @@
 }
 
 .image{
-    width: 15%;
-    height: 15%;
+    width: 25%;
+    height: 25%;
 }
 .lista-posts h1{
     font-family: 'Montserrat', sans-serif;
@@ -152,5 +154,41 @@
 }
 
 @media (max-width: 1000px){
-    
+
+.body{
+    width: 100%;
+}
+
+.lista-posts{
+    width: 100%;
+    height: 100%;
+}
+
+.image{
+    width: 80%;
+    height: 80%;
+}
+
+.table-container{
+    width: 100%;
+}
+
+.tabela{
+    margin-top: 10px;
+    width: 60%;
+}
+
+.serch-bar{
+    width: 100%;
+    height: 10%;
+}
+
+.icons{
+    display: none;
+}
+
+.mbl-btn{
+    display: flex;
+}
+
 }
