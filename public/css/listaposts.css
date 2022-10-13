@@ -175,7 +175,7 @@
 
 .tabela{
     margin-top: 10px;
-    width: 60%;
+    width: 100%;
 }
 
 .serch-bar{
@@ -191,4 +191,11 @@
     display: flex;
 }
 
+@media (max-width: 357px){
+.body{
+    width: 357px;
+    position: absolute;
+}
+
+}
 }
