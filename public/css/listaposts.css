@@ -52,6 +52,10 @@
     justify-content: space-evenly;
 }
 
+.image{
+    width: 15%;
+    height: 15%;
+}
 .lista-posts h1{
     font-family: 'Montserrat', sans-serif;
     color: #348771;
