@@ -15,6 +15,9 @@
 .logo{
     width: 15%;
     height: 40%;
+
+    animation-name: fade-movement;
+    animation-duration: 0.5s;
 }
 
 .serch-bar{
