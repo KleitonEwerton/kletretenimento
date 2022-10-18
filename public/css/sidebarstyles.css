@@ -10,11 +10,10 @@ body{
 }
 
 
-
 .sidebar{
     position: fixed;
-    width: 240px;
-    left: -240px;
+    width: 490px;
+    left: -490px;
     height: 100%;
     background: #1e1e1e;
     transition: all 0.5s ease;
@@ -54,6 +53,10 @@ a.active,a:hover{
     letter-spacing: 1px;
     text-transform: uppercase;
 }
+.sidebar span{
+    font-size: 27px;
+}
+
 #check{
     display: none;
 }
@@ -89,7 +92,7 @@ label #cancel{
 }
 
 #check:checked ~ label #cancel {
-    margin-left: 245px;
+    margin-left: 495px;
     opacity: 1;
     visibility: visible;
 }

@@ -11,8 +11,8 @@ Desenvolvedores:
 - 
 - 
 - 
+- Hugo Nogueira Carvalho
 - 
-- Davi Kirchmaier Paiva
 
 Scrum Master:
 
