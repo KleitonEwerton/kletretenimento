@@ -8,11 +8,11 @@ Projeto desenvolvido para o Trainee da [Code Jr](https://codejr.com.br/) que con
 ## Projeto Trainee, Code Jr, Grupo X, 2022.2 
 
 Desenvolvedores:
-- 
-- 
-- 
+- Arthur riccioppo oliveira pereira
+- Lucas de souza carmo
 - Hugo Nogueira Carvalho
-- 
+- Davi Kirchmaier Paiva
+
 
 Scrum Master:
 
