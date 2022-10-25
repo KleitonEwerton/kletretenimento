@@ -149,6 +149,16 @@
     animation-duration: 0.5s;
 }
 
+.form-list{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    height: 70%;
+    position: absolute;
+    background-color: #fff;
+}
+
 @keyframes fade-movement{
     0% {transform: translate(0px, -15px); opacity: 0;}
     25% {opacity: 0.25;}
