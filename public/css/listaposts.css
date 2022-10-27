@@ -126,7 +126,7 @@
 
 .lista-posts{
     display: flex;
-    height: 80%;
+    height: 100%;
     width: 100%;
     flex-direction: column;
     align-items: center;
@@ -151,12 +151,24 @@
 
 .form-list{
     display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 80%;
-    height: 70%;
-    position: absolute;
-    background-color: #fff;
+    top: 0;
+    left: 0;
+    z-index: 5;
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+.form-list-container{
+    position: fixed;
+    width: 70%;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #071217;
+    z-index: 10;
+    border-radius: 25px;
 }
 
 @keyframes fade-movement{
