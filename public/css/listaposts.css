@@ -149,15 +149,16 @@
     animation-duration: 0.5s;
 }
 
-.form-list{
-    display: flex;
+.fade-modal{
+    display: block;
     top: 0;
     left: 0;
     z-index: 5;
-    width: 100vw;
-    height: 100vh;
+    width: 100%;
+    height: 100%;
     position: fixed;
     background-color: rgba(0, 0, 0, 0.6);
+    pointer-events: all;
 }
 
 .form-container{

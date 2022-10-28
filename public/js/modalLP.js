@@ -1,4 +1,4 @@
-const fade = document.querySelector("#fadeModal");
+const fade = document.getElementById("fade");
 const btn = document.getElementsByClassName("btn");
 
 const modalBtns = [...btn].filter((el)=>{
@@ -8,17 +8,17 @@ const modalBtns = [...btn].filter((el)=>{
 const toggleModal = (id) =>{
     if(id == undefined){
         fade.classList.toggle("hide");
-        const closeModal = closeModal();
+        const closeModal = currentModal();
         closeModal.classList.toggle("hide");
     } else{
-        const openModal = document.getElementById(id);
+        const modalOpen = document.getElementById(id);
         modalOpen.classList.toggle("hide");
         fade.classList.toggle("hide");
     }
 }
 
-const closeModal = () =>{
-    const modal = document.getElementById("modalAdd");
+const currentModal = () =>{
+    const modal = document.getElementsByClassName("form-container");
     const openModal = [...modal].filter((modal)=>{
         return !modal.classList.contains("hide");
     })
