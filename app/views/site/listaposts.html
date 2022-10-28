@@ -16,7 +16,7 @@
         <h1>POSTS</h1>
         <div class="serch-bar">
             <ul class="serch-itens">
-              <li><a href="#"><i class="bi bi-plus"></i></a></li>
+              <li><a href="#"><i class="bi bi-plus btn" id="add-btn"></i></a></li>
               <li><a href="#"><input type="text" placeholder="Pesquisar"></a></li>
             </ul>
         </div>
@@ -36,9 +36,9 @@
                   <td>12/10/2022</td>
                   <td><a>Kleiton</a</td>
                   <td class="icons">
-                    <a href="#"><i class="bi bi-trash-fill"></i></a>
-                    <a href="#"><i class="bi bi-pencil-square"></i></a>
-                    <a href="#"><i class="bi bi-eye-fill"></i></a>
+                    <a href="#"><i class="bi bi-trash-fill btn"></i></a>
+                    <a href="#"><i class="bi bi-pencil-square btn"></i></a>
+                    <a href="#"><i class="bi bi-eye-fill btn"></i></a>
                   </td>
                 </tr>
                 <tr class="table-itens">
@@ -46,9 +46,9 @@
                   <td>11/10/2022</td>
                   <td></td>
                   <td class="icons">
-                    <a href="#"><i class="bi bi-trash-fill"></i></a>
-                    <a href="#"><i class="bi bi-pencil-square"></i></a>
-                    <a href="#"><i class="bi bi-eye-fill"></i></a>
+                    <a href="#"><i class="bi bi-trash-fill btn"></i></a>
+                    <a href="#"><i class="bi bi-pencil-square btn"></i></a>
+                    <a href="#"><i class="bi bi-eye-fill btn"></i></a>
                   </td>
                 </tr>
                 <tr class="table-itens">
@@ -56,41 +56,49 @@
                   <td>Ontem</td>
                   <td>Pelé</td>
                   <td class="icons">
-                    <a href="#"><i class="bi bi-trash-fill"></i></a>
-                    <a href="#"><i class="bi bi-pencil-square"></i></a>
-                    <a href="#"><i class="bi bi-eye-fill"></i></a>
+                    <a href="#"><i class="bi bi-trash-fill btn"></i></a>
+                    <a href="#"><i class="bi bi-pencil-square btn"></i></a>
+                    <a href="#"><i class="bi bi-eye-fill btn"></i></a>
                   </td>               
                  </tr>
              </tbody>
          </table>
         </div> 
     </div>
-    <div class="form-list">
-      <div class="form-list-container">
-        <form class="add-form" >
-         <label for="Usuário"></label>
-         <input type="text" id="Usuário">
+    <div class="form-list hide" id="fadeModal">
+      <div class="form-container hide">
+        <div class="modal-head">
+          <h1 class="title">ADICIONAR POST</h1>
+        </div>
+        <div class="modal-itens">
+         <form class="add-form" >
+          <label for="Usuário">USUÁRIO.</label>
+          <input type="text" id="Usuário" class="form-input">
         
-         <label for="Titulo"></label>
-         <input type="text" id="Titulo">
+          <label for="Titulo">TITULO DO POST.</label>
+          <input type="text" id="Titulo" class="form-input">
+          
+          <label for="input-image" class="img-selector">IMAGEM DO POST</label>
+          <input id="input-image" class="img-btn" type="file" onchange="readURL(this)" accept="image/*">
+          <br>
+          <label for="post">ESCREVA O POST AQUI!</label>
+          <textarea type="text" id="post" rows="10" cols="30" class="form-input"></textarea>
 
-         <input class="input-image" type="file" onchange="readURL(this)" accept="image/*">
-
-         <label for="post"></label>
-         <textarea type="text" id="post" rows="10" cols="30"></textarea>
-
-         <button id="confirm-btn">Adicionar</button>
-        </form>
-        <form class="view-form">
+          <button id="confirm-btn" class="cfn-btn">Adicionar</button>
+         </form>
+        </div> 
+      </div>
+      <form class="view-form" style="display: none;">
           <select>
-              <option></option>
-              <option></option>
-              <option></option>
-              <option></option>
+            <option></option>
+            <option></option>
+            <option></option>
+            <option></option>
           </select>
-          <button id="view-btn" href="#"></button>
-        </form>
-        <form class="delete-form">
+        <button id="view-btn" href="#"></button>
+      </form>
+      </div>
+      <form class="delete-form" style="display: none;">
           <select>
             <option>1</option>
             <option>2</option>
@@ -99,12 +107,12 @@
           </select>
           <button id="del-btn"></button>
           <div class="confirmation-container">
-          <p>Tem certeza que deseja excluir o post? Tal ação não pode ser desfeita!</p>
-          <button id="yes-btn" class="yes"></button>
-          <button id="no-btn" class="no"></button>
+            <p>Tem certeza que deseja excluir o post? Tal ação não pode ser desfeita!</p>
+            <button id="yes-btn" class="yes"></button>
+            <button id="no-btn" class="no"></button>
           </div>
-        </form>
-        <form class="edit-form">
+      </form>
+      <form class="edit-form" style="display: none;">
           <select>
             <option>1</option>
             <option>2</option>
@@ -112,8 +120,7 @@
             <option>4</option>
           </select>
           <button id="edit-btn"></button>
-        </form>
-      </div>
+      </form>
     </div>
 
 
