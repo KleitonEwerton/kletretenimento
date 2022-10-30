@@ -1,5 +1,6 @@
 const fade = document.getElementById("fade");
 const btn = document.getElementsByClassName("btn");
+const container = document.getElementsByClassName("struct-modal");
 
 const modalBtns = [...btn].filter((el)=>{
     return el.dataset.modal != null;
@@ -18,7 +19,7 @@ const toggleModal = (id) =>{
 }
 
 const currentModal = () =>{
-    const modal = document.getElementsByClassName("form-container");
+    const modal = document.getElementsByClassName("struct-modal");
     const openModal = [...modal].filter((modal)=>{
         return !modal.classList.contains("hide");
     })
