@@ -9,21 +9,14 @@ const modalBtns = [...btn].filter((el)=>{
 const toggleModal = (id) =>{
     if(id == undefined){
         fade.classList.toggle("hide");
-        const closeModal = currentModal();
-        closeModal.classList.toggle("hide");
     } else{
         const modalOpen = document.getElementById(id);
-        modalOpen.classList.toggle("hide");
+        modalOpen.style.display = "block"
         fade.classList.toggle("hide");
+        fade.addEventListener("click", ()=>{
+            modalOpen.style.display = "none";
+        })
     }
-}
-
-const currentModal = () =>{
-    const modal = document.getElementsByClassName("struct-modal");
-    const openModal = [...modal].filter((modal)=>{
-        return !modal.classList.contains("hide");
-    })
-    openModal[0];
 }
 
 [...modalBtns, fade].forEach((el)=>{
@@ -31,3 +24,4 @@ const currentModal = () =>{
         toggleModal(el.dataset.modal);
     })
 })
+
