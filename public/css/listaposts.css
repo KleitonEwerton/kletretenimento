@@ -281,7 +281,7 @@
     100% {transform: translate(0px, 0px); opacity: 1;}
 }
 
-@media (max-width: 1025px){
+@media (max-width: 1000px){
 
 .body{
     width: 100%;
@@ -345,8 +345,27 @@
 
 }
 
+@media (max-width: 375px){
+.form-input{
+    height: 3%;
+    font-size: 7px;
+}
+
+.img-selector{
+    font-size: 15px;
+}
+
+.title{
+    font-size: medium;
+}
+}
+
+
 @media (max-width: 357px){
 .body{
     width: 357px;
 }
+
+
 }
+
