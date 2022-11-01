@@ -224,13 +224,14 @@
 
 .img-selector{
     padding: 20px 10px;
-    width: 160px;
+    width: 100px;
     border-radius: 15px;
     background: #000;
     color: #209b7c;
     display: block;
     font-family: 'Montserrat', sans-serif;
     font-size: 15px;
+    text-align: center;
     transition: 0.5s;
 }
 
@@ -284,10 +285,12 @@
 
 .body{
     width: 100%;
+    height: 100%;
 }
 
 .logo{
-    width: auto;
+    width: 15%;
+    height: 20%;
 }
 
 .lista-posts{
@@ -302,6 +305,7 @@
 
 .table-container{
     width: 100%;
+    height: 100%;
 }
 
 .tabela{
@@ -314,56 +318,35 @@
     height: 10%;
 }
 
+}
+@media (max-width: 500px){
+.body{
+    width: 100%;
+    position: absolute;
+}
+
+.logo{
+    display: none;
+}
+
 .form-container{
-    height: 80%;
-}
-
-.title{
-    font-size: 15px;
-}
-
-.modal-itens{
-    margin: 0.5rem;
-}
-
-.add-form{
-    font-size: 12px;
-}
-
-.form-input{
-    height: 3%;
-}
-
-.modal-itens textarea{
-    height: 15vh;
+    height: 90%;
 }
 
 .img-selector{
-    width: 110px;
-    font-size: 10px;
-    height: fit-content;
+    width: 60%;
+    height: 8%;
 }
 
-.cfn-btn{
-    width: 90px;
-    font-size: 15px;
-    height: 60px;
+.add-form textarea{
+    margin-bottom: 3%;
 }
 
-@media (max-width: 375px){
+
+}
+
+@media (max-width: 357px){
 .body{
     width: 357px;
-    position: absolute;
-}
-
-.form-list{
-    width: 357px;
-    height: 1000px;
-    position: absolute;
-}
-
-.modal-itens textarea{
-    height: 20vh;
-}
 }
 }
