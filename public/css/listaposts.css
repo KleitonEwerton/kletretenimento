@@ -250,6 +250,7 @@
 .cfn-btn{
     padding: 20px 10px;
     width: 100px;
+    border: none;
     border-radius: 15px;
     background: #000;
     color: #209b7c;
@@ -279,6 +280,35 @@
     50% {opacity: 0.5;}
     75% {opacity: 0.75;}
     100% {transform: translate(0px, 0px); opacity: 1;}
+}
+
+@media (max-width: 1026px){
+
+.serch-bar{
+    height: 11%;
+}
+
+.form-container{
+    height: 95%;
+}
+
+.title{
+    font-size: 15px;
+}
+
+.form-input{
+    font-size: 10px;
+    height: 7%;
+}
+
+.img-selector{
+    height: 3%;
+}
+
+.cfn-btn{
+    height: 3%;
+}
+
 }
 
 @media (max-width: 1000px){
@@ -318,6 +348,10 @@
     height: 10%;
 }
 
+.form-container{
+    height: fit-content;
+}
+
 }
 @media (max-width: 500px){
 .body{
@@ -330,7 +364,7 @@
 }
 
 .form-container{
-    height: 90%;
+    height: fit-content;
 }
 
 .img-selector{
@@ -347,7 +381,7 @@
 
 @media (max-width: 375px){
 .form-input{
-    height: 3%;
+    height: 10%;
     font-size: 7px;
 }
 
