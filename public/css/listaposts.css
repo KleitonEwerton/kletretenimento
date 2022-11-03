@@ -126,7 +126,7 @@
 
 .lista-posts{
     display: flex;
-    height: 80%;
+    height: 100%;
     width: 100%;
     flex-direction: column;
     align-items: center;
@@ -149,6 +149,131 @@
     animation-duration: 0.5s;
 }
 
+.fade-modal{
+    display: block;
+    top: 0;
+    left: 0;
+    z-index: 5;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.6);
+    pointer-events: all;
+}
+
+.struct-modal{
+    display: none;
+}
+
+.form-container{
+    position: fixed;
+    width: 70%;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #071217;
+    z-index: 10;
+    border-radius: 25px;
+    justify-content: center;
+    align-items: center;
+    padding: 25px;
+}
+
+.title{
+    font-family: 'Montserrat', sans-serif;
+    color: #348771;
+    font-size: 25px;
+}
+
+.modal-itens{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: flex-start;
+    margin: 2rem;
+}
+
+.add-form{
+    font-family: 'Montserrat', sans-serif;
+    color: #348771;
+    width: 100%;
+    font-size: 15px;
+}
+
+.form-input{
+    border: none;
+    background-color: #000;
+    border-radius: 5px;
+    padding: 0.5rem 1rem;
+    margin-bottom: 15px;
+    width: 100%;
+    color: #209b7c;
+    font-size: 1rem;
+    outline: none;
+    transition: all 300ms ease-in-out;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.form-input:focus{
+    box-shadow: 0.5rem 0.5rem #209b7c;
+}
+
+.img-btn{
+    display: none;
+}
+
+.img-selector{
+    padding: 20px 10px;
+    width: 100px;
+    border-radius: 15px;
+    background: #000;
+    color: #209b7c;
+    display: block;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
+    text-align: center;
+    transition: 0.5s;
+}
+
+.img-selector:hover{
+    background: #209b7c;
+    color: #000;
+    transform: scale(0.9);
+    transform: all 0.2s;
+    transition: all 0.5s ease 0s;
+}
+
+.modal-itens textarea{
+    resize: none;
+}
+
+.cfn-btn{
+    padding: 20px 10px;
+    width: 100px;
+    border: none;
+    border-radius: 15px;
+    background: #000;
+    color: #209b7c;
+    display: block;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
+    transition: 0.5s;
+}
+
+.cfn-btn:hover{
+    background: #209b7c;
+    color: #000;
+    transform: scale(0.9);
+    transform: all 0.2s;
+    transition: all 0.5s ease 0s;
+}
+
+.hide{
+    opacity: 0;
+    top: 0;
+    pointer-events: none;
+}
+
 @keyframes fade-movement{
     0% {transform: translate(0px, -15px); opacity: 0;}
     25% {opacity: 0.25;}
@@ -157,14 +282,45 @@
     100% {transform: translate(0px, 0px); opacity: 1;}
 }
 
+@media (max-width: 1026px){
+
+.serch-bar{
+    height: 11%;
+}
+
+.form-container{
+    height: 95%;
+}
+
+.title{
+    font-size: 15px;
+}
+
+.form-input{
+    font-size: 10px;
+    height: 7%;
+}
+
+.img-selector{
+    height: 3%;
+}
+
+.cfn-btn{
+    height: 3%;
+}
+
+}
+
 @media (max-width: 1000px){
 
 .body{
     width: 100%;
+    height: 100%;
 }
 
 .logo{
-    width: auto;
+    width: 15%;
+    height: 20%;
 }
 
 .lista-posts{
@@ -179,6 +335,7 @@
 
 .table-container{
     width: 100%;
+    height: 100%;
 }
 
 .tabela{
@@ -191,11 +348,58 @@
     height: 10%;
 }
 
-@media (max-width: 357px){
-.body{
-    width: 357px;
-    position: absolute;
+.form-container{
+    height: fit-content;
 }
 
 }
+@media (max-width: 500px){
+.body{
+    width: 100%;
+    position: absolute;
 }
+
+.logo{
+    display: none;
+}
+
+.form-container{
+    height: fit-content;
+}
+
+.img-selector{
+    width: 60%;
+    height: 8%;
+}
+
+.add-form textarea{
+    margin-bottom: 3%;
+}
+
+
+}
+
+@media (max-width: 375px){
+.form-input{
+    height: 10%;
+    font-size: 7px;
+}
+
+.img-selector{
+    font-size: 15px;
+}
+
+.title{
+    font-size: medium;
+}
+}
+
+
+@media (max-width: 357px){
+.body{
+    width: 357px;
+}
+
+
+}
+
