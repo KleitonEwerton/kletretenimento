@@ -20,13 +20,14 @@ header{
 .logo
 {
     max-width: 100%;
-    margin-left: 1400px;
+   position: absolute;
+   right: 0;
     
 }
 
 .logo h2{
     color: #266354;
-    font-size: 60px;
+    font-size: 80px;
     
     
     
@@ -40,13 +41,14 @@ header{
 
 .content {
     margin: auto;
-    margin-top: 20px;
+    margin-top: 100px;
     color: #9AC3B8;
     margin-bottom: 100px;
     text-align: left;
     width: 1200px;
     padding: 100%;
     margin-left: 25px;
+    
     
     
 
@@ -65,14 +67,14 @@ header{
 
 .content p{
     font-size: 18px;
-    line-height: 30px;
+    
+    text-align: justify;
 
 }
 
 .content ol{
     padding: 15px;
     font-size: 18px;
-    
 }
 
 .content img{
@@ -92,3 +94,47 @@ figcaption{
     color:#266354;
 }
 
+@media(min-width:800px) {
+    
+    .logo h2  {
+        font-size: 65px !important; 
+
+    }
+
+    .content h1{
+        font-size: 100px !important;
+        color: #9AC3B8;
+        
+        
+    }
+    
+    .content h3{
+       color: #266354;
+    }
+    
+    .content p{
+        font-size: 30px !important;
+        line-height: 40px;
+    
+    }
+    
+    .content ol{
+        padding: 55px;
+        font-size: 40px !important;
+
+        
+    }
+
+    .content h2{
+        font-size: 60px !important;
+        color: #266354;
+        
+        
+    }
+
+    
+    
+    
+
+
+}
