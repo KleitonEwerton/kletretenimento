@@ -2,6 +2,8 @@ body{
 	background-color: #1B1F27;
 	font-family: Arial, Helvetica, sans-serif;
 	overflow: hidden;
+	
+	
 }
 
 .area-login{
@@ -11,6 +13,10 @@ body{
 	align-items: center;
 	justify-content: center;
 	align-items: center;
+	
+	
+	
+	
 
 }
 
@@ -20,8 +26,8 @@ body{
 	align-items: center;
 	background-color: #181920;
 	position: relative;
-	width: 380px;
-	height: 320px;
+	width: 480px;
+	height: 420px;
 	border-radius: 10px;
 	padding: 35px;
 	box-shadow: 0px 10px 25px #00FF88;
@@ -34,7 +40,11 @@ body{
 .login form{
 	display: flex;
 	flex-direction: column;
-	width: 100%;
+	width: 500px;
+	
+	margin-top: 30px;
+	
+	
 }
 
 .login input{
@@ -43,7 +53,7 @@ body{
 	color: white;
 	padding-left: 10px;
 	border: none;
-	height: 45px;
+	height: 70px;
 	outline: none;
 	border-radius: 10px;
 	
@@ -66,12 +76,18 @@ form [type="submit"] {
 	
 }
 
+form [type="text"] {
+	
+	font-size: 30px;
+}
 
 
 p{
+	
 	color: white;
 	text-decoration: none;
 	margin-left: 10px;
+	font-size: 25px;
 
 }
 
