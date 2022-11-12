@@ -1,5 +1,10 @@
 @import url('https://fonts.googlespis.com/css?family=Montserrat:500');
 
+html{
+    overflow-y: hidden;
+    overflow-x: hidden;
+}
+
 *{
     margin: 0;
     padding: 0;
