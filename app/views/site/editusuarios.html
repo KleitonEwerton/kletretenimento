@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../../public/css/styles-editusuario.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <script src="../../../public/js/modalEU.js"  defer ></script>
+    <title>Admin</title>
+</head>
+<body class="body">
+  <div class="lista-posts">
+    <img class="logo"  src="../../../public/assets/logo.png">
+    <h1>EDITAR USUÁRIOS</h1>
+    <div class="table-container">
+      <table class="table table-dark table-hover tabela">
+        <thead>
+          <tr>
+            <th scope="col">Usuários</th>
+            <th scope="col">Nomes</th>
+            <th scope="col">Email</th>
+            <th scope="col">Opções</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr class ="table-itens">
+            <th scope="row">1</th>
+            <buttom></buttom>
+            <td>Tuzin</td>
+            <td>tuzin@gmail.com</td>
+            <td class="icons">
+              <a href="#"><i class="bi bi-pencil-square btn" id="edit" data-modal="modalEdit"></i></a>
+              <a href="#"><i class="bi bi-trash-fill btn"></i></a>
+              
+              
+            </td>
+          </tr>
+          <tr>
+            <th scope="row">2</th>
+            <td>davisin</td>
+            <td>davisin@gmail.com</td>
+            <td class = "icons">
+              <a href="#"><i class="bi bi-pencil-square btn" id="edit" data-modal="modalEdit"></i></a>
+              <a href="#"><i class="bi bi-trash-fill btn"></i></a>
+              
+              
+            </td>
+          </tr>
+          <tr>
+            <th scope="row">3</th>
+            <td>luquinhas</td>
+            <td>luquinhas@gmail.com</td>
+            <td class = "icons">
+              <a href="#"><i class="bi bi-pencil-square btn" id ="edit" data-modal="modalEdit" ></i></a>
+              <a href="#"><i class="bi bi-trash-fill btn"></i></a>
+              
+             
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+    <div id="fade" class="hide"></div>
+    <div id="modalEdit" style="display: none;" class="hide">  
+    <div class="form-container">
+      <div class="modal-head">
+        <h1 class="title">EDITAR USUÁRIO</h1>
+      </div>
+      <div class="modal-itens">
+       <form class="add-form" >
+        <label for="Usuário">USUÁRIO.</label>
+        <input type="text" id="Usuário" class="form-input">
+      
+        <label for="Titulo">E-MAIL.</label>
+        <input type="text" id="Titulo" class="form-input">
+        
+        <label for="Titulo">SENHA.</label>
+        <input type="password" id="Senha" class="form-input">
+
+        <button id="confirm-btn" class="cfn-btn">SALVAR</button>
+       </form>
+      </div> 
+    </div>
+    </div>
+  
+    
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+</body>
+</html>
