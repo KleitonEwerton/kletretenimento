@@ -10,7 +10,7 @@ body{
     max-width: 1200px;
     min-width: 100px;
     overflow: hidden;
-    padding: 0px;
+    padding: 0;
 
 
 }
@@ -55,7 +55,7 @@ body{
         font-size: 30px;
     }
     div.content {
-        margin-left: 0px;
+        margin-left: 0;
     }
 
 }
@@ -129,13 +129,11 @@ div.form {
     display: flex;
     justify-content: center;
     align-items: center;
-    display: none;
 }
 
 .form-container {
     position: relative;
     background-color: #000000;
-    padding: 25px;
     border-radius: 21px;
     display: flex;
     flex-direction: column;
