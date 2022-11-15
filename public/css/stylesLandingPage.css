@@ -2,17 +2,44 @@
 
 
   body {
-     animation: gradient 10s ease infinite;
+     animatio: gradient 10s ease infinite;
      background: linear-gradient(-45deg, rgb(13, 63, 36), rgb(0, 0, 0), rgb(10, 63, 36)) no-repeat;
      background-size: 300% 300%;
      align-items: center;
      justify-content:center;
-     height: 200vh;
+      min-width:393px ;
+      min-height: 851px;
 
+
+  }
+  @media(max-width: 1023px){
+      body{
+          width: 100%;
+          height: 100%;
+      }
+      slides{
+          font-size: 20%;
+          margin-left: 100px;
+
+      }
+  }
+  @media(max-width: 1000px){
+      slides{
+          font-size: 20%;
+
+      }
+
+  }
+  @media(max-width: 1000px){
+      body{
+          font-size: 100%;
+          align-items: center;
+      }
   }
 
 
           @keyframes gradient {
+
 
            0% {
              background-position: 0 50%;
@@ -49,6 +76,7 @@
               padding-left: 350px;
               animation-name:profile-imagem;
               animation-duration: 2s;
+              
           }
 
           h3{
