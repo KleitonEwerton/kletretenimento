@@ -1,0 +1,191 @@
+body{
+    margin: 0 auto;
+    font-family: Nunito, sans-serif;
+    background-color:  #071217;
+    color:#209b7c;
+    display: flex;
+    max-height: 900px;
+    height: 100%;
+    width: 100%;
+    max-width: 1200px;
+    min-width: 100px;
+    overflow: hidden;
+    padding: 0;
+
+
+}
+
+
+@media(max-width: 1000px){
+    body{
+        height: 100%;
+        width: 100%;
+        padding: 0;
+    }
+    div.content img.logo {
+        width: 15%;
+        height: 20%;
+    }
+    div.content {
+        width: 100%;
+        height: 100%;
+    }
+
+}
+
+@media(max-width: 500px){
+    body{
+        width: 100%;
+        position: absolute;
+        margin-right: 50px;
+    }
+    div.content img.logo {
+        width: 15%;
+        height: 20%;
+        margin-top: 60px;
+        margin-left: -20px;
+    }
+    table.users {
+        font-size: 30px;
+    }
+    table.users tr {
+        font-size: 30px;
+    }
+    table.users tr {
+        font-size: 30px;
+    }
+    div.content {
+        margin-left: 0;
+    }
+
+}
+
+@media(max-width: 357px){
+    body{
+        width: 357px;
+
+    }
+}
+
+
+div.content {
+    display: flex;
+    width: 100%;
+    margin-left: 200px;
+    margin-top: 250px;
+    height: 100%;
+    margin-right: 200px;
+}
+
+div.content img.logo {
+    width: 100%;
+    max-width: 300px;
+    min-width: 100px;
+    position: absolute;
+    top: -5%;
+    margin-left: 250px;
+}
+
+table.users {
+    border-collapse: collapse;
+}
+
+table.users tr {
+    border: 3px solid #1f5448;
+    background-color: black;
+    box-shadow: 0.3rem 0.3rem #209b7c;
+}
+
+table.users td{
+    width: fit-content;
+    padding: 0 10px;
+    text-align: center;
+}
+
+table.users span.delete-btn {
+    color: #540000;
+}
+
+table.users tr:not(:first-child):hover{
+    background-color: #000000;
+}
+
+td.table-actions span {
+    cursor: pointer;
+}
+
+td.table-icon img {
+    width: 50px;
+    margin-top: 3px;
+}
+
+div.form {
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.73);
+    justify-content: center;
+    align-items: center;
+    display: none;
+}
+
+.form-container {
+    position: relative;
+    background-color: #000000;
+    padding: 25px;
+    border-radius: 21px;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 50px;
+}
+
+div.form-container>*{
+    margin: 5px 0;
+}
+
+div.form-container>input {
+    width: 260px;
+    font-size: 15px;
+    border: none;
+    border-bottom: 1px solid black;
+}
+
+div.form-container input:focus {
+    outline: 0;
+}
+
+div.form-container>input[type='text'], div.form-container>input[type='password'] {
+    height: 25px;
+    font-size: 18px;
+    background-color: #071217;
+    color:#209b7c ;
+}
+
+span.form-title {
+    font-size: 40px;
+    margin-left: 45px;
+    align-items: center;
+}
+
+div.form-container span.check {
+    font-size: 19px;
+    position: absolute;
+    left: 25px;
+    bottom: 10px;
+    cursor: pointer;
+}
+
+div.form-container span.close {
+    font-size: 19px;
+    position: absolute;
+    right: 25px;
+    top: 10px;
+    cursor: pointer;
+    color: darkred;
+}
+
+div.form-container input.form-icon{
+    border:0
+}
