@@ -2,7 +2,7 @@
 
 return [
     'database' => [
-        'name' => '', // coloca o nome do banco aqui
+        'name' => 'dados_kl', // coloca o nome do banco aqui
         'username' => 'root', 
         'password' => '',
         'connection' => 'mysql:host=127.0.0.1',
