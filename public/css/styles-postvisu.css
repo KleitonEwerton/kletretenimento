@@ -1,0 +1,140 @@
+body{
+    font-family: 'Oswald';
+    margin: 0;
+    padding: 0;
+    background-color: #1B1F27;
+    text-align: center;
+    width: 100px;
+    height: 200px;
+}
+
+
+
+header{
+    display: flex;
+    justify-content: center;
+    
+}
+
+
+.logo
+{
+    max-width: 100%;
+   position: absolute;
+   right: 0;
+    
+}
+
+.logo h2{
+    color: #266354;
+    font-size: 80px;
+    
+    
+    
+}
+
+.logo span{
+    color: #9AC3B8;
+    
+
+}
+
+.content {
+    margin: auto;
+    margin-top: 100px;
+    color: #9AC3B8;
+    margin-bottom: 100px;
+    text-align: left;
+    width: 1200px;
+    padding: 100%;
+    margin-left: 25px;
+    
+    
+    
+
+}
+
+.content h1{
+    font-size: 60px;
+    color: #9AC3B8;
+    
+    
+}
+
+.content h3{
+   color: #266354;
+}
+
+.content p{
+    font-size: 18px;
+    
+    text-align: justify;
+
+}
+
+.content ol{
+    padding: 15px;
+    font-size: 18px;
+}
+
+.content img{
+    width: 1200px;
+    height: 800px;
+    display: flex;
+    
+    
+}
+
+figcaption{
+
+    color:#9AC3B8;
+}
+
+.content h2 {
+    color:#266354;
+}
+
+@media(min-width:800px) {
+    
+    .logo h2  {
+        font-size: 65px !important; 
+
+    }
+
+    .content h1{
+        font-size: 100px !important;
+        color: #9AC3B8;
+        
+        
+    }
+    
+    .content h3{
+       color: #266354;
+    }
+    
+    .content p{
+        font-size: 30px !important;
+        line-height: 40px;
+    
+    }
+    
+    .content ol{
+        padding: 55px;
+        font-size: 40px !important;
+
+        
+    }
+
+    .content h2{
+        font-size: 60px !important;
+        color: #266354;
+        
+        
+    }
+
+    
+    
+    
+
+
+}
