@@ -8,7 +8,7 @@ class User Extends Model
 {
 
     protected $fillable = [
-
+        
     ];
 
 }
