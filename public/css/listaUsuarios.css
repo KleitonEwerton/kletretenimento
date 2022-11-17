@@ -15,6 +15,9 @@ body{
 
 }
 
+.form{
+    display: none;
+}
 
 @media(max-width: 1000px){
     body{
