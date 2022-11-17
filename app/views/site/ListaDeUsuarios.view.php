@@ -44,7 +44,7 @@
   </table>
 </div>
 <div class='form form-add'>
-  <form class='register'>
+  <form class='register' action="site/ListaDeUsuarios" method="POST">
     <div class='form-container'>
       <span class="material-icons-sharp close">close</span>
       <span class=form-title>Cadastrar</span>
