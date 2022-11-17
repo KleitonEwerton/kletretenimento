@@ -35,14 +35,19 @@ class UserController extends Controller
     //retorna a pagina responsavel por criar um elemento
     public function create()
     {
-        //return view('...');
+        return view('site/ListaDeUsuarios');
     }
 
     // valida e armazena os dados preenchidos no front e redireciona para alguma rota caso tudo esteja ok, caso contrario redireciona para a pagina anterior com alguma mensagem de erro
     public function store()
     {
         //Exemplo para o registro de um usuario
-
+        $parameters = [
+            'nome' => $_POST['name'],
+            'email' => $_POST['email'],
+            'phone' => $_POST['phone'],
+            'senha' => $_POST['password']
+        ];
         /*$filterForm = [
             "name" => FILTER_SANITIZE_STRIPPED,
             "email" => FILTER_VALIDATE_EMAIL,
