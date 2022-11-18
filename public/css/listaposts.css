@@ -1,9 +1,5 @@
 @import url('https://fonts.googlespis.com/css?family=Montserrat:500');
 
-html{
-    overflow-y: hidden;
-    overflow-x: hidden;
-}
 
 *{
     margin: 0;
@@ -13,8 +9,8 @@ html{
 
 .body{
     background-color: #071217;
-    height: 100vh;
-    width: 100vw;
+    height: 100%;
+    width: 100%;
 }
 
 .logo{
