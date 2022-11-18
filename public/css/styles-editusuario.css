@@ -100,6 +100,38 @@
     font-size: 15px;
 }
 
+.form-container{
+    color:#348771;
+    width: 100%;
+    font-size: 15px;
+    font-family: 'Montserrat', sans-serif;
+
+
+}
+.form-title{
+    font-size: 30px;
+}
+.form-name{
+    background-color: #071217;
+    color: #266354;
+    padding: 6px;
+}
+.form-email{
+    background-color: #071217;
+    color: #266354;
+    padding: 6px;
+}
+.form-phone{
+    background-color: #071217;
+    color: #266354;
+    padding: 6px;
+}
+.form-senha{
+    background-color: #071217;
+    color: #266354;
+    padding: 6px;
+}
+
 .form-input{
     border: none;
     background-color: #000;
