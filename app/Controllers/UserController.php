@@ -20,16 +20,17 @@ class UserController extends Controller
     //retorna pagina principal
     public function index()
     {
-        //$exemplo = App\Models\Exemplo::all();
-        //return view(..., compact("exemplo");
+        $users = App\Models\User::all();
+        return view('site/ListaDeUsuarios', compact("exemplo"));
     }
 
     //retorna pagina individual de um elemento
     public function show()
     {
-        //$id = "validação da variavel global $_GET no indice que você quiser. Por exemplo $_GET['id']. Preferenciamentel coloque o campo de identificação do usuario com o nome de id"
-        //$exemplo = App\Models\Exemplo::find($id);
-        //return view('...', compact("exemplo"))
+       $id = $_POST['id'];
+       $userId = app\Models\User::find($id);
+
+       return view('site/ListaDePosts', compact($userId));
     }
 
     //retorna a pagina responsavel por criar um elemento
@@ -45,7 +46,6 @@ class UserController extends Controller
         $parameters = [
             'nome' => $_POST['name'],
             'email' => $_POST['email'],
-            'phone' => $_POST['phone'],
             'senha' => $_POST['password']
         ];
 
@@ -78,21 +78,41 @@ class UserController extends Controller
     // retorna a pagina para editar um elemento
     public function edit()
     {
-        //$id = "validação da variavel global $_GET no indice que você quiser. Por exemplo $_GET['id']. Preferenciamentel coloque o campo de identificação do usuario com o nome de id"
-        //$exemplo = App\Models\Exemplo::find($id);
-        //return view('...', compact("exemplo"))
+        $id = $_POST['id'];
+        $userId = app\Models\User::find($id);
+
+        $parameters = [
+            'nome' => $_POST['name'],
+            'email' => $_POST['email'],
+            'senha' => $_POST['password']
+        ];
+
+        app::get('database') ->edit('users', $userId, $parameters);
+
+        return view('site/ListaDePosts', compact($userId));
     }
 
     // valida e atualiza os dados preenchidos no front e redireciona para alguma rota caso tudo esteja ok, caso contrario redireciona para a pagina anterior com alguma mensagem de erro
     public function update()
     {
-        //Muito trampo escrever, esse aqui vocês dão uma pensada ai.
+        $id = $_POST['id'];
+        $userId = app\Models\User::find($id);
+
+        $parameters = [
+            'nome' => $_POST['name'],
+            'email' => $_POST['email'],
+            'senha' => $_POST['password']
+        ];
+
+        app::get('database') ->edit('users', $userId, $parameters);
+
+        return view('site/ListaDePosts', compact($userId));
     }
 
     // deleta um elemento e redireciona para alguma rota
     public function delete()
     {
-        $id = $_GET['id'];
+        $id = $_POST['id'];
         $userId = App\models\User::find($id);
 
         app::get('database')-> delete('users', $userId);
