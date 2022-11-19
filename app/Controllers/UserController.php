@@ -48,26 +48,19 @@ class UserController extends Controller
             'phone' => $_POST['phone'],
             'senha' => $_POST['password']
         ];
-        /*$filterForm = [
-            "name" => FILTER_SANITIZE_STRIPPED,
-            "email" => FILTER_VALIDATE_EMAIL,
-            "password" => FILTER_SANITIZE_STRIPPED,
-            "birthdate" => FILTER_SANITIZE_STRIPPED,
-            "gender" => FILTER_SANITIZE_STRIPPED,
-        ];*/
 
-        //$userData = filter_input_array(INPUT_POST, $filterForm);
+        $userData = filter_input_array(INPUT_POST, $parameters);
 
-        /*if(in_array(false, $userData)) {
+        if(in_array(false, $userData)) {
             $errors = array_keys($userData, false, false);
             $_SESSION["errors"] = [];
             foreach($errors as $error) {
                 $_SESSION["errors"][$error] = "Coloque sua mensagem de erro";
             }
-            return view('...');
-        }*/
+            return view('site/ListaDeUsuarios');
+        }
 
-        /*try {
+        try {
             $userData["password"] = password_hash($userData["password"], PASSWORD_BCRYPT);
             $user = User::create($userData);
         } catch(QueryException $PDOException) {
@@ -76,7 +69,7 @@ class UserController extends Controller
         }
         unset($_SESSION["error"]);
         $_SESSION["logado"] = $user->getAttributes();
-        return redirect('...');*/
+        return redirect('site/ListaDeUsuarios');
     }
 
     // retorna a pagina para editar um elemento
