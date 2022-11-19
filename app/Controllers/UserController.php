@@ -1,6 +1,7 @@
 <?php
 
 namespace App\Controllers;
+use App\Models\User;
 
 class UserController extends Controller
 {
@@ -78,46 +79,32 @@ class UserController extends Controller
     // retorna a pagina para editar um elemento
     public function edit()
     {
-        $id = $_POST['id'];
-        $userId = app\Models\User::find($id);
+        $id = $_GET['id'];
+        $user = User::find($id);
 
-        $parameters = [
-            'nome' => $_POST['name'],
-            'email' => $_POST['email'],
-            'senha' => $_POST['password']
-        ];
-
-        app::get('database') ->edit('users', $userId, $parameters);
-
-        return view('site/ListaDePosts', compact($userId));
+        return view('site/ListaDePosts', compact($user));
     }
 
     // valida e atualiza os dados preenchidos no front e redireciona para alguma rota caso tudo esteja ok, caso contrario redireciona para a pagina anterior com alguma mensagem de erro
     public function update()
     {
+        //die(var_dump($_POST));
         $id = $_POST['id'];
-        $userId = app\Models\User::find($id);
+        $user = User::find($id);
+        $user->update([
+            "name" => $_POST['name'],
+        ]);
 
-        $parameters = [
-            'nome' => $_POST['name'],
-            'email' => $_POST['email'],
-            'senha' => $_POST['password']
-        ];
-
-        app::get('database') ->edit('users', $userId, $parameters);
-
-        return view('site/ListaDePosts', compact($userId));
+        return redirect('site/ListaDeUsuarios');
     }
 
     // deleta um elemento e redireciona para alguma rota
     public function delete()
     {
         $id = $_POST['id'];
-        $userId = App\models\User::find($id);
+        $userId = User::destroy($id);
 
-        app::get('database')-> delete('users', $userId);
-
-        return redirect('site/ListaDeUsuarios', compact($userId));
+        return redirect('site/ListaDeUsuarios');
     }
     
 }
