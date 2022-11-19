@@ -8,6 +8,7 @@ class User Extends Model
 {
 
     protected $fillable = [
+        "id",
         "name", 
         "email",
         "password",
