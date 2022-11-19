@@ -55,7 +55,7 @@ class UserController extends Controller
             $errors = array_keys($userData, false, false);
             $_SESSION["errors"] = [];
             foreach($errors as $error) {
-                $_SESSION["errors"][$error] = "Coloque sua mensagem de erro";
+                $_SESSION["errors"][$error] = "Digite informações validas, por favor!";
             }
             return view('site/ListaDeUsuarios');
         }
@@ -65,10 +65,13 @@ class UserController extends Controller
             $user = User::create($userData);
         } catch(QueryException $PDOException) {
             $_SESSION["error"] = ["email" => "Email já foi cadastrado"];
-            return view('guests/register_page');
+            return view('site/ListaDeUsuarios');
         }
         unset($_SESSION["error"]);
         $_SESSION["logado"] = $user->getAttributes();
+
+        app::get('database')->insertInfo('users', $parameters);
+
         return redirect('site/ListaDeUsuarios');
     }
 
@@ -89,8 +92,12 @@ class UserController extends Controller
     // deleta um elemento e redireciona para alguma rota
     public function delete()
     {
-        //$id = "validação da variavel global $_GET no indice que você quiser. Por exemplo $_GET['id'];"
-        //App\Models\Exemplo::destroy($id);
-        //return redirect('...');
+        $id = $_GET['id'];
+        $userId = App\models\User::find($id);
+
+        app::get('database')-> delete('users', $userId);
+
+        return redirect('site/ListaDeUsuarios', compact($userId));
     }
+    
 }

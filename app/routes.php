@@ -10,3 +10,5 @@ $router-> get('ListaDeUsuarios', 'UserController@view');
 $router-> get('ListaDeUsuarios', 'UserController@create');
 
 $router-> get('ListaDeUsuarios', 'UserController@store');
+
+$router-> get('ListaDeUsuarios', 'UserController@delete');

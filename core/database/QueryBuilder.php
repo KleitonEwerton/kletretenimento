@@ -13,7 +13,19 @@ class QueryBuilder
         $this->pdo = $pdo;
     }
 
-    public function insertInfo($pdo, $parameters){
-        $pdo -> exec('INSERT INTO $s ($s) VALUES $s {$parameters}');
+    public function insertInfo($table, $parameters){
+        $pdo -> exec('INSERT INTO $s VALUES $s ',$table , $parameters);
+    }
+
+    public function delete($table, $id){
+        $pdo -> exec('DELETE FROM $s WHERE $s',$table, $id);
+
+        try{
+            $stmt = this->pdo;
+
+            $stmt->exec(compact($id));
+        } catch (Exception $e) {
+            die($e->getMessage());
+        }
     }
 }
