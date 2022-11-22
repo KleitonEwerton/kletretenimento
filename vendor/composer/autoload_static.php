@@ -150,13 +150,24 @@ class ComposerStaticInit77d18dcc81140e6fe6e1cf916f541701
     public static $classMap = array (
         'App\\Controllers\\Controller' => __DIR__ . '/../..' . '/app/Controllers/Controller.php',
         'App\\Controllers\\HomeController' => __DIR__ . '/../..' . '/app/Controllers/HomeController.php',
+<<<<<<< HEAD
+=======
+        'App\\Controllers\\PostController' => __DIR__ . '/../..' . '/app/Controllers/PostController.php',
+>>>>>>> ea04ce14b2253f1239c85fd0825068c114f44062
         'App\\Controllers\\controller_name' => __DIR__ . '/../..' . '/app/Controllers/default_controller/DefaultController.php',
         'App\\Core\\App' => __DIR__ . '/../..' . '/core/App.php',
         'App\\Core\\Database\\Connection' => __DIR__ . '/../..' . '/core/database/Connection.php',
         'App\\Core\\Database\\QueryBuilder' => __DIR__ . '/../..' . '/core/database/QueryBuilder.php',
         'App\\Core\\Request' => __DIR__ . '/../..' . '/core/Request.php',
         'App\\Core\\Router' => __DIR__ . '/../..' . '/core/Router.php',
+<<<<<<< HEAD
         'App\\Models\\Post' => __DIR__ . '/../..' . '/app/Models/Post.php',
+=======
+        'App\\Models\\DadosK' => __DIR__ . '/../..' . '/app/Models/DadosK.php',
+        'App\\Models\\Dados_k' => __DIR__ . '/../..' . '/app/Models/Dados_k.php',
+        'App\\Models\\Post' => __DIR__ . '/../..' . '/app/Models/Post.php',
+        'App\\Models\\Teste' => __DIR__ . '/../..' . '/app/Models/Teste.php',
+>>>>>>> ea04ce14b2253f1239c85fd0825068c114f44062
         'App\\Models\\table_name_uc_first' => __DIR__ . '/../..' . '/app/Models/default_model/DefaultModel.php',
         'Attribute' => __DIR__ . '/..' . '/symfony/polyfill-php80/Resources/stubs/Attribute.php',
         'Carbon\\AbstractTranslator' => __DIR__ . '/..' . '/nesbot/carbon/src/Carbon/AbstractTranslator.php',
@@ -236,6 +247,7 @@ class ComposerStaticInit77d18dcc81140e6fe6e1cf916f541701
         'Carbon\\Traits\\Serialization' => __DIR__ . '/..' . '/nesbot/carbon/src/Carbon/Traits/Serialization.php',
         'Carbon\\Traits\\Test' => __DIR__ . '/..' . '/nesbot/carbon/src/Carbon/Traits/Test.php',
         'Carbon\\Traits\\Timestamp' => __DIR__ . '/..' . '/nesbot/carbon/src/Carbon/Traits/Timestamp.php',
+        'Carbon\\Traits\\ToStringFormat' => __DIR__ . '/..' . '/nesbot/carbon/src/Carbon/Traits/ToStringFormat.php',
         'Carbon\\Traits\\Units' => __DIR__ . '/..' . '/nesbot/carbon/src/Carbon/Traits/Units.php',
         'Carbon\\Traits\\Week' => __DIR__ . '/..' . '/nesbot/carbon/src/Carbon/Traits/Week.php',
         'Carbon\\Translator' => __DIR__ . '/..' . '/nesbot/carbon/src/Carbon/Translator.php',
@@ -324,6 +336,7 @@ class ComposerStaticInit77d18dcc81140e6fe6e1cf916f541701
         'Illuminate\\Contracts\\Cache\\Store' => __DIR__ . '/..' . '/illuminate/contracts/Cache/Store.php',
         'Illuminate\\Contracts\\Config\\Repository' => __DIR__ . '/..' . '/illuminate/contracts/Config/Repository.php',
         'Illuminate\\Contracts\\Console\\Application' => __DIR__ . '/..' . '/illuminate/contracts/Console/Application.php',
+        'Illuminate\\Contracts\\Console\\Isolatable' => __DIR__ . '/..' . '/illuminate/contracts/Console/Isolatable.php',
         'Illuminate\\Contracts\\Console\\Kernel' => __DIR__ . '/..' . '/illuminate/contracts/Console/Kernel.php',
         'Illuminate\\Contracts\\Container\\BindingResolutionException' => __DIR__ . '/..' . '/illuminate/contracts/Container/BindingResolutionException.php',
         'Illuminate\\Contracts\\Container\\CircularDependencyException' => __DIR__ . '/..' . '/illuminate/contracts/Container/CircularDependencyException.php',
@@ -504,6 +517,7 @@ class ComposerStaticInit77d18dcc81140e6fe6e1cf916f541701
         'Illuminate\\Database\\Eloquent\\JsonEncodingException' => __DIR__ . '/..' . '/illuminate/database/Eloquent/JsonEncodingException.php',
         'Illuminate\\Database\\Eloquent\\MassAssignmentException' => __DIR__ . '/..' . '/illuminate/database/Eloquent/MassAssignmentException.php',
         'Illuminate\\Database\\Eloquent\\MassPrunable' => __DIR__ . '/..' . '/illuminate/database/Eloquent/MassPrunable.php',
+        'Illuminate\\Database\\Eloquent\\MissingAttributeException' => __DIR__ . '/..' . '/illuminate/database/Eloquent/MissingAttributeException.php',
         'Illuminate\\Database\\Eloquent\\Model' => __DIR__ . '/..' . '/illuminate/database/Eloquent/Model.php',
         'Illuminate\\Database\\Eloquent\\ModelNotFoundException' => __DIR__ . '/..' . '/illuminate/database/Eloquent/ModelNotFoundException.php',
         'Illuminate\\Database\\Eloquent\\Prunable' => __DIR__ . '/..' . '/illuminate/database/Eloquent/Prunable.php',
@@ -550,6 +564,7 @@ class ComposerStaticInit77d18dcc81140e6fe6e1cf916f541701
         'Illuminate\\Database\\Events\\StatementPrepared' => __DIR__ . '/..' . '/illuminate/database/Events/StatementPrepared.php',
         'Illuminate\\Database\\Events\\TransactionBeginning' => __DIR__ . '/..' . '/illuminate/database/Events/TransactionBeginning.php',
         'Illuminate\\Database\\Events\\TransactionCommitted' => __DIR__ . '/..' . '/illuminate/database/Events/TransactionCommitted.php',
+        'Illuminate\\Database\\Events\\TransactionCommitting' => __DIR__ . '/..' . '/illuminate/database/Events/TransactionCommitting.php',
         'Illuminate\\Database\\Events\\TransactionRolledBack' => __DIR__ . '/..' . '/illuminate/database/Events/TransactionRolledBack.php',
         'Illuminate\\Database\\Grammar' => __DIR__ . '/..' . '/illuminate/database/Grammar.php',
         'Illuminate\\Database\\LazyLoadingViolationException' => __DIR__ . '/..' . '/illuminate/database/LazyLoadingViolationException.php',
@@ -677,6 +692,7 @@ class ComposerStaticInit77d18dcc81140e6fe6e1cf916f541701
         'Illuminate\\Support\\ItemNotFoundException' => __DIR__ . '/..' . '/illuminate/collections/ItemNotFoundException.php',
         'Illuminate\\Support\\Js' => __DIR__ . '/..' . '/illuminate/support/Js.php',
         'Illuminate\\Support\\LazyCollection' => __DIR__ . '/..' . '/illuminate/collections/LazyCollection.php',
+        'Illuminate\\Support\\Lottery' => __DIR__ . '/..' . '/illuminate/support/Lottery.php',
         'Illuminate\\Support\\Manager' => __DIR__ . '/..' . '/illuminate/support/Manager.php',
         'Illuminate\\Support\\MessageBag' => __DIR__ . '/..' . '/illuminate/support/MessageBag.php',
         'Illuminate\\Support\\MultipleInstanceManager' => __DIR__ . '/..' . '/illuminate/support/MultipleInstanceManager.php',

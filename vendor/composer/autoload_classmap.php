@@ -8,13 +8,24 @@ $baseDir = dirname($vendorDir);
 return array(
     'App\\Controllers\\Controller' => $baseDir . '/app/Controllers/Controller.php',
     'App\\Controllers\\HomeController' => $baseDir . '/app/Controllers/HomeController.php',
+<<<<<<< HEAD
+=======
+    'App\\Controllers\\PostController' => $baseDir . '/app/Controllers/PostController.php',
+>>>>>>> ea04ce14b2253f1239c85fd0825068c114f44062
     'App\\Controllers\\controller_name' => $baseDir . '/app/Controllers/default_controller/DefaultController.php',
     'App\\Core\\App' => $baseDir . '/core/App.php',
     'App\\Core\\Database\\Connection' => $baseDir . '/core/database/Connection.php',
     'App\\Core\\Database\\QueryBuilder' => $baseDir . '/core/database/QueryBuilder.php',
     'App\\Core\\Request' => $baseDir . '/core/Request.php',
     'App\\Core\\Router' => $baseDir . '/core/Router.php',
+<<<<<<< HEAD
     'App\\Models\\Post' => $baseDir . '/app/Models/Post.php',
+=======
+    'App\\Models\\DadosK' => $baseDir . '/app/Models/DadosK.php',
+    'App\\Models\\Dados_k' => $baseDir . '/app/Models/Dados_k.php',
+    'App\\Models\\Post' => $baseDir . '/app/Models/Post.php',
+    'App\\Models\\Teste' => $baseDir . '/app/Models/Teste.php',
+>>>>>>> ea04ce14b2253f1239c85fd0825068c114f44062
     'App\\Models\\table_name_uc_first' => $baseDir . '/app/Models/default_model/DefaultModel.php',
     'Attribute' => $vendorDir . '/symfony/polyfill-php80/Resources/stubs/Attribute.php',
     'Carbon\\AbstractTranslator' => $vendorDir . '/nesbot/carbon/src/Carbon/AbstractTranslator.php',
@@ -94,6 +105,7 @@ return array(
     'Carbon\\Traits\\Serialization' => $vendorDir . '/nesbot/carbon/src/Carbon/Traits/Serialization.php',
     'Carbon\\Traits\\Test' => $vendorDir . '/nesbot/carbon/src/Carbon/Traits/Test.php',
     'Carbon\\Traits\\Timestamp' => $vendorDir . '/nesbot/carbon/src/Carbon/Traits/Timestamp.php',
+    'Carbon\\Traits\\ToStringFormat' => $vendorDir . '/nesbot/carbon/src/Carbon/Traits/ToStringFormat.php',
     'Carbon\\Traits\\Units' => $vendorDir . '/nesbot/carbon/src/Carbon/Traits/Units.php',
     'Carbon\\Traits\\Week' => $vendorDir . '/nesbot/carbon/src/Carbon/Traits/Week.php',
     'Carbon\\Translator' => $vendorDir . '/nesbot/carbon/src/Carbon/Translator.php',
@@ -182,6 +194,7 @@ return array(
     'Illuminate\\Contracts\\Cache\\Store' => $vendorDir . '/illuminate/contracts/Cache/Store.php',
     'Illuminate\\Contracts\\Config\\Repository' => $vendorDir . '/illuminate/contracts/Config/Repository.php',
     'Illuminate\\Contracts\\Console\\Application' => $vendorDir . '/illuminate/contracts/Console/Application.php',
+    'Illuminate\\Contracts\\Console\\Isolatable' => $vendorDir . '/illuminate/contracts/Console/Isolatable.php',
     'Illuminate\\Contracts\\Console\\Kernel' => $vendorDir . '/illuminate/contracts/Console/Kernel.php',
     'Illuminate\\Contracts\\Container\\BindingResolutionException' => $vendorDir . '/illuminate/contracts/Container/BindingResolutionException.php',
     'Illuminate\\Contracts\\Container\\CircularDependencyException' => $vendorDir . '/illuminate/contracts/Container/CircularDependencyException.php',
@@ -362,6 +375,7 @@ return array(
     'Illuminate\\Database\\Eloquent\\JsonEncodingException' => $vendorDir . '/illuminate/database/Eloquent/JsonEncodingException.php',
     'Illuminate\\Database\\Eloquent\\MassAssignmentException' => $vendorDir . '/illuminate/database/Eloquent/MassAssignmentException.php',
     'Illuminate\\Database\\Eloquent\\MassPrunable' => $vendorDir . '/illuminate/database/Eloquent/MassPrunable.php',
+    'Illuminate\\Database\\Eloquent\\MissingAttributeException' => $vendorDir . '/illuminate/database/Eloquent/MissingAttributeException.php',
     'Illuminate\\Database\\Eloquent\\Model' => $vendorDir . '/illuminate/database/Eloquent/Model.php',
     'Illuminate\\Database\\Eloquent\\ModelNotFoundException' => $vendorDir . '/illuminate/database/Eloquent/ModelNotFoundException.php',
     'Illuminate\\Database\\Eloquent\\Prunable' => $vendorDir . '/illuminate/database/Eloquent/Prunable.php',
@@ -408,6 +422,7 @@ return array(
     'Illuminate\\Database\\Events\\StatementPrepared' => $vendorDir . '/illuminate/database/Events/StatementPrepared.php',
     'Illuminate\\Database\\Events\\TransactionBeginning' => $vendorDir . '/illuminate/database/Events/TransactionBeginning.php',
     'Illuminate\\Database\\Events\\TransactionCommitted' => $vendorDir . '/illuminate/database/Events/TransactionCommitted.php',
+    'Illuminate\\Database\\Events\\TransactionCommitting' => $vendorDir . '/illuminate/database/Events/TransactionCommitting.php',
     'Illuminate\\Database\\Events\\TransactionRolledBack' => $vendorDir . '/illuminate/database/Events/TransactionRolledBack.php',
     'Illuminate\\Database\\Grammar' => $vendorDir . '/illuminate/database/Grammar.php',
     'Illuminate\\Database\\LazyLoadingViolationException' => $vendorDir . '/illuminate/database/LazyLoadingViolationException.php',
@@ -535,6 +550,7 @@ return array(
     'Illuminate\\Support\\ItemNotFoundException' => $vendorDir . '/illuminate/collections/ItemNotFoundException.php',
     'Illuminate\\Support\\Js' => $vendorDir . '/illuminate/support/Js.php',
     'Illuminate\\Support\\LazyCollection' => $vendorDir . '/illuminate/collections/LazyCollection.php',
+    'Illuminate\\Support\\Lottery' => $vendorDir . '/illuminate/support/Lottery.php',
     'Illuminate\\Support\\Manager' => $vendorDir . '/illuminate/support/Manager.php',
     'Illuminate\\Support\\MessageBag' => $vendorDir . '/illuminate/support/MessageBag.php',
     'Illuminate\\Support\\MultipleInstanceManager' => $vendorDir . '/illuminate/support/MultipleInstanceManager.php',

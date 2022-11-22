@@ -16,7 +16,9 @@ if(count($migrations_to_run)) {
         try {
             echo "Migration rodada: $migration" . PHP_EOL;
             $migrations_to_run[$key]::up();
+           
         } catch(\Exception $exception) {
+            
             echo "A migration {$migration} já foi rodada" . PHP_EOL;
             //$migrations_to_run[$key]::down();
         }
