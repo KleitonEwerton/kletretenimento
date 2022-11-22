@@ -112,24 +112,29 @@
     font-size: 30px;
 }
 .form-name{
-    background-color: #071217;
+    background-color: #0b1c23;
     color: #266354;
     padding: 6px;
+    width: 800px;
+
 }
 .form-email{
-    background-color: #071217;
+    background-color: #0b1c23;
     color: #266354;
     padding: 6px;
+    width: 800px;
 }
 .form-phone{
-    background-color: #071217;
+    background-color: #0b1c23;
     color: #266354;
     padding: 6px;
+    width: 800px;
 }
 .form-senha{
-    background-color: #071217;
+    background-color: #0b1c23;
     color: #266354;
     padding: 6px;
+    width: 800px;
 }
 
 .form-input{
