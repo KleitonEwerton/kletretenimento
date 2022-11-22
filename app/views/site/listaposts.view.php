@@ -11,6 +11,8 @@
     <title>Document</title>
 </head>
 <body class="body">
+  <?php include app\views\includes\navbar.php ?>
+  <?php include app\views\site\sidebar.php ?>
      <div class="lista-posts">
         <img class="logo"  src="../../../public/assets/logo.png">
         <h1>POSTS</h1>
@@ -30,11 +32,12 @@
                   <th scope="col">Opções</th>
                 </tr>
               </thead>
+              <? foreach($Post as $Post) : ?>
               <tbody>
                 <tr class="table-itens">
-                  <th scope="row">Cristo Redentor</th>
-                  <td>12/10/2022</td>
-                  <td><a>Kleiton</a</td>
+                  <th scope="row"><?= $Post-> name ?></th>
+                  <td><?= $Post-> data_nascimento ?></td>
+                  <td><a><?= $Post-> user_id ?></a</td>
                   <td class="icons">
                     <a href="#"><i class="bi bi-trash-fill btn"></i></a>
                     
@@ -43,33 +46,11 @@
                     <a href="#"><i class="bi bi-eye-fill btn"></i></a>
                   </td>
                 </tr>
-                <tr class="table-itens">
-                  <th scope="row">Teste 2</th>
-                  <td>11/10/2022</td>
-                  <td></td>
-                  <td class="icons">
-                    <a href="#"><i class="bi bi-trash-fill btn"></i></a>
-                    
-                    <a href="#"><i class="bi bi-pencil-square btn" id="add-btn" data-modal="modalEditar"></i></a>
-                    
-                    <a href="#"><i class="bi bi-eye-fill btn"></i></a>
-                  </td>
-                </tr>
-                <tr class="table-itens">
-                  <th scope="row">Santos Futebol Clube</th>
-                  <td>Ontem</td>
-                  <td>Pelé</td>
-                  <td class="icons">
-                    <a href="#"><i class="bi bi-trash-fill btn"></i></a>
-                    
-                    <a href="#"><i class="bi bi-pencil-square btn" id="add-btn" data-modal="modalEditar"></i></a>
-                    
-                    <a href="#"><i class="bi bi-eye-fill btn"></i></a>
-                  </td>               
-                 </tr>
+              <? endforeach; ?>
              </tbody>
          </table>
-        </div> 
+        </div>
+        <?php include app\views\includes\footer.php ?>
     </div>
 
 

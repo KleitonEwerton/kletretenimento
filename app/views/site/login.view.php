@@ -7,7 +7,10 @@
 		<link rel="stylesheet" href="../../../public/css/styleslogin.css">
 		<title>Login</title>
 	</head>
+	
 	<body>
+		<?php include app\views\includes\navbar.php ?>
+		<?php include app\views\site\sidebar.php ?>
 		<section class="area-login"> 
 			<div class="login"> 
 				<div>
@@ -22,6 +25,8 @@
 				<p>Não possui uma conta?<a href="#">Criar conta</a></p>
 			</div>
 		</section>
+		<?php include app\views\includes\footer.php ?>
+  		
 	</body>
 
 </html>
