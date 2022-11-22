@@ -5,6 +5,7 @@ class UserAdd{
     }
 
 
+
     register(){
         let formEl = document.querySelector('.register');
         let elements = formEl.elements;
@@ -26,6 +27,9 @@ class UserAdd{
 
     }
 
+
+
+
     addEventBtns(){
 
         document.querySelector(".add").addEventListener("click",()=>{
@@ -35,8 +39,6 @@ class UserAdd{
         document.querySelectorAll(".close")[0].addEventListener("click",()=>{
             document.querySelector(".form-add").style.display = "none"
         })
-        document.querySelectorAll(".close")[1].addEventListener("click",()=>{
-            document.querySelector(".form-edit").style.display = "none"
-        })
+
     }
 }
