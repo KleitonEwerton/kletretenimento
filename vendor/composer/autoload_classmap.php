@@ -8,24 +8,24 @@ $baseDir = dirname($vendorDir);
 return array(
     'App\\Controllers\\Controller' => $baseDir . '/app/Controllers/Controller.php',
     'App\\Controllers\\HomeController' => $baseDir . '/app/Controllers/HomeController.php',
-<<<<<<< HEAD
-=======
+
     'App\\Controllers\\PostController' => $baseDir . '/app/Controllers/PostController.php',
->>>>>>> ea04ce14b2253f1239c85fd0825068c114f44062
+
+    'App\\Controllers\\UserController' => $baseDir . '/app/Controllers/UserController.php',
     'App\\Controllers\\controller_name' => $baseDir . '/app/Controllers/default_controller/DefaultController.php',
+    'App\\Controllers\\testeController' => $baseDir . '/app/Controllers/testeController.php',
     'App\\Core\\App' => $baseDir . '/core/App.php',
     'App\\Core\\Database\\Connection' => $baseDir . '/core/database/Connection.php',
     'App\\Core\\Database\\QueryBuilder' => $baseDir . '/core/database/QueryBuilder.php',
     'App\\Core\\Request' => $baseDir . '/core/Request.php',
     'App\\Core\\Router' => $baseDir . '/core/Router.php',
-<<<<<<< HEAD
+
     'App\\Models\\Post' => $baseDir . '/app/Models/Post.php',
-=======
     'App\\Models\\DadosK' => $baseDir . '/app/Models/DadosK.php',
     'App\\Models\\Dados_k' => $baseDir . '/app/Models/Dados_k.php',
     'App\\Models\\Post' => $baseDir . '/app/Models/Post.php',
     'App\\Models\\Teste' => $baseDir . '/app/Models/Teste.php',
->>>>>>> ea04ce14b2253f1239c85fd0825068c114f44062
+    'App\\Models\\User' => $baseDir . '/app/Models/User.php',
     'App\\Models\\table_name_uc_first' => $baseDir . '/app/Models/default_model/DefaultModel.php',
     'Attribute' => $vendorDir . '/symfony/polyfill-php80/Resources/stubs/Attribute.php',
     'Carbon\\AbstractTranslator' => $vendorDir . '/nesbot/carbon/src/Carbon/AbstractTranslator.php',
@@ -116,6 +116,7 @@ return array(
     'Composer\\Autoload\\ComposerStaticInit77d18dcc81140e6fe6e1cf916f541701' => $vendorDir . '/composer/autoload_static.php',
     'Composer\\InstalledVersions' => $vendorDir . '/composer/InstalledVersions.php',
     'Database\\Migrations\\addadminuserstable' => $baseDir . '/database/migrations/16639111486229_add_admin_users_table.php',
+    'Database\\Migrations\\poststable' => $baseDir . '/database/migrations/16683855329814_posts_table.php',
     'Database\\Migrations\\table_name' => $baseDir . '/database/default_migration/DefaultMigration.php',
     'Database\\Migrations\\userstable' => $baseDir . '/database/migrations/16637836561018_users_table.php',
     'Doctrine\\Inflector\\CachedWordInflector' => $vendorDir . '/doctrine/inflector/lib/Doctrine/Inflector/CachedWordInflector.php',

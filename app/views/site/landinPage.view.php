@@ -16,11 +16,14 @@
 
 
      <body>
-
+        <?php include app\views\includes\navbar.php ?>
+        <?php include app\views\site\sidebar.php ?>
 
            <div class="imagem1">
 
-          <h2><img src="../../../public/assets/logo3-sem-fundo.png"></h2>
+          <h2>
+              <img src="../../../public/assets/logo3-sem-fundo.png" alt="imagen logo">
+          </h2>
 
            </div>
 
@@ -34,13 +37,13 @@
 
 
             <div class="slide first">
-                <img src="../../../public/assets/hallow.png">
+                <img src="../../../public/assets/hallow.png" alt="image evento1">
                      </div>
                      <div class="slide">
-                      <img src="../../../public/assets/terror.png">
+                      <img src="../../../public/assets/terror.png" alt="imagen evento2">
                                 </div>
                      <div class="slide">
-                     <img src="../../../public/assets/chakal.png">
+                     <img src="../../../public/assets/chakal.png" alt="imagen evento3">
                                 </div>
 
 
@@ -64,7 +67,7 @@
             </div>
 
             <div class="titulo1">
-             <b><h4><p>Quem somos?</h4><p></b>
+             <h4>Quem somos?</h4>
             </div>
 
               <div class="texto1">
@@ -73,7 +76,7 @@
 
 
           <div class="titulo2">
-              <b><h5><p>O que fazemos?</h5><p></b>
+              <h5>O que fazemos?</h5>
           </div>
 
           <div class="texto2">
@@ -81,9 +84,8 @@
           </div>
 
 
-
+          <?php include app\views\includes\footer.php ?>
            <script src="../../../public/js/ScriptLandingPage.js"></script>
           </body>
 
 
-  </html>

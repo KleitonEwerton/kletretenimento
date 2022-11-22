@@ -12,6 +12,5 @@ class QueryBuilder
     {
         $this->pdo = $pdo;
     }
-
 }
 

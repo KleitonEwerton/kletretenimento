@@ -8,7 +8,12 @@ class User Extends Model
 {
 
     protected $fillable = [
-
+        "id",
+        "name", 
+        "email",
+        "password",
+        "sexo",
+        "data_nascimento",
     ];
 
 }

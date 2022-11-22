@@ -150,24 +150,24 @@ class ComposerStaticInit77d18dcc81140e6fe6e1cf916f541701
     public static $classMap = array (
         'App\\Controllers\\Controller' => __DIR__ . '/../..' . '/app/Controllers/Controller.php',
         'App\\Controllers\\HomeController' => __DIR__ . '/../..' . '/app/Controllers/HomeController.php',
-<<<<<<< HEAD
-=======
+
         'App\\Controllers\\PostController' => __DIR__ . '/../..' . '/app/Controllers/PostController.php',
->>>>>>> ea04ce14b2253f1239c85fd0825068c114f44062
+
+        'App\\Controllers\\UserController' => __DIR__ . '/../..' . '/app/Controllers/UserController.php',
         'App\\Controllers\\controller_name' => __DIR__ . '/../..' . '/app/Controllers/default_controller/DefaultController.php',
+        'App\\Controllers\\testeController' => __DIR__ . '/../..' . '/app/Controllers/testeController.php',
         'App\\Core\\App' => __DIR__ . '/../..' . '/core/App.php',
         'App\\Core\\Database\\Connection' => __DIR__ . '/../..' . '/core/database/Connection.php',
         'App\\Core\\Database\\QueryBuilder' => __DIR__ . '/../..' . '/core/database/QueryBuilder.php',
         'App\\Core\\Request' => __DIR__ . '/../..' . '/core/Request.php',
         'App\\Core\\Router' => __DIR__ . '/../..' . '/core/Router.php',
-<<<<<<< HEAD
+
         'App\\Models\\Post' => __DIR__ . '/../..' . '/app/Models/Post.php',
-=======
         'App\\Models\\DadosK' => __DIR__ . '/../..' . '/app/Models/DadosK.php',
         'App\\Models\\Dados_k' => __DIR__ . '/../..' . '/app/Models/Dados_k.php',
         'App\\Models\\Post' => __DIR__ . '/../..' . '/app/Models/Post.php',
         'App\\Models\\Teste' => __DIR__ . '/../..' . '/app/Models/Teste.php',
->>>>>>> ea04ce14b2253f1239c85fd0825068c114f44062
+        'App\\Models\\User' => __DIR__ . '/../..' . '/app/Models/User.php',
         'App\\Models\\table_name_uc_first' => __DIR__ . '/../..' . '/app/Models/default_model/DefaultModel.php',
         'Attribute' => __DIR__ . '/..' . '/symfony/polyfill-php80/Resources/stubs/Attribute.php',
         'Carbon\\AbstractTranslator' => __DIR__ . '/..' . '/nesbot/carbon/src/Carbon/AbstractTranslator.php',
@@ -258,6 +258,7 @@ class ComposerStaticInit77d18dcc81140e6fe6e1cf916f541701
         'Composer\\Autoload\\ComposerStaticInit77d18dcc81140e6fe6e1cf916f541701' => __DIR__ . '/..' . '/composer/autoload_static.php',
         'Composer\\InstalledVersions' => __DIR__ . '/..' . '/composer/InstalledVersions.php',
         'Database\\Migrations\\addadminuserstable' => __DIR__ . '/../..' . '/database/migrations/16639111486229_add_admin_users_table.php',
+        'Database\\Migrations\\poststable' => __DIR__ . '/../..' . '/database/migrations/16683855329814_posts_table.php',
         'Database\\Migrations\\table_name' => __DIR__ . '/../..' . '/database/default_migration/DefaultMigration.php',
         'Database\\Migrations\\userstable' => __DIR__ . '/../..' . '/database/migrations/16637836561018_users_table.php',
         'Doctrine\\Inflector\\CachedWordInflector' => __DIR__ . '/..' . '/doctrine/inflector/lib/Doctrine/Inflector/CachedWordInflector.php',
