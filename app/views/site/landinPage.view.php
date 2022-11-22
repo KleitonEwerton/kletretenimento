@@ -16,7 +16,8 @@
 
 
      <body>
-
+        <?php include app\views\includes\navbar.php ?>
+        <?php include app\views\site\sidebar.php ?>
 
            <div class="imagem1">
 
@@ -83,7 +84,7 @@
           </div>
 
 
-
+          <?php include app\views\includes\footer.php ?>
            <script src="../../../public/js/ScriptLandingPage.js"></script>
           </body>
 

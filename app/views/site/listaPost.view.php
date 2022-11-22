@@ -1,3 +1,7 @@
+<?php
+ use app\Controllers\testeController;
+?>
+
 <!DOCTYPE html>
 <html lang="pt">
 <head>
@@ -8,6 +12,8 @@
     <title>lista de post</title>
 </head>
 <body>
+    <?php include app\views\includes\navbar.php ?>
+    <?php include app\views\site\sidebar.php ?>
    
     <div class="search-box">
         <input type="text" class="search-txt" list="pesquisa-salva" placeholder="Pesquisar">
@@ -59,5 +65,6 @@
     </a>
     
     </div>
+    <?php include app\views\includes\footer.php ?>
 </body>
 </html>

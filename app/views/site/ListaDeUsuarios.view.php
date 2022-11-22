@@ -15,6 +15,8 @@
 </head>
 
 <body>
+<?php include app\views\includes\navbar.php ?>
+<?php include app\views\site\sidebar.php ?>
 
 <div class='content'>
   <img class='logo' src="../../../public/assets/logo.png" alt="Logo">
@@ -48,6 +50,7 @@
 
   </table>
 </div>
+<?php include App\Views\Includes\footer.php ?>
 <div class='form form-add'>
   <form class='register' action="ListaDeUsuarios" method="POST">
     <div class='form-container'>
