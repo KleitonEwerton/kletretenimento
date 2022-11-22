@@ -22,7 +22,7 @@ class UserController extends Controller
     public function index()
     {
         $users = App\Models\User::all();
-        return view('site/ListaDeUsuarios', compact("exemplo"));
+        return view('site/ListaDeUsuarios', compact("users"));
     }
 
     //retorna pagina individual de um elemento
