@@ -81,7 +81,7 @@
           <h1 class="title">ADICIONAR POST</h1>
         </div>
         <div class="modal-itens">
-         <form class="add-form" >
+         <form class="add-form" action ="admin/index-dashbord" method ="POST">
           <label for="Usuário">USUÁRIO.</label>
           <input type="text" id="Usuário" class="form-input">
         

@@ -1,3 +1,7 @@
+<?php
+ require app/Controllers/UserController;
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -11,10 +15,13 @@
 </head>
 
 <body>
+<?php include app\views\includes\navbar.php ?>
+<?php include app\views\site\sidebar.php ?>
 
 <div class='content'>
   <img class='logo' src="../../../public/assets/logo.png" alt="Logo">
   <table class='users'>
+    <?php foreach($users as $users) : ?>
     <tr>
       <td class='table-id'>n°</td>
       <td class='table-icon'>Ícone</td>
@@ -28,23 +35,24 @@
       </td>
     </tr>
     <tr>
-      <td class='table-icon'>1</td>
+      <td class='table-icon'><?= $users -> id ?></td>
       <td class='table-icon'><img src='../../../public/assets/terror.png' alt='Ícone'></td>
-      <td class='table-name'>Lucas Souza</td>
-      <td class='table-email'>testeUsuario@teste.com</td>
-      <td class='table-phone'>32 985098778</td>
-      <td class='table-date'>8/11/2022 11:16</td>
-      <td class='table-admin'>Sim</td>
+      <td class='table-name'><?= $users -> name ?></td>
+      <td class='table-email'><?= $users -> email ?></td>
+      <td class='table-phone'><?= $users -> phone ?></td>
+      <td class='table-date'><?= $users -> data_nascimento ?></td>
       <td class='table-actions'>
         <span class="material-icons-sharp edit-btn">edit</span>
         <span class="material-icons-sharp delete-btn">delete</span>
       </td>
     </tr>
+    <? endforeach; ?>
 
   </table>
 </div>
+<?php include App\Views\Includes\footer.php ?>
 <div class='form form-add'>
-  <form class='register'>
+  <form class='register' action="ListaDeUsuarios" method="POST">
     <div class='form-container'>
       <span class="material-icons-sharp close">close</span>
       <span class=form-title>Cadastrar</span>

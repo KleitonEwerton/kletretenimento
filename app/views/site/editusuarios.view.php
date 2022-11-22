@@ -13,6 +13,9 @@
     <title>Admin</title>
 </head>
 <body class="body">
+  <?php include app\views\includes\navbar.php ?>
+  <?php include app\views\site\sidebar.php ?>
+
   <div class="lista-posts">
     <img class="logo"  src="../../../public/assets/logo.png">
     <h1>EDITAR USUÁRIOS</h1>
@@ -119,6 +122,9 @@
       </div> 
     </div>
     </div>
+  
+    <?php include app\views\includes\footer.php ?>
+ 
 
 
 

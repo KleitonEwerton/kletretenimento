@@ -15,6 +15,9 @@ body{
 
 }
 
+.form{
+    display: none;
+}
 
 @media(max-width: 1000px){
     body{
@@ -128,13 +131,11 @@ div.form {
     background-color: rgba(0, 0, 0, 0.73);
     justify-content: center;
     align-items: center;
-    display: none;
 }
 
 .form-container {
     position: relative;
     background-color: #000000;
-    padding: 25px;
     border-radius: 21px;
     display: flex;
     flex-direction: column;
