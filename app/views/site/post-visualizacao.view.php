@@ -16,8 +16,8 @@
                 <h2>KL<span>ENTRETENIMENTO</span></h2>
             </div>
         </header>
-        <?php include app\views\includes\navbar.php ?>
-		<?php include app\views\site\sidebar.php ?>
+        <?php include __DIR__ .'/../includes/navbar.php' ?>
+        
 
         <div class="content">
             <h1>HEADLINE</h1>
@@ -61,8 +61,7 @@
         
         
         </div>
-        <?php include app\views\includes\footer.php ?>
-
+        <?php include __DIR__ .'/../includes/footer.php' ?>
         
        
 

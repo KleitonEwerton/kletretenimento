@@ -13,8 +13,8 @@
     <title>Admin</title>
 </head>
 <body class="body">
-  <?php include app\views\includes\navbar.php ?>
-  <?php include app\views\site\sidebar.php ?>
+  <?php include __DIR__ .'/../includes/navbar.php' ?>
+  <?php include __DIR__ .'/../includes/footer.php' ?>
 
   <div class="lista-posts">
     <img class="logo"  src="../../../public/assets/logo.png">
@@ -27,7 +27,7 @@
   </div>
     
   <div class="table-container">
-    <?php foreach ($users as $users) : ?>
+    <?php foreach ($users as $user): ?>
       <table class="table table-dark table-hover tabela">
         <thead>
           <tr>
@@ -39,10 +39,10 @@
         </thead>
         <tbody>
           <tr class ="table-itens">
-            <th scope="row"><?= $users-> id ?></th>
+            <th scope="row"><?= $user->id ?></th>
             <buttom></buttom>
-            <td><?= $users-> name ?></td>
-            <td><?= $users-> email ?></td>
+            <td><?= $user->name ?></td>
+            <td><?= $user->email ?></td>
             <td class="icons">
               <a href="#"><i class="bi bi-pencil-square btn" id="edit" data-modal="modalEdit"></i></a>
               <a href="#"><i class="bi bi-trash-fill btn"></i></a>
@@ -51,9 +51,9 @@
             </td>
             
           </tr>
-    <? endforeach; ?>
+    <?php endforeach;?>
           <div class='form form-add'>
-              <form class='register'>
+              <form class='register' action='ListaDeUsuarios/criar' method='POST'>
                   <div class='form-container'>
                       <span class="material-icons-sharp close">close</span>
                       <span class=form-title><b>Cadastrar</b></span>
@@ -123,9 +123,7 @@
       </div> 
     </div>
     </div>
-  
-    <?php include app\views\includes\footer.php ?>
- 
+
 
 
 

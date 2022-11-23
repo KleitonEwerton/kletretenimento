@@ -16,8 +16,8 @@
 
 
      <body>
-        <?php include app\views\includes\navbar.php ?>
-        <?php include app\views\site\sidebar.php ?>
+     <?php include __DIR__ .'/../includes/navbar.php' ?>
+     
 
            <div class="imagem1">
 
@@ -83,9 +83,7 @@
             <p>Adiministramos e desenvolvemos esse blogue destinado a pessoas que procuram por algum programa para o fim de semana, damos esse espaço para que membros da comunidade possam anunciar eventos, festas ou qualquer outra categoria de evento que possa animar um pouco do seu dia, criamos essa página sem fins lucrativos, visando apenas ajudar as pessoas entediadas e sem planos para sair.<p>
           </div>
 
-
-          <?php include app\views\includes\footer.php ?>
+        <?php include __DIR__ .'/../includes/footer.php' ?>
+          
            <script src="../../../public/js/ScriptLandingPage.js"></script>
           </body>
-
-
