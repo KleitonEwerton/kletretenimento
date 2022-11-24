@@ -40,9 +40,9 @@ class UserController extends Controller
     {
         //Exemplo para o registro de um usuario
         $parameters = [
-            'nome' => $_POST['name'],
-            'email' => $_POST['email'],
-            'senha' => $_POST['password']
+            "name" => FILTER_SANITIZE_STRIPPED,
+            "email" => FILTER_VALIDATE_EMAIL,
+            "password" => FILTER_SANITIZE_STRIPPED,
         ];
 
         $userData = filter_input_array(INPUT_POST, $parameters);
@@ -83,11 +83,13 @@ class UserController extends Controller
     // valida e atualiza os dados preenchidos no front e redireciona para alguma rota caso tudo esteja ok, caso contrario redireciona para a pagina anterior com alguma mensagem de erro
     public function update()
     {
-        //die(var_dump($_POST));
+        
         $id = $_POST['id'];
         $user = User::find($id);
         $user->update([
             "name" => $_POST['name'],
+            "email" => $_POST['email'],
+            "password" => $_POST['password']
         ]);
 
         return redirect('site/ListaDeUsuarios');

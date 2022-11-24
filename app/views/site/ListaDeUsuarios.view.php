@@ -108,7 +108,7 @@
         <h1 class="title">EDITAR USUÁRIO</h1>
       </div>
       <div class="modal-itens">
-       <form class="add-form" >
+       <form class="add-form" action='ListaDeUsuarios/editar' method='POST'>
         <label for="Usuário">USUÁRIO.</label>
         <input type="text" id="Usuário" class="form-input">
       
