@@ -14,7 +14,7 @@
 </head>
 <body class="body">
   <?php include __DIR__ .'/../includes/navbar.php' ?>
-  <?php include __DIR__ .'/../includes/footer.php' ?>
+  
 
   <div class="lista-posts">
     <img class="logo"  src="../../../public/assets/logo.png">
@@ -46,12 +46,8 @@
             <td class="icons">
               <a href="#"><i class="bi bi-pencil-square btn" id="edit" data-modal="modalEdit"></i></a>
               <a href="#"><i class="bi bi-trash-fill btn"></i></a>
-              
-              
             </td>
-            
           </tr>
-    <?php endforeach;?>
           <div class='form form-add'>
               <form class='register' action='ListaDeUsuarios/criar' method='POST'>
                   <div class='form-container'>
@@ -98,6 +94,7 @@
         </tbody>
       </table>
     </table>
+    <?php endforeach;?>
   </div>
   </div>
 
@@ -126,7 +123,8 @@
 
 
 
-
+    <?php include __DIR__ .'/../includes/footer.php' ?>
+    
     <script src="../../../public/js/UserAdd.js"></script>
     <script src="../../../public/js/apss.js"></script>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>

@@ -16,3 +16,11 @@ $router->get('ListaDeUsuarios/index', 'UserController@index');
 $router->get('ListaDeUsuarios/editar', 'UserController@edit');
 
 $router->get('ListaDeUsuarios/atualizar', 'UserController@update');
+
+$router->get('landinPage', 'LandingController@view');
+
+$router->get('listaPost', 'ListapController@view');
+
+$router->get('login', 'LoginController@view');
+
+$router->get('post-visualizacao', 'PVUController@view');

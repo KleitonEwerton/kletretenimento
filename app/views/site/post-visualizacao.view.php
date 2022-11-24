@@ -10,13 +10,13 @@
     </head>
 
     <body>
-        
+        <?php include __DIR__ .'/../includes/navbar.php' ?>
         <header>
             <div class="logo">
                 <h2>KL<span>ENTRETENIMENTO</span></h2>
             </div>
         </header>
-        <?php include __DIR__ .'/../includes/navbar.php' ?>
+        
         
 
         <div class="content">
