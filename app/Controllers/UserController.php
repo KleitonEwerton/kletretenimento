@@ -15,14 +15,15 @@ class UserController extends Controller
     }
 
     public function view(){
-        return view('site/ListaDeUsuarios');
+        $users = User::all();
+        return view('site/ListaDeUsuarios', compact('users'));
     }
 
     //retorna pagina principal
     public function index()
     {
         $users = App\Models\User::all();
-        return view('/site/ListaDeUsuarios', compact("users"));
+        return view('/site/ListaDeUsuarios', compact('users'));
     }
 
     //retorna pagina individual de um elemento
@@ -34,20 +35,14 @@ class UserController extends Controller
        return view('site/ListaDePosts', compact($userId));
     }
 
-    //retorna a pagina responsavel por criar um elemento
-    public function create()
-    {
-        return view('site/ListaDeUsuarios');
-    }
-
     // valida e armazena os dados preenchidos no front e redireciona para alguma rota caso tudo esteja ok, caso contrario redireciona para a pagina anterior com alguma mensagem de erro
-    public function store()
+    public function create()
     {
         //Exemplo para o registro de um usuario
         $parameters = [
-            'nome' => $_POST['name'],
-            'email' => $_POST['email'],
-            'senha' => $_POST['password']
+            "name" => FILTER_SANITIZE_STRIPPED,
+            "email" => FILTER_VALIDATE_EMAIL,
+            "password" => FILTER_SANITIZE_STRIPPED,
         ];
 
         $userData = filter_input_array(INPUT_POST, $parameters);
@@ -88,11 +83,13 @@ class UserController extends Controller
     // valida e atualiza os dados preenchidos no front e redireciona para alguma rota caso tudo esteja ok, caso contrario redireciona para a pagina anterior com alguma mensagem de erro
     public function update()
     {
-        //die(var_dump($_POST));
+        
         $id = $_POST['id'];
         $user = User::find($id);
         $user->update([
             "name" => $_POST['name'],
+            "email" => $_POST['email'],
+            "password" => $_POST['password']
         ]);
 
         return redirect('site/ListaDeUsuarios');

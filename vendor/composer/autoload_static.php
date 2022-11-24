@@ -150,19 +150,14 @@ class ComposerStaticInit77d18dcc81140e6fe6e1cf916f541701
     public static $classMap = array (
         'App\\Controllers\\Controller' => __DIR__ . '/../..' . '/app/Controllers/Controller.php',
         'App\\Controllers\\HomeController' => __DIR__ . '/../..' . '/app/Controllers/HomeController.php',
-
         'App\\Controllers\\PostController' => __DIR__ . '/../..' . '/app/Controllers/PostController.php',
-
         'App\\Controllers\\UserController' => __DIR__ . '/../..' . '/app/Controllers/UserController.php',
         'App\\Controllers\\controller_name' => __DIR__ . '/../..' . '/app/Controllers/default_controller/DefaultController.php',
-        'App\\Controllers\\testeController' => __DIR__ . '/../..' . '/app/Controllers/testeController.php',
         'App\\Core\\App' => __DIR__ . '/../..' . '/core/App.php',
         'App\\Core\\Database\\Connection' => __DIR__ . '/../..' . '/core/database/Connection.php',
         'App\\Core\\Database\\QueryBuilder' => __DIR__ . '/../..' . '/core/database/QueryBuilder.php',
         'App\\Core\\Request' => __DIR__ . '/../..' . '/core/Request.php',
         'App\\Core\\Router' => __DIR__ . '/../..' . '/core/Router.php',
-
-        'App\\Models\\Post' => __DIR__ . '/../..' . '/app/Models/Post.php',
         'App\\Models\\DadosK' => __DIR__ . '/../..' . '/app/Models/DadosK.php',
         'App\\Models\\Dados_k' => __DIR__ . '/../..' . '/app/Models/Dados_k.php',
         'App\\Models\\Post' => __DIR__ . '/../..' . '/app/Models/Post.php',

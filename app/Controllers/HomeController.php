@@ -15,6 +15,7 @@ class HomeController extends Controller
     public function view(){
         return view('site/ListaDeUsuarios');
     }
+    
     public function index()
     {
         return view('/site/listaposts');
