@@ -24,3 +24,5 @@ $router->get('listaPost', 'ListapController@view');
 $router->get('login', 'LoginController@view');
 
 $router->get('post-visualizacao', 'PVUController@view');
+
+$router->get('index-dashbord', 'DashController@view');
