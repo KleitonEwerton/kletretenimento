@@ -70,6 +70,15 @@
     </div>
   </form>
 </div>
+
+<div class="form delet">
+    <form class="delet">
+        <span class=form-title> DELETAR </span>
+        <input type="button" class='confirm-delet' name='deletar'>
+        <input type="button" class='cancel-delet' name='cancelar        '>
+    </form>
+</div>
+
 <div class='form form-edit'>
   <form class='edit'>
     <div class='form-container'>
