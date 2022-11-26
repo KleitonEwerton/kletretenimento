@@ -11,6 +11,8 @@
     <title>Document</title>
 </head>
 <body class="body">
+  <?php include __DIR__ .'/../includes/navbar.php' ?>
+  
      <div class="lista-posts">
         <img class="logo"  src="../../../public/assets/logo.png">
         <h1>POSTS</h1>
@@ -30,11 +32,12 @@
                   <th scope="col">Opções</th>
                 </tr>
               </thead>
+              <? foreach($posts as $post) : ?>
               <tbody>
                 <tr class="table-itens">
-                  <th scope="row">Cristo Redentor</th>
-                  <td>12/10/2022</td>
-                  <td><a>Kleiton</a</td>
+                  <th scope="row"><?= $post->name ?></th>
+                  <td><?= $post->data_nascimento ?></td>
+                  <td><a><?= $post->user_id ?></a</td>
                   <td class="icons">
                     <a href="#"><i class="bi bi-trash-fill btn"></i></a>
                     
@@ -43,33 +46,10 @@
                     <a href="#"><i class="bi bi-eye-fill btn"></i></a>
                   </td>
                 </tr>
-                <tr class="table-itens">
-                  <th scope="row">Teste 2</th>
-                  <td>11/10/2022</td>
-                  <td></td>
-                  <td class="icons">
-                    <a href="#"><i class="bi bi-trash-fill btn"></i></a>
-                    
-                    <a href="#"><i class="bi bi-pencil-square btn" id="add-btn" data-modal="modalEditar"></i></a>
-                    
-                    <a href="#"><i class="bi bi-eye-fill btn"></i></a>
-                  </td>
-                </tr>
-                <tr class="table-itens">
-                  <th scope="row">Santos Futebol Clube</th>
-                  <td>Ontem</td>
-                  <td>Pelé</td>
-                  <td class="icons">
-                    <a href="#"><i class="bi bi-trash-fill btn"></i></a>
-                    
-                    <a href="#"><i class="bi bi-pencil-square btn" id="add-btn" data-modal="modalEditar"></i></a>
-                    
-                    <a href="#"><i class="bi bi-eye-fill btn"></i></a>
-                  </td>               
-                 </tr>
+              <?php endforeach; ?>
              </tbody>
          </table>
-        </div> 
+      </div>
     </div>
 
 
@@ -99,28 +79,9 @@
         </div> 
       </div>
       <form class="view-form" style="display: none;">
-          <select>
-            <option></option>
-            <option></option>
-            <option></option>
-            <option></option>
-          </select>
-        <button id="view-btn" href="#"></button>
       </form>
       </div>
       <form class="delete-form" style="display: none;">
-          <select>
-            <option>1</option>
-            <option>2</option>
-            <option>3</option>
-            <option>4</option>
-          </select>
-          <button id="del-btn"></button>
-          <div class="confirmation-container">
-            <p>Tem certeza que deseja excluir o post? Tal ação não pode ser desfeita!</p>
-            <button id="yes-btn" class="yes"></button>
-            <button id="no-btn" class="no"></button>
-          </div>
       </form>
       <form class="edit-form" style="display: none;">
           <select>
@@ -203,7 +164,7 @@
 
 
   </div>
-
+  <?php include __DIR__ .'/../includes/footer.php' ?>
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.3/dist/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>

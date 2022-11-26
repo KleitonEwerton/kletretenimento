@@ -7,20 +7,19 @@ $baseDir = dirname($vendorDir);
 
 return array(
     'App\\Controllers\\Controller' => $baseDir . '/app/Controllers/Controller.php',
+    'App\\Controllers\\DashController' => $baseDir . '/app/Controllers/DashController.php',
     'App\\Controllers\\HomeController' => $baseDir . '/app/Controllers/HomeController.php',
-
-    'App\\Controllers\\PostController' => $baseDir . '/app/Controllers/PostController.php',
-
+    'App\\Controllers\\LandingController' => $baseDir . '/app/Controllers/LandingController.php',
+    'App\\Controllers\\ListapController' => $baseDir . '/app/Controllers/ListapController.php',
+    'App\\Controllers\\LoginController' => $baseDir . '/app/Controllers/LoginController.php',
+    'App\\Controllers\\PVUController' => $baseDir . '/app/Controllers/PVUController.php',
     'App\\Controllers\\UserController' => $baseDir . '/app/Controllers/UserController.php',
     'App\\Controllers\\controller_name' => $baseDir . '/app/Controllers/default_controller/DefaultController.php',
-    'App\\Controllers\\testeController' => $baseDir . '/app/Controllers/testeController.php',
     'App\\Core\\App' => $baseDir . '/core/App.php',
     'App\\Core\\Database\\Connection' => $baseDir . '/core/database/Connection.php',
     'App\\Core\\Database\\QueryBuilder' => $baseDir . '/core/database/QueryBuilder.php',
     'App\\Core\\Request' => $baseDir . '/core/Request.php',
     'App\\Core\\Router' => $baseDir . '/core/Router.php',
-
-    'App\\Models\\Post' => $baseDir . '/app/Models/Post.php',
     'App\\Models\\DadosK' => $baseDir . '/app/Models/DadosK.php',
     'App\\Models\\Dados_k' => $baseDir . '/app/Models/Dados_k.php',
     'App\\Models\\Post' => $baseDir . '/app/Models/Post.php',

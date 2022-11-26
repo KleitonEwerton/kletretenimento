@@ -10,12 +10,14 @@
     </head>
 
     <body>
-        
+        <?php include __DIR__ .'/../includes/navbar.php' ?>
         <header>
             <div class="logo">
                 <h2>KL<span>ENTRETENIMENTO</span></h2>
             </div>
         </header>
+        
+        
 
         <div class="content">
             <h1>HEADLINE</h1>
@@ -59,7 +61,7 @@
         
         
         </div>
-
+        <?php include __DIR__ .'/../includes/footer.php' ?>
         
        
 
