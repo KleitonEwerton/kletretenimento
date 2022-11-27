@@ -10,8 +10,8 @@
     <title>Document</title>
 </head>
 <body>
-    <header>   
-     <img class="logo" src="../../../public/assets/logo.png" alt="Logo do blog" href="#">
+    <header class="navbar-body">   
+     <img class="nav-logo" src="../../../public/assets/logo.png" alt="Logo do blog" href="#">
         <nav class="navigation">
          <ul class="nav-itens">
              <li><a href="#">USUÁRIOS</a></li>

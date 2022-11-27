@@ -11,11 +11,12 @@
 
     <body>
         <?php include __DIR__ .'/../includes/navbar.php' ?>
-        <header>
+        <div class="container">
+        <div class="title">
             <div class="logo">
                 <h2>KL<span>ENTRETENIMENTO</span></h2>
             </div>
-        </header>
+        </div>
         
         
 
@@ -62,7 +63,7 @@
         
         </div>
         <?php include __DIR__ .'/../includes/footer.php' ?>
-        
+        </div>
        
 
     </body>

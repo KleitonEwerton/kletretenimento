@@ -38,7 +38,7 @@ footer{
     animation-duration: 0.5s;
 }
 
-p{
+.footer-text{
     font-family: "Montserrat", sans-serif;
     color: #348771;
     font-size: 17px;
