@@ -14,7 +14,6 @@
   </head>
   
   <body>
-  <?php include __DIR__ .'/../site/sidebar.php' ?>
     
     <div class="buttomlog">
         <p> <a class="buttom" href="#"> Logout </a></p>
@@ -43,7 +42,6 @@
             </div>
         </div>
     </div>
-    <?php include __DIR__ .'/../includes/footer.php' ?>
     <!-- JavaScript (Opcional) -->
     <!-- jQuery primeiro, depois Popper.js, depois Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
