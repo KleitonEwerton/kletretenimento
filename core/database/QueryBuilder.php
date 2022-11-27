@@ -13,5 +13,10 @@ class QueryBuilder
         $this->pdo = $pdo;
     }
 
+    public function insertInfo($table, $parameters) {
+        $pdo->exec('INSERT INTO $s VALUES $s ', $table, $parameters);
+    }
+
+
 }
 

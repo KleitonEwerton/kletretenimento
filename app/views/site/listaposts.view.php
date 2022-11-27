@@ -31,44 +31,12 @@
                 </tr>
               </thead>
               <tbody>
-                <tr class="table-itens">
-                  <th scope="row">Cristo Redentor</th>
-                  <td>12/10/2022</td>
-                  <td><a>Kleiton</a</td>
-                  <td class="icons">
-                    <a href="#"><i class="bi bi-trash-fill btn"></i></a>
-                    
-                    <a href="#"><i class="bi bi-pencil-square btn" id="add-btn" data-modal="modalEditar"></i></a>
-                   
-                    <a href="#"><i class="bi bi-eye-fill btn"></i></a>
-                  </td>
-                </tr>
-                <tr class="table-itens">
-                  <th scope="row">Teste 2</th>
-                  <td>11/10/2022</td>
-                  <td></td>
-                  <td class="icons">
-                    <a href="#"><i class="bi bi-trash-fill btn"></i></a>
-                    
-                    <a href="#"><i class="bi bi-pencil-square btn" id="add-btn" data-modal="modalEditar"></i></a>
-                    
-                    <a href="#"><i class="bi bi-eye-fill btn"></i></a>
-                  </td>
-                </tr>
-                <tr class="table-itens">
-                  <th scope="row">Santos Futebol Clube</th>
-                  <td>Ontem</td>
-                  <td>Pelé</td>
-                  <td class="icons">
-                    <a href="#"><i class="bi bi-trash-fill btn"></i></a>
-                    
-                    <a href="#"><i class="bi bi-pencil-square btn" id="add-btn" data-modal="modalEditar"></i></a>
-                    
-                    <a href="#"><i class="bi bi-eye-fill btn"></i></a>
-                  </td>               
-                 </tr>
-             </tbody>
-         </table>
+              <?php foreach ((array) $posts as $post): ?>  
+              <tr class="table-itens">
+            
+                <?php endforeach; ?>
+              </tbody>
+          </table>
         </div> 
     </div>
 
@@ -76,12 +44,15 @@
 
     <div class="hide fade-modal" id="fade"></div>
     <div class="struct-modal" id="modalAdd">
+      <form method="post" action="listaposts/create">
       <div class=" form-container">
         <div class="modal-head">
           <h1 class="title">ADICIONAR POST</h1>
         </div>
-        <div class="modal-itens">
-         <form class="add-form" >
+      <div class="modal-itens">
+       
+        <form class="add-form">
+       
           <label for="Usuário">USUÁRIO.</label>
           <input type="text" id="Usuário" class="form-input">
         
@@ -95,9 +66,12 @@
           <textarea type="text" id="post" rows="8" cols="30" class="form-input"></textarea>
 
           <button id="confirm-btn" class="cfn-btn">POSTAR</button>
-         </form>
-        </div> 
-      </div>
+          
+        </form>
+        </form>
+    </div> 
+    
+    </div>
       <form class="view-form" style="display: none;">
           <select>
             <option></option>
@@ -138,20 +112,21 @@
       <div class=" form-container">
         <div class="modal-head">
           <h1 class="title">EDITAR POST</h1>
+          <form action="/listaposts/create" method="POST" form>
         </div>
         <div class="modal-itens">
          <form class="add-form" >
           <label for="Usuário">USUÁRIO.</label>
-          <input type="text" id="Usuário" class="form-input">
+          <input type="text" id="Usuário" class="form-input" name='usuario'>
         
           <label for="Titulo">TITULO DO POST.</label>
-          <input type="text" id="Titulo" class="form-input">
+          <input type="text" id="Titulo" class="form-input" name='titulo'>
           
           <label for="input-image" class="img-selector">IMAGEM</label>
           <input id="input-image" class="img-btn" type="file" onchange="readURL(this)" accept="image/*">
           <br>
           <label for="post">REESCREVA O POST AQUI!</label>
-          <textarea type="text" id="post" rows="8" cols="30" class="form-input"></textarea>
+          <textarea type="text" id="post" rows="8" cols="30" class="form-input" name='post'></textarea>
 
           <button id="confirm-btn" class="cfn-btn">REPOSTAR</button>
          </form>

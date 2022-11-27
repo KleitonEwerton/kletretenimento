@@ -1,7 +1,8 @@
 <?php
 
 namespace App\Controllers;
-
+use App\Models\Post;
+use App\CORE\APP;
 class PostController extends Controller
 {
     public function __construct()
@@ -17,7 +18,8 @@ class PostController extends Controller
     //retorna pagina principal
     public function index()
     {
-        return view('/site/listaposts');
+        $posts = Post::all();
+        return view('site/listaposts', compact('posts'));
     }
 
     //retorna pagina individual de um elemento
@@ -31,21 +33,39 @@ class PostController extends Controller
     //retorna a pagina responsavel por criar um elemento
     public function create()
     {
-        //return view('...');
+        $parameters = [
+            'usuario' => $_POST['usuario'],
+            'titulo' => $_POST['titulo'],
+            'post' => $_POST['post'],
+       ];
+       
+        
+       app::get('database')->insertInfo('usuarios', $parameters);
+       header('Location: /');
+       
+       
+       
+       /*$name = filter_input(INPUT_POST, 'usuario', FILTER_SANITIZE_SPECIAL_CHARS);
+        $gender = filter_input(INPUT_POST, 'titulo', FILTER_SANITIZE_SPECIAL_CHARS);
+        $year = filter_input(INPUT_POST, 'post', FILTER_SANITIZE_SPECIAL_CHARS);
+       
+        if(!$name)
+        {
+            $_SESSION['faltaCampos'] = 'ERRO: Preencha o campo nome!';
+            header('Location: site/index');
+            exit();
+
+        }
+        App::get('database')->adicionar('movies', compact('name','genero','ano')); 
+        header('Location: site/index');
+       
+        return view('site/listaposts');*/
     }
 
     // valida e armazena os dados preenchidos no front e redireciona para alguma rota caso tudo esteja ok, caso contrario redireciona para a pagina anterior com alguma mensagem de erro
     public function store()
     {
-        //Exemplo para o registro de um usuario
-
-        /*$filterForm = [
-            "name" => FILTER_SANITIZE_STRIPPED,
-            "email" => FILTER_VALIDATE_EMAIL,
-            "password" => FILTER_SANITIZE_STRIPPED,
-            "birthdate" => FILTER_SANITIZE_STRIPPED,
-            "gender" => FILTER_SANITIZE_STRIPPED,
-        ];*/
+        
 
         //$userData = filter_input_array(INPUT_POST, $filterForm);
 

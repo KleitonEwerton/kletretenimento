@@ -11,10 +11,7 @@ class HomeController extends Controller
             exit();
         }*/
     }
-    public function index()
-    {
-        return view('/site/listaposts');
-    }
+    
 
 }
 
