@@ -153,6 +153,7 @@ class ComposerStaticInit77d18dcc81140e6fe6e1cf916f541701
         'App\\Controllers\\HomeController' => __DIR__ . '/../..' . '/app/Controllers/HomeController.php',
         'App\\Controllers\\LandingController' => __DIR__ . '/../..' . '/app/Controllers/LandingController.php',
         'App\\Controllers\\ListapController' => __DIR__ . '/../..' . '/app/Controllers/ListapController.php',
+        'App\\Controllers\\ListapostsController' => __DIR__ . '/../..' . '/app/Controllers/ListapostsController.php',
         'App\\Controllers\\LoginController' => __DIR__ . '/../..' . '/app/Controllers/LoginController.php',
         'App\\Controllers\\PVUController' => __DIR__ . '/../..' . '/app/Controllers/PVUController.php',
         'App\\Controllers\\UserController' => __DIR__ . '/../..' . '/app/Controllers/UserController.php',

@@ -11,7 +11,7 @@ class userstable
     {
         Capsule::schema()->create("users", function (Blueprint $table) {
             $table->increments("id");
-            $table->timestamps();
+            $table->timestamps();       
         });
     }
 

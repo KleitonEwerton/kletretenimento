@@ -26,33 +26,39 @@
          <table class="table table-hover table-dark tabela">
               <thead>
                 <tr>
-                  <th scope="col">Titulo</th>
+                <th scope="col">ID</th>
+                <th scope="col">Titulo</th>
                   <th scope="col">Data de postagem</th>
-                  <th scope="col">Autor</th>
+                  <th scope="col">Usuario</th>
+                  <th scope="col">texto do Post</th>
+                  <th scope="col">Imagem</th>
                   <th scope="col">Opções</th>
                 </tr>
               </thead>
-              <? foreach($posts as $post) : ?>
               <tbody>
-                <tr class="table-itens">
-                  <th scope="row"><?= $post->name ?></th>
-                  <td><?= $post->data_nascimento ?></td>
-                  <td><a><?= $post->user_id ?></a</td>
+              <?php foreach ($posts as $post) : ?>
+              <tr class="table-itens">
+                  <th scope="row"><?= $post->id?></th>
+                  <th ><?= $post->tituloDopost ?></th>
+                  <td><?= $post->created_at ?></td>
+                  <td><a><?= $post->usuario ?></a</td>
+                  <td><?= $post->textoPost ?></td>
+                  <td><?= $post->imagem ?></td>
+                  
                   <td class="icons">
-                    <a href="#"><i class="bi bi-trash-fill btn"></i></a>
+                    <a href="#"><i class="bi bi-trash-fill btn" action ="listaposts/deletar" method ="POST"></i></a>
                     
                     <a href="#"><i class="bi bi-pencil-square btn" id="add-btn" data-modal="modalEditar"></i></a>
                    
-                    <a href="#"><i class="bi bi-eye-fill btn"></i></a>
+                    <a href="#"><i class="bi bi-eye-fill btn" id="add-btn" data-modal="modalVisual"></i></a>
                   </td>
                 </tr>
               <?php endforeach; ?>
-             </tbody>
+              </tbody>
+          
          </table>
       </div>
     </div>
-
-
 
     <div class="hide fade-modal" id="fade"></div>
     <div class="struct-modal" id="modalAdd">
@@ -61,18 +67,21 @@
           <h1 class="title">ADICIONAR POST</h1>
         </div>
         <div class="modal-itens">
-         <form class="add-form" action ="admin/index-dashbord" method ="POST">
+         <form class="add-form" action ="listaposts/criar" method ="POST">
           <label for="Usuário">USUÁRIO.</label>
-          <input type="text" id="Usuário" class="form-input">
+          <input type="text" id="Usuário" name='usuario' class="form-input">
         
           <label for="Titulo">TITULO DO POST.</label>
-          <input type="text" id="Titulo" class="form-input">
+          <input type="text" id="Titulo"  name='tituloDopost' class="form-input">
           
+          <label for="Titulo">DATA DO POST.</label>
+          <input type="text" id="Titulo"  name='created_at' class="form-input">
+
           <label for="input-image" class="img-selector">IMAGEM</label>
-          <input id="input-image" class="img-btn" type="file" onchange="readURL(this)" accept="image/*">
+          <input id="input-image" class="img-btn" type="file" onchange="readURL(this)" name = 'imagem' accept="image/*">
           <br>
           <label for="post">ESCREVA O POST AQUI!</label>
-          <textarea type="text" id="post" rows="8" cols="30" class="form-input"></textarea>
+          <textarea type="text" id="post" rows="8" cols="30" name='textoPost' class="form-input"></textarea>
 
           <button id="confirm-btn" class="cfn-btn">POSTAR</button>
          </form>
@@ -101,6 +110,35 @@
           <h1 class="title">EDITAR POST</h1>
         </div>
         <div class="modal-itens">
+         <form class="add-form" action ="listaposts/edit" method ="POST" >
+          <label for="Usuário">USUÁRIO.</label>
+          <input type="text" id="Usuário" name='usuario' class="form-input">
+        
+          <label for="Titulo">TITULO DO POST.</label>
+          <input type="text" id="Titulo" name='tituloDopost' class="form-input">
+          
+          <label for="Titulo">DATA DO POST.</label>
+          <input type="text" id="Titulo"  name='created_at' class="form-input">
+          
+          <label for="input-image" class="img-selector">IMAGEM</label>
+          <input id="input-image" class="img-btn" type="file" onchange="readURL(this)"name = 'imagem' accept="image/*">
+          <br>
+          <label for="post">REESCREVA O POST AQUI!</label>
+          <textarea type="text" id="post" rows="8" cols="30" name='textoPost' class="form-input"></textarea>
+
+          <button id="confirm-btn" class="cfn-btn">REPOSTAR</button>
+         </form>
+        </div> 
+      </div>
+      
+      <!-- teste inicio -->
+      <!-- <div class="hide fade-modal" id="fade"></div>
+    <div class="struct-modal" id="modalVisual">
+      <div class=" form-container">
+        <div class="modal-head">
+          <h1 class="title">EDITAR POST</h1>
+        </div>
+        <div class="modal-itens">
          <form class="add-form" >
           <label for="Usuário">USUÁRIO.</label>
           <input type="text" id="Usuário" class="form-input">
@@ -117,7 +155,10 @@
           <button id="confirm-btn" class="cfn-btn">REPOSTAR</button>
          </form>
         </div> 
-      </div>
+      </div> -->
+      
+      <!-- teste fim -->
+      
       <form class="view-form" style="display: none;">
           <select>
             <option></option>
@@ -128,7 +169,7 @@
         <button id="view-btn" href="#"></button>
       </form>
       </div>
-      <form class="delete-form" style="display: none;">
+      <form class="delete-form" action ="listaposts/deletar" style="display: none;">
           <select>
             <option>1</option>
             <option>2</option>
