@@ -11,6 +11,12 @@ class Post Extends Model
         'body',
         'user_id',
         'image_path',
+        'usuario',
+        'tituloDopost',
+        'imagem',
+        'textoPost',
+        'created_at',
+         'id',
     ];
 
     public function user()
