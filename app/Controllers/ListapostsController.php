@@ -2,6 +2,8 @@
 
 namespace App\Controllers;
 
+use App\Models\Post;
+
 use App\Core\App;
 
 class ListapostsController extends Controller
@@ -36,16 +38,26 @@ public function delete(){
     return redirect('listaposts');
 
  }
-public function edit(){
+// retorna a pagina para editar um elemento
+public function edit()
+{
+    $id = $_GET['id'];
+    $post = Post::find($id);
 
-$parameters =[
-    'usuario' =>$_POST['usuario'],
+    return view('listaposts', compact($post));
+}
+
+ public function update(){
+      $id = $_POST['id'];
+      //die(var_dump($_POST));
+      $post = Post::find($id);
+      $post->update([
+       'usuario' =>$_POST['usuario'],
        'tituloDopost' =>$_POST['tituloDopost'],
        'imagem' =>$_POST['imagem'],
        'textoPost' =>$_POST['textoPost'],
        'created_at'=>$_POST['created_at'],
-];
-    app::get('database')->edit('posts', $_POST['id'], $parameters);
+]);
 
     return redirect('listaposts');
 }

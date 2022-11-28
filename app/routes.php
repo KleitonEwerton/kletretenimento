@@ -29,7 +29,7 @@ $router->post('listaposts/criar', 'ListapostsController@create');
 
 $router->post('listaposts/deletar', 'ListapostsController@delete');
 
-$router->post('listaposts/edit', 'ListapostsController@edit');
+$router->post('listaposts/update', 'ListapostsController@update');
 
 // listaposts rotas fim
 
