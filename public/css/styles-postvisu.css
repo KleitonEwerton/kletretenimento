@@ -3,9 +3,9 @@ body{
     margin: 0;
     padding: 0;
     background-color: #1B1F27;
-    text-align: center;
-    width: 100px;
-    height: 200px;
+    
+    width: 100%;
+    height: 200%;
 }
 
 
@@ -13,15 +13,20 @@ body{
 header{
     display: flex;
     justify-content: center;
-    
 }
 
 
 .logo
 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    right: 0;
+    left: 0;
     max-width: 100%;
-   position: absolute;
-   right: 0;
+    position: absolute;
+    
+    
     
 }
 

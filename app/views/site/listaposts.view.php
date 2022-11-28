@@ -46,11 +46,15 @@
                   <td><?= $post->imagem ?></td>
                   
                   <td class="icons">
-                    <a href="#"><i class="bi bi-trash-fill btn" action ="listaposts/deletar" method ="POST"></i></a>
+                    <a href="#"><i class="bi bi-trash-fill btn" id="add=btn" action ="listaposts/delete" data-modal="modalDelete" method ="POST"></i></a>
                     
                     <a href="#"><i class="bi bi-pencil-square btn" id="add-btn" data-modal="modalEditar"></i></a>
                    
                     <a href="#"><i class="bi bi-eye-fill btn" id="add-btn" data-modal="modalVisual"></i></a>
+                    
+                    
+
+
                   </td>
                 </tr>
               <?php endforeach; ?>
@@ -159,6 +163,7 @@
       
       <!-- teste fim -->
       
+      
       <form class="view-form" style="display: none;">
           <select>
             <option></option>
@@ -169,20 +174,24 @@
         <button id="view-btn" href="#"></button>
       </form>
       </div>
-      <form class="delete-form" action ="listaposts/deletar" style="display: none;">
-          <select>
-            <option>1</option>
-            <option>2</option>
-            <option>3</option>
-            <option>4</option>
-          </select>
-          <button id="del-btn"></button>
+      
+      
+      <div class="hide fade-modal" id="fade"></div>
+      <div class="struct-modal" id="modalDelete">
+      <div class=" form-container">
+      <form class="delete-form" action ="listaposts/delete">
+          
           <div class="confirmation-container">
             <p>Tem certeza que deseja excluir o post? Tal ação não pode ser desfeita!</p>
-            <button id="yes-btn" class="yes"></button>
-            <button id="no-btn" class="no"></button>
+            <button id="yes-btn" class="cfn-btn">SIM</button>
+            <button id="no-btn" class="cfn-btn">NÃO</button>
           </div>
-      </form>
+        </form>
+      </div>
+      </div>
+      
+      
+      
       <form class="edit-form" style="display: none;">
           <select>
             <option>1</option>
