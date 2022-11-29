@@ -21,7 +21,7 @@
     <h1>EDITAR USUÁRIOS</h1>
     <div class="serch-bar">
       <ul class="serch-itens">
-        <li><a href="#"><i class="bi bi-plus btn" id="add-btn" data-modal="modalAdd"></i></a></li>
+          <span class="material-icons-sharp add">add</span>
         <li><a href="#"><input type="text" placeholder="Pesquisar"></a></li>
       </ul>
   </div>
@@ -126,7 +126,12 @@
       <span class=form-title>Editar</span>
       <input type='hidden' class='form-id' name='id'>
       <input type='text' required class='form-name' name='name' placeholder="Nome">
-      <input type='text' required class='form-email' name='email' placeholder="E-mail">
+
+
+
+                '
+
+        <input type='text' required class='form-email' name='email' placeholder="E-mail">
       <input type='text' required class='form-phone' name='phone' placeholder="Telefone">
       <div>
         <label>
