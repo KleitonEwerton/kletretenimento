@@ -173,6 +173,9 @@
 .form-edit{
     display: none;
 }
+.form-delet{
+    display:none;
+}
 
 .form-container{
     color:#348771;
