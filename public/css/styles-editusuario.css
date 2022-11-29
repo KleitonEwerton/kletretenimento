@@ -167,7 +167,11 @@
 }
 
 .form-add{
-    display: none
+    display: none;
+}
+
+.form-edit{
+    display: none;
 }
 
 .form-container{

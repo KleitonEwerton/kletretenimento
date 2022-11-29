@@ -129,8 +129,6 @@
 
 
 
-                '
-
         <input type='text' required class='form-email' name='email' placeholder="E-mail">
       <input type='text' required class='form-phone' name='phone' placeholder="Telefone">
       <div>
