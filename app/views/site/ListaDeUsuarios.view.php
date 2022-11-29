@@ -110,11 +110,11 @@
   </form>
 </div>
 
-<div class="form delet">
+<div class="form form-delet">
     <form class="delet">
         <span class=form-title> DELETAR </span>
         <input type="button" class='confirm-delet' name='deletar'>
-        <input type="button" class='cancel-delet' name='cancelar        '>
+        <input type="button" class='cancel-delet' name='cancelar'>
     </form>
 </div>
 
