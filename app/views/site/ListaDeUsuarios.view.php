@@ -138,10 +138,9 @@
       <input type='file' name="photo" class='form-icon'>
       <span class="material-icons-sharp check">done</span>
     </div>
+    <button id="confirm-btn" class="cfn-btn">SALVAR</button>
   </form>
 </div>
-
-        <button id="confirm-btn" class="cfn-btn">SALVAR</button>
        </form>
       </div> 
     </div>
