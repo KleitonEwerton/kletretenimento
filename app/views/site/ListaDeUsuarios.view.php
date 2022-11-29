@@ -113,7 +113,9 @@
 
 <div class="form form-delet">
     <form class="delet">
+        <div class='form-container'>
         <span class=form-title> DELETAR </span>
+            <span class="material-icons-sharp close">close</span>
         <input type="button" class='confirm-delet' name='deletar'>
         <input type="button" class='cancel-delet' name='cancelar'>
     </form>
