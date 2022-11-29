@@ -44,7 +44,7 @@ class UserController{
         })
 
         document.querySelectorAll(".close")[1].addEventListener("click",()=>{
-            document.querySelector(".form-delet).style.display = "none"
+            document.querySelector(".form-delet").style.display = "none"
         })
     }
 }
