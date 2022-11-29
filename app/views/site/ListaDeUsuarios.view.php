@@ -104,7 +104,6 @@
       <div class="modal-head">
         <h1 class="title">EDITAR USUÁRIO</h1>
       </div>
-<<<<<<< HEAD
       <input type='file' name="photo" class='form-icon'>
       <span class="material-icons-sharp check">done</span>
     </div>
@@ -141,22 +140,9 @@
       <input type='file' name="photo" class='form-icon'>
       <span class="material-icons-sharp check">done</span>
     </div>
+    <button id="confirm-btn" class="cfn-btn">SALVAR</button>
   </form>
 </div>
-=======
-      <div class="modal-itens">
-       <form class="add-form" action='ListaDeUsuarios/editar' method='POST'>
-        <label for="Usuário">USUÁRIO.</label>
-        <input type="text" id="Usuário" class="form-input">
-      
-        <label for="Titulo">E-MAIL.</label>
-        <input type="text" id="Titulo" class="form-input">
-        
-        <label for="Titulo">SENHA.</label>
-        <input type="password" id="Senha" class="form-input">
->>>>>>> d3b3f97c7b1b5b7e2575c504e4f6b4fe8d7197a0
-
-        <button id="confirm-btn" class="cfn-btn">SALVAR</button>
        </form>
       </div> 
     </div>
