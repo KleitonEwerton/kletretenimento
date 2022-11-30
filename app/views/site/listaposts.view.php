@@ -46,21 +46,64 @@
               <td><?= $post->imagem ?></td>
 
               <td class="icons">
-                <a href="#"><i class="bi bi-trash-fill btn" id="add-btn" data-modal="modal-delete"></i></a>
+                <a href="#"><i class="bi bi-trash-fill btn" id="add-btn" aria-hidden="true" data-modal="modalDelete-<?=$post->id?>"></i></a>
                  
                
-                <a href="#"><i class="bi bi-pencil-square btn modalclick" data-id=<?= $post->id ?> id="add-btn" name='id' data-modal="modalEditar"></i></a>
+                <a href="#"><i class="bi bi-pencil-square btn modalclick" data-id= <?= $post->id ?> id="add-btn" name='id' data-modal="modalEditar"></i></a>
 
-                <a href="#"><i class="bi bi-eye-fill btn" id="add-btn" data-modal="modalVisual"></i></a>
+                <a href="#"><i class="bi bi-eye-fill btn" id="add-btn" aria-hidden="true" data-modal="modalView-<?=$post->id?>" ></i></a>
               </td>
-            </tr>
-          <?php endforeach; ?>
-        </tbody>
+            </tr>       
+      
+            <!-- Modal view -->
+        <div class="hide fade-modal" id="fade"></div>
+        <div class="struct-modal" id="modalView-<?=$post->id?>">
+          <div class=" form-container">
+            <div class="modal-head">
+              <h1 class="title">POST</h1>
+            </div>
+            <div class="modal-itens">
+              <div class="add-form">
+                <label for="Usuário">USUÁRIO.</label>
+                <p class=" form showusuario show"><?=$post->usuario?></p>
+              
+                <label for="Titulo">TITULO DO POST.</label>
+                <p class=" form showtitiluDopost show"><?=$post->tituloDopost?></p>
 
+                <label for="input-image" class="img-selector">IMAGEM</label>
+                <!-- <input id="input-image" class="img-btn" type="file" onchange="readURL(this)" name='imagem' accept="image/*"> -->
+                <br>
+                <label for="post">TEXTO DO POST</label>
+                <p class=" form showtextopost show"><?=$post->textoPost?></p>
+                </div>
+            </div>
+          </div>
+        </div>
+  
+        <!----MODAL EXCLUIR---->
+        <div class="hide fade-modal" id="fade"></div>
+        <div class="struct-modal" id="modalDelete-<?=$post->id?>">
+        <div class=" form-container">
+          <div class="modal-head">
+        <h2 id="title">Apagar Post</h2>
+        <p>Tem certeza que deseja excluir o post?</p>
+          <div class="row d-flex justify-content-center">
+          <form action="listaposts/deletar" method="POST">
+          <input type="hidden" value="<?=$post->id?>" name="id">
+          <button type="submit" class="cfn-btn" >Sim</button>
+            <button type="button" class="cfn-btn">Cancelar</button>
+            </form>
+           </div>
+           </div>
+           </div>
+           </div>
+                <!---->
+  <?php endforeach; ?>
+        </tbody>
       </table>
     </div>
   </div>
-
+      <!-- Modal Adicionar -->
   <div class="hide fade-modal" id="fade"></div>
   <div class="struct-modal" id="modalAdd">
     <div class=" form-container">
@@ -86,7 +129,7 @@
       </div>
     </div>
   </div>
-
+              <!-- Modal Editar -->
   <div class="hide fade-modal" id="fade"></div>
   <div class="struct-modal" id="modalEditar">
     <div class=" form-container">
@@ -114,40 +157,12 @@
       </div>
     </div>
   </div>
-  <!-- teste inicio -->
-  <div class="hide fade-modal" id="fade"></div>
-  <div class="struct-modal" id="modalVisual">
-    <div class=" form-container">
-      <div class="modal-head">
-        <h1 class="title">POST</h1>
-      </div>
-      <div class="modal-itens">
-        <form class="add-form" action="listaposts/delete" method="POST">
-          <label for="Usuário">USUÁRIO.</label>
-          <input type="text" id="Usuário" name='usuario' class="form-input">
-
-          <label for="Titulo">TITULO DO POST.</label>
-          <input type="text" id="Titulo" name='tituloDopost' class="form-input">
-
-          <label for="input-image" class="img-selector">IMAGEM</label>
-          <input id="input-image" class="img-btn" type="file" onchange="readURL(this)" name='imagem' accept="image/*">
-          <br>
-          <label for="post">TEXTO DO POST</label>
-          <textarea type="text" id="post" rows="8" cols="30" name='textoPost' class="form-input"></textarea>
-
-        </form>
-      </div>
-    </div>
-  </div>
-  <!-- teste fim -->
 
   <div class="modal-p hide" id="modalAdicionar">
     <div class="modal-head">
       <h3>Titulo do Modal</h3>
     </div>
     <div class="modal_corpo" id="modalAdicionar">
-
-
     </div>
 
 

@@ -30,14 +30,10 @@ public function create(){
 }
 
 public function delete(){
-
-    $id = $_POST['id'];
-
-    app::get('database')->delete('posts', $id);
-
+    $id = filter_input(INPUT_POST, 'id', FILTER_SANITIZE_NUMBER_INT);
+    App::get('database')->delete('posts', $id);
     return redirect('listaposts');
-
- }
+}
 // retorna a pagina para editar um elemento
 public function edit()
 {
