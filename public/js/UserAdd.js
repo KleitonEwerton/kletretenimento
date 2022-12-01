@@ -1,43 +1,27 @@
-class UserAdd{
-    constructor(){
-        this.addEventBtns();
-        this.register();
-    }
+const fade = document.getElementById("fade");
+const btn = document.getElementsByClassName("add");
+const container = document.getElementsByClassName("form-container");
 
+const modalBtns = [...btn].filter((el)=>{
+    return el.dataset.modal != null;
+})
 
-
-    register(){
-        let formEl = document.querySelector('.register');
-        let elements = formEl.elements;
-        let registerData = {};
-        [...elements].forEach((v)=>{
-            switch (v.type){
-                case'checkbox':
-                    registerData.admin = v.checked
-                    break;
-
-                case'file':
-                    break;
-                default:
-                    registerData[v.name] = v.value
-                    break;
-            }
-
-        })
-
-    }
-
-
-
-
-    addEventBtns(){
-
-        document.querySelector(".add").addEventListener("click",()=>{
-            document.querySelector(".add-btn").style.display = "flex"
-        })
-
-        document.querySelectorAll(".close")[0].addEventListener("click",()=>{
-            document.querySelector(".add-btn").style.display = "none"
+const toggleModal = (id) =>{
+    if(id == undefined){
+        fade.classList.toggle("hide");
+    } else{
+        const modalOpen = document.getElementById(id);
+        modalOpen.style.display = "flex"
+        fade.classList.toggle("hide");
+        fade.addEventListener("click", ()=>{
+            modalOpen.style.display = "none";
         })
     }
 }
+
+[...modalBtns, fade].forEach((el)=>{
+    el.addEventListener("click",()=>{
+        toggleModal(el.dataset.modal);
+    })
+})
+

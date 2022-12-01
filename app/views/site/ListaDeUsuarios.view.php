@@ -21,7 +21,7 @@
     <h1>EDITAR USUÁRIOS</h1>
     <div class="serch-bar">
       <ul class="serch-itens">
-          <span class="material-icons-sharp add">add</span>
+          <span class="material-icons-sharp add" data-modal="modalAdd">add</span>
         <li><a href="#"><input type="text" placeholder="Pesquisar"></a></li>
       </ul>
   </div>
@@ -50,7 +50,7 @@
           </tr>
           <div class='form form-add'>
               <form class='register' action='ListaDeUsuarios/criar' method='POST'>
-                  <div class='form-container'>
+                  <div class='form-container' id="modalAdd">
                       <span class="material-icons-sharp close">close</span>
                       <span class=form-title><b>Cadastrar</b></span>
                       <p><input type='text' required class='form-name' name='name' placeholder="Nome"></p>
@@ -99,6 +99,24 @@
   </div>
 
     <div id="fade" class="hide"></div>
+    <div class="form form-add">
+          <form class='register' action='ListaDeUsuarios/criar' method='POST'>
+              <div class='form-container' id="modalAdd">
+                <span class="material-icons-sharp close">close</span>
+                <span class=form-title><b>Cadastrar</b></span>
+                <p><input type='text' required class='form-name' name='name' placeholder="Nome"></p>
+                <p><input type='text' required class='form-email' name='email' placeholder="E-mail"></p>
+                <p><input type='text' required class='form-phone' name='phone' placeholder="Telefone"></p>
+                <p><input type='password' required class='form-senha' name='password' placeholder="Senha"></p>
+              <div>
+                <label><input type='checkbox' class='form-admin' name='admin'>Administrador</label>
+              </div>
+                <input type='file' name="photo" class='form-icon'>
+                <span class="material-icons-sharp check">done</span>
+              </div>
+          </form>
+      </div>
+
     <div id="modalEdit" style="display: none;" class="hide">  
     <div class="form-container">
       <div class="modal-head">
@@ -147,7 +165,7 @@
       </div> 
     </div>
     </div>
-
+</div>
 
 
     <?php include __DIR__ .'/../includes/footer.php' ?>
