@@ -16,11 +16,11 @@
 				<div>
 					<img src="../../../public/assets/logo2-sem-fundo.png">
 				</div>
-
-				<form method="POST">
+				
+				<form method="POST" action="/login/logar">
 					<input type="text" name="nome" placeholder="Usuário" autofocus>
-					<input type="text" name="senha" placeholder="Senha">
-					<input type="submit" value="entrar">
+					<input type="text" name="senha" placeholder="Senha" >
+					<button type="submit"> entrar <button>
 				</form>
 				<p>Não possui uma conta?<a href="#">Criar conta</a></p>
 			</div>

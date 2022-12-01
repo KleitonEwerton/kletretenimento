@@ -35,6 +35,8 @@ $router->post('listaposts/update', 'ListapostsController@update');
 
 $router->get('login', 'LoginController@view');
 
+$router->post('login/logar', 'LoginController@entrar');
+
 $router->get('post-visualizacao', 'PVUController@view');
 
-$router->get('index-dashbord', 'DashController@view');
+$router->get('dashboard', 'DashController@view');

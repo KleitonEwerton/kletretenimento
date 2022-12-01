@@ -81,4 +81,22 @@ public function delete($table, $id){
 
 }
 
+public function logar($nome, $senha)
+    {
+        $sql = "select 'users' from users where nome='{$nome}'and senha='{$senha}'";
+
+        try {
+            $stmt = $this->pdo->prepare($sql);
+
+            $stmt->execute();
+
+            return $stmt->fetchAll(PDO::FETCH_CLASS);
+        } 
+
+        catch (Exception $e) {
+            die($e->getMessage());
+        }
+    }
+
+
 }
