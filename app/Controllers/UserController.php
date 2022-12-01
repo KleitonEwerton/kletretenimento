@@ -40,12 +40,12 @@ class UserController extends Controller
     {
         //Exemplo para o registro de um usuario
         $parameters = [
-            "name" => FILTER_SANITIZE_STRIPPED,
-            "email" => FILTER_VALIDATE_EMAIL,
-            "password" => FILTER_SANITIZE_STRIPPED,
+            'name' => $_POST['name'],
+            'email' => $_POST['email'],
+            'password' => $_POST['password'],
         ];
 
-        $userData = filter_input_array(INPUT_POST, $parameters);
+        /*$userData = filter_input_array(INPUT_POST, $parameters);
 
         if(in_array(false, $userData)) {
             $errors = array_keys($userData, false, false);
@@ -64,7 +64,7 @@ class UserController extends Controller
             return view('site/ListaDeUsuarios');
         }
         unset($_SESSION["error"]);
-        $_SESSION["logado"] = $user->getAttributes();
+        $_SESSION["logado"] = $user->getAttributes();*/
 
         app::get('database')->insertInfo('users', $parameters);
 
@@ -87,9 +87,9 @@ class UserController extends Controller
         $id = $_POST['id'];
         $user = User::find($id);
         $user->update([
-            "name" => $_POST['name'],
-            "email" => $_POST['email'],
-            "password" => $_POST['password']
+            'name' => $_POST['name'],
+            'email' => $_POST['email'],
+            'password' => $_POST['password']
         ]);
 
         return redirect('site/ListaDeUsuarios');
