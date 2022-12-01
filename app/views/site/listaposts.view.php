@@ -69,9 +69,10 @@
               
                 <label for="Titulo">TITULO DO POST.</label>
                 <p class=" form showtitiluDopost show"><?=$post->tituloDopost?></p>
-
-                <label for="input-image" class="img-selector">IMAGEM</label>
-                <!-- <input id="input-image" class="img-btn" type="file" onchange="readURL(this)" name='imagem' accept="image/*"> -->
+                <label for="imagem">IMAGEM.</label>
+                <div class="testes-imagem">
+                <img height="100" src="../public/assets/<?=$post->imagem?>" alt="imagem-post">
+              </div>
                 <br>
                 <label for="post">TEXTO DO POST</label>
                 <p class=" form showtextopost show"><?=$post->textoPost?></p>
@@ -91,8 +92,8 @@
           <form action="listaposts/deletar" method="POST">
           <input type="hidden" value="<?=$post->id?>" name="id">
           <button type="submit" class="cfn-btn" >Sim</button>
-            <button type="button" class="cfn-btn">Cancelar</button>
-            </form>
+          <button type="button" class="cfn-btn fechar">Cancelar</button>
+        </form>
            </div>
            </div>
            </div>
@@ -147,7 +148,7 @@
           <input type="text" id="Titulo" name='tituloDopost' class="form-input">
 
           <label for="input-image" class="img-selector">IMAGEM</label>
-          <input id="input-image" class="img-btn" type="file" onchange="readURL(this)" name='imagem' accept="image/*">
+          <div id="input-image" class="img-btn" type="file" onchange="readURL(this)" name='imagem' accept="image/*"></div>
           <br>
           <label for="post">REESCREVA O POST AQUI!</label>
           <textarea type="text" id="post" rows="8" cols="30" name='textoPost' class="form-input"></textarea>
