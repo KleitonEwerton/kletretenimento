@@ -99,9 +99,9 @@
   </div>
 
     <div id="fade" class="hide"></div>
-    <div class="form form-add">
+    <div class="form-container form-add" id="modalAdd">
           <form class='register' action='ListaDeUsuarios/criar' method='POST'>
-              <div class='form-container' id="modalAdd">
+              <div class='form-container' >
                 <span class="material-icons-sharp close">close</span>
                 <span class=form-title><b>Cadastrar</b></span>
                 <p><input type='text' required class='form-name' name='name' placeholder="Nome"></p>
