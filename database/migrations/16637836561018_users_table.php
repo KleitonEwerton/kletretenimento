@@ -15,6 +15,7 @@ class userstable
             $table->string("name");
             $table->string("email")->unique();
             $table->string("password");
+            $table->string("phone");
             $table->enum("sexo", ["M", "F", "NB"])->nullable();
             $table->date("data_nascimento")->nullable();
             $table->timestamps();

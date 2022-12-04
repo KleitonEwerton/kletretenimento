@@ -7,7 +7,7 @@ use App\Core\Router;
 
 $router->get('ListaDeUsuarios', 'UserController@view');
 
-$router->get('ListaDeUsuarios/criar', 'UserController@create');
+$router->post('ListaDeUsuarios/criar', 'UserController@create');
 
 $router->get('ListaDeUsuarios/deletar', 'UserController@delete');
 

@@ -11,6 +11,7 @@ class User Extends Model
         "id",
         "name", 
         "email",
+        "phone",
         "password",
         "sexo",
         "data_nascimento",

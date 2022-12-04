@@ -67,30 +67,6 @@
                   </div>
               </form>
           </div>
-
-
-          <tr>
-            <th scope="row">2</th>
-            <td>davisin</td>
-            <td>davisin@gmail.com</td>
-            <td class = "icons">
-              <a href="#"><i class="bi bi-pencil-square btn" id="edit" data-modal="modalEdit"></i></a>
-              <a href="#"><i class="bi bi-trash-fill btn"></i></a>
-              
-              
-            </td>
-          </tr>
-          <tr>
-            <th scope="row">3</th>
-            <td>luquinhas</td>
-            <td>luquinhas@gmail.com</td>
-            <td class = "icons">
-              <a href="#"><i class="bi bi-pencil-square btn" id ="edit" data-modal="modalEdit" ></i></a>
-              <a href="#"><i class="bi bi-trash-fill btn"></i></a>
-              
-             
-            </td>
-          </tr>
         </tbody>
       </table>
     </table>
@@ -108,11 +84,6 @@
                 <p><input type='text' required class='form-email' name='email' placeholder="E-mail"></p>
                 <p><input type='text' required class='form-phone' name='phone' placeholder="Telefone"></p>
                 <p><input type='password' required class='form-senha' name='password' placeholder="Senha"></p>
-              <div>
-                <label><input type='checkbox' class='form-admin' name='admin'>Administrador</label>
-              </div>
-                <input type='file' name="photo" class='form-icon'>
-                <span class="material-icons-sharp check">done</span>
                 <button class="cfn-btn">POSTAR</button>
               </div>
           </form>
@@ -172,7 +143,6 @@
     <?php include __DIR__ .'/../includes/footer.php' ?>
     
     <script src="../../../public/js/UserAdd.js"></script>
-    <script src="../../../public/js/apss.js"></script>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>

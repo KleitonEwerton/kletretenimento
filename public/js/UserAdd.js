@@ -10,7 +10,7 @@ const toggleModal = (id) =>{
         fade.classList.toggle("hide");
     } else{
         const modalOpen = document.getElementById(id);
-        modalOpen.style.display = "flex"
+        modalOpen.style.display = "block"
         fade.classList.toggle("hide");
         fade.addEventListener("click", ()=>{
             modalOpen.style.display = "none";
