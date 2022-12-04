@@ -99,7 +99,7 @@
   </div>
 
     <div id="fade" class="hide"></div>
-    <div class="form-container form-add" id="modalAdd">
+    <div class="form-add" id="modalAdd">
           <form class='register' action='ListaDeUsuarios/criar' method='POST'>
               <div class='form-container' >
                 <span class="material-icons-sharp close">close</span>
@@ -113,6 +113,7 @@
               </div>
                 <input type='file' name="photo" class='form-icon'>
                 <span class="material-icons-sharp check">done</span>
+                <button class="cfn-btn">POSTAR</button>
               </div>
           </form>
       </div>

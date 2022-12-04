@@ -42,6 +42,7 @@ class UserController extends Controller
         $parameters = [
             'name' => $_POST['name'],
             'email' => $_POST['email'],
+            'phone' => $_POST['phone'],
             'password' => $_POST['password'],
         ];
 
