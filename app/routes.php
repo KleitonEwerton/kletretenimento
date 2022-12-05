@@ -13,7 +13,7 @@ $router->get('ListaDeUsuarios/deletar', 'UserController@delete');
 
 $router->get('ListaDeUsuarios/index', 'UserController@index');
 
-$router->get('ListaDeUsuarios/editar', 'UserController@edit');
+$router->post('ListaDeUsuarios/editar', 'UserController@edit');
 
 $router->get('ListaDeUsuarios/atualizar', 'UserController@update');
 

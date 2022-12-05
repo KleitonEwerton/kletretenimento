@@ -1,5 +1,5 @@
 const fade = document.getElementById("fade");
-const btn = document.getElementsByClassName("add");
+const btn = document.getElementsByClassName("btn");
 
 const modalBtns = [...btn].filter((el)=>{
     return el.dataset.modal != null;

@@ -21,13 +21,12 @@
     <h1>EDITAR USUÁRIOS</h1>
     <div class="serch-bar">
       <ul class="serch-itens">
-          <span class="material-icons-sharp add" data-modal="modalAdd">add</span>
+          <span class="material-icons-sharp btn" data-modal="modalAdd">add</span>
         <li><a href="#"><input type="text" placeholder="Pesquisar"></a></li>
       </ul>
   </div>
     
   <div class="table-container">
-    <?php foreach ($users as $user): ?>
       <table class="table table-dark table-hover tabela">
         <thead>
           <tr>
@@ -38,6 +37,7 @@
           </tr>
         </thead>
         <tbody>
+          <?php foreach ($users as $user): ?>
           <tr class ="table-itens">
             <th scope="row"><?= $user->id ?></th>
             <buttom></buttom>
@@ -48,29 +48,10 @@
               <a href="#"><i class="bi bi-trash-fill btn"></i></a>
             </td>
           </tr>
-          <div class='form form-add'>
-              <form class='register' action='ListaDeUsuarios/criar' method='POST'>
-                  <div class='form-container' id="modalAdd">
-                      <span class="material-icons-sharp close">close</span>
-                      <span class=form-title><b>Cadastrar</b></span>
-                      <p><input type='text' required class='form-name' name='name' placeholder="Nome"></p>
-                      <p><input type='text' required class='form-email' name='email' placeholder="E-mail"></p>
-                      <p><input type='text' required class='form-phone' name='phone' placeholder="Telefone"></p>
-                      <p><input type='password' required class='form-senha' name='password' placeholder="Senha"></p>
-                      <div>
-                          <label>
-                              <input type='checkbox' class='form-admin' name='admin'>
-                              Administrador</label>
-                      </div>
-                      <input type='file' name="photo" class='form-icon'>
-                      <span class="material-icons-sharp check">done</span>
-                  </div>
-              </form>
-          </div>
+          <?php endforeach;?>
         </tbody>
       </table>
-    </table>
-    <?php endforeach;?>
+    
   </div>
   </div>
 
@@ -89,17 +70,6 @@
           </form>
       </div>
 
-    <div id="modalEdit" style="display: none;" class="hide">  
-    <div class="form-container">
-      <div class="modal-head">
-        <h1 class="title">EDITAR USUÁRIO</h1>
-      </div>
-      <input type='file' name="photo" class='form-icon'>
-      <span class="material-icons-sharp check">done</span>
-    </div>
-  </form>
-</div>
-
 <div class="form form-delet">
     <form class="delet">
         <div class='form-container'>
@@ -109,27 +79,16 @@
         <input type="button" class='cancel-delet' name='cancelar'>
     </form>
 </div>
+</div>
 
-<div class='form form-edit'>
-  <form class='edit'>
-    <div class='form-container'>
+<div class='form-edit' id="modalEdit">
+  <form class='edit' action="ListaDeUsuarios/editar" method="POST">
+    <div class='form-container' >
       <span class="material-icons-sharp close">close</span>
       <span class=form-title>Editar</span>
-      <input type='hidden' class='form-id' name='id'>
       <input type='text' required class='form-name' name='name' placeholder="Nome">
-
-
-
-        <input type='text' required class='form-email' name='email' placeholder="E-mail">
+      <input type='text' required class='form-email' name='email' placeholder="E-mail">
       <input type='text' required class='form-phone' name='phone' placeholder="Telefone">
-      <div>
-        <label>
-          <input type='checkbox' class='form-admin' name='admin'>
-          Administrador</label>
-      </div>
-      <input type='file' name="photo" class='form-icon'>
-      <span class="material-icons-sharp check">done</span>
-    </div>
     <button id="confirm-btn" class="cfn-btn">SALVAR</button>
   </form>
 </div>
