@@ -15,7 +15,7 @@ $router->get('ListaDeUsuarios/index', 'UserController@index');
 
 $router->post('ListaDeUsuarios/editar', 'UserController@edit');
 
-$router->get('ListaDeUsuarios/atualizar', 'UserController@update');
+$router->post('ListaDeUsuarios/atualizar', 'UserController@update');
 
 $router->get('landinPage', 'LandingController@view');
 

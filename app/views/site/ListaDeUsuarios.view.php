@@ -82,7 +82,7 @@
 </div>
 
 <div class='form-edit' id="modalEdit">
-  <form class='edit' action="ListaDeUsuarios/editar" method="POST">
+  <form class='edit' action="ListaDeUsuarios/atualizar" method="POST">
     <div class='form-container' >
       <span class="material-icons-sharp close">close</span>
       <span class=form-title>Editar</span>
