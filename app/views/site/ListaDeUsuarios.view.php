@@ -44,7 +44,7 @@
             <td><?= $user->name ?></td>
             <td><?= $user->email ?></td>
             <td class="icons">
-              <a href="#"><i class="bi bi-pencil-square btn" id="edit" data-modal="modalEdit"></i></a>
+              <a href="#"><i class="bi bi-pencil-square btn modalclick" data-id=<?= $User->id ?> id="edit" data-modal="modalEdit"></i></a>
               <a href="#"><i class="bi bi-trash-fill btn"></i></a>
             </td>
           </tr>
@@ -98,6 +98,16 @@
     </div>
     </div>
 </div>
+
+<script>
+    $(function() {
+      $(".modalclick").click(function() {
+          //$(this).attr("data-id");
+          $('#updateid').val($(this).attr("data-id")); 
+          console.log( $('#updateid').val());
+      });
+    })
+  </script>
 
 
     <?php include __DIR__ .'/../includes/footer.php' ?>
