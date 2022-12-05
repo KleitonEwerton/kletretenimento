@@ -87,6 +87,7 @@
       <span class="material-icons-sharp close">close</span>
       <span class=form-title>Editar</span>
       <p><input type='text' required class='form-name' name='name' placeholder="Nome"></p>
+      <input type="hidden" name='id' id='updateid'>
       <p><input type='text' required class='form-email' name='email' placeholder="E-mail"></p>
       <p><input type='text' required class='form-phone' name='phone' placeholder="Telefone"></p>
       <p><input type='password' required class='form-senha' name='password' placeholder="Senha"></p>
@@ -99,15 +100,7 @@
     </div>
 </div>
 
-<script>
-    $(function() {
-      $(".modalclick").click(function() {
-          //$(this).attr("data-id");
-          $('#updateid').val($(this).attr("data-id")); 
-          console.log( $('#updateid').val());
-      });
-    })
-  </script>
+
 
 
     <?php include __DIR__ .'/../includes/footer.php' ?>
@@ -116,5 +109,16 @@
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+    <script>
+    $(function() {
+      $(".modalclick").click(function() {
+          //$(this).attr("data-id");
+          $('#updateid').val($(this).attr("data-id")); 
+          console.log( $('#updateid').val());
+      });
+    })
+  </script>
+  
 </body>
 </html>
