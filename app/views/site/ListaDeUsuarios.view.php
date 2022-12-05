@@ -86,9 +86,10 @@
     <div class='form-container' >
       <span class="material-icons-sharp close">close</span>
       <span class=form-title>Editar</span>
-      <input type='text' required class='form-name' name='name' placeholder="Nome">
-      <input type='text' required class='form-email' name='email' placeholder="E-mail">
-      <input type='text' required class='form-phone' name='phone' placeholder="Telefone">
+      <p><input type='text' required class='form-name' name='name' placeholder="Nome"></p>
+      <p><input type='text' required class='form-email' name='email' placeholder="E-mail"></p>
+      <p><input type='text' required class='form-phone' name='phone' placeholder="Telefone"></p>
+      <p><input type='password' required class='form-senha' name='password' placeholder="Senha"></p>
     <button id="confirm-btn" class="cfn-btn">SALVAR</button>
   </form>
 </div>

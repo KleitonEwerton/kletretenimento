@@ -20,22 +20,6 @@ class UserController extends Controller
         return view('/site/ListaDeUsuarios', compact('users'));
     }
 
-    //retorna pagina principal
-    public function index()
-    {
-        $users = App\Models\User::all();
-        return view('/site/ListaDeUsuarios', compact('users'));
-    }
-
-    //retorna pagina individual de um elemento
-    public function show()
-    {
-       $id = $_POST['id'];
-       $userId = app\Models\User::find($id);
-
-       return view('/site/ListaDePosts', compact($userId));
-    }
-
     // valida e armazena os dados preenchidos no front e redireciona para alguma rota caso tudo esteja ok, caso contrario redireciona para a pagina anterior com alguma mensagem de erro
     public function create()
     {
@@ -68,9 +52,10 @@ class UserController extends Controller
         $id = $_POST['id'];
         $user = User::find($id);
         $user->update([
-            'name' => $_POST['name'],
-            'email' => $_POST['email'],
-            'password' => $_POST['password']
+            'name'=>$_POST['name'],
+            'email'=>$_POST['email'],
+            'phone'=>$_POST['phone'],
+            'password'=>$_POST['password']
         ]);
 
         return redirect('ListaDeUsuarios');

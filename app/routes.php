@@ -11,8 +11,6 @@ $router->post('ListaDeUsuarios/criar', 'UserController@create');
 
 $router->get('ListaDeUsuarios/deletar', 'UserController@delete');
 
-$router->get('ListaDeUsuarios/index', 'UserController@index');
-
 $router->post('ListaDeUsuarios/editar', 'UserController@edit');
 
 $router->post('ListaDeUsuarios/atualizar', 'UserController@update');
