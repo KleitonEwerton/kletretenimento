@@ -7,7 +7,7 @@ body{
     padding: 0;
 }
 
-header{
+.navbar-body{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -19,7 +19,7 @@ header{
     animation-duration: 0.5s;
 }
 
-.logo{
+.nav-logo{
     width: 100px;
     height: 100px;
     cursor: pointer;
@@ -28,7 +28,7 @@ header{
     animation-duration: 0.5s;
 }
 
-.logo:hover{
+.nav-logo:hover{
     transition: all 0.5s ease 0s;
     transform: scale(0.8);
     transform: all 0.2s;
@@ -116,7 +116,7 @@ li, a{
     display: none;
 }
 
-.logo{
+.nav-logo{
     width: 12%;
     height: 12%;
 }

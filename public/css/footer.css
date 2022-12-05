@@ -13,8 +13,9 @@ footer{
     align-items: center;
     justify-content: center;
     text-align: center;
-    position: absolute;
+    position: inherit;
     bottom: 0;
+    margin-top: 15px;
     width: 100%;
     background-color: #071217;
 
@@ -37,7 +38,7 @@ footer{
     animation-duration: 0.5s;
 }
 
-p{
+.footer-text{
     font-family: "Montserrat", sans-serif;
     color: #348771;
     font-size: 17px;

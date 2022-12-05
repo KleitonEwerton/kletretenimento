@@ -260,6 +260,7 @@
     font-family: 'Montserrat', sans-serif;
     font-size: 15px;
     transition: 0.5s;
+    margin-top: 10px;
 }
 
 .cfn-btn:hover{

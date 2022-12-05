@@ -1,7 +1,8 @@
 <?php
 
 namespace App\Controllers;
-class HomeController extends Controller
+
+class LandingController extends Controller
 {
     public function __construct()
     {
@@ -13,14 +14,12 @@ class HomeController extends Controller
     }
 
     public function view(){
-        return view('site/ListaDeUsuarios');
-    }
-    
-    public function index()
-    {
-        return view('/site/listaposts');
+        return view('site/landinPage');
     }
 
+
+    public function viewPVU(){
+        return view('site/post-visualizacao');
+    }
+   
 }
-
-

@@ -12,7 +12,7 @@
     <footer>
         <div class="ft-cnt">
             <img class="Ft-lg" src="../../../public/assets/logo3-sem-fundo.png">
-            <p>Blog desenvolvido durante periodo trainee 2022.2 da Code Empresa Jr. de Computação</p>
+            <p class="footer-text">Blog desenvolvido durante periodo trainee 2022.2 da Code Empresa Jr. de Computação</p>
             <ul class="ft-itens">
                 <li><a href="https://www.facebook.com/codeempresajunior"><i class="fa-brands fa-square-facebook"></i></a></li>
                 <li><a href="https://www.instagram.com/codejr/"><i class="fa-brands fa-instagram"></i></a></li>
