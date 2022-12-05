@@ -219,10 +219,9 @@
 .form-input:focus{
     box-shadow: 0.5rem 0.5rem #209b7c;
 }
-
 .img-btn{
     display: none;
-}
+} 
 
 .img-selector{
     padding: 20px 10px;

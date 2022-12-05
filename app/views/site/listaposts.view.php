@@ -32,7 +32,6 @@
             <th scope="col">Titulo</th>
             <th scope="col">Usuario</th>
             <th scope="col">texto do Post</th>
-            <th scope="col">Imagem</th>
             <th scope="col">Opções</th>
           </tr>
         </thead>
@@ -43,7 +42,6 @@
               <th><?= $post->tituloDopost ?></th>
               <td><a><?= $post->usuario ?></a></td>
               <td><?= $post->textoPost ?></td>
-              <td><?= $post->imagem ?></td>
 
               <td class="icons">
                 <a href="#"><i class="bi bi-trash-fill btn" id="add-btn" aria-hidden="true" data-modal="modalDelete-<?=$post->id?>"></i></a>
@@ -71,7 +69,7 @@
                 <p class=" form showtitiluDopost show"><?=$post->tituloDopost?></p>
                 <label for="imagem">IMAGEM.</label>
                 <div class="testes-imagem">
-                <img height="100" src="../public/assets/<?=$post->imagem?>" alt="imagem-post">
+                <img height="100" src="../public/assets/<?=$post->imagem?>" alt="IMAGEM NÃO ADICIONADA!!!">
               </div>
                 <br>
                 <label for="post">TEXTO DO POST</label>
@@ -92,7 +90,6 @@
           <form action="listaposts/deletar" method="POST">
           <input type="hidden" value="<?=$post->id?>" name="id">
           <button type="submit" class="cfn-btn" >Sim</button>
-          <button type="button" class="cfn-btn fechar">Cancelar</button>
         </form>
            </div>
            </div>
@@ -114,16 +111,16 @@
       <div class="modal-itens">
         <form class="add-form" action="listaposts/criar" method="POST">
           <label for="Usuário">USUÁRIO.</label>
-          <input type="text" id="Usuário" name='usuario' class="form-input">
+          <input type="text" id="Usuário" name='usuario' placeholder="nome" class="form-input">
 
           <label for="Titulo">TITULO DO POST.</label>
-          <input type="text" id="Titulo" name='tituloDopost' class="form-input">
+          <input type="text" id="Titulo" name='tituloDopost' placeholder="escreva aqui"class="form-input">
 
           <label for="input-image" class="img-selector">IMAGEM</label>
           <input id="input-image" class="img-btn" type="file" onchange="readURL(this)" name='imagem' accept="image/*">
           <br>
           <label for="post">ESCREVA O POST AQUI!</label>
-          <textarea type="text" id="post" rows="8" cols="30" name='textoPost' class="form-input"></textarea>
+          <textarea type="text" id="post" rows="8" cols="30" name='textoPost' placeholder="escreva aqui" class="form-input"></textarea>
 
           <button id="confirm-btn" class="cfn-btn">POSTAR</button>
         </form>
@@ -140,18 +137,17 @@
       <div class="modal-itens">
         <form class="add-form" action="listaposts/update" method="POST">
           <label for="Usuário">USUÁRIO.</label>
-          <input type="text" id="Usuário" name='usuario' class="form-input">
+          <input type="text" id="Usuário" name='usuario'placeholder="nome" value="<?=$post->usuario?>"  class="form-input">
           <input type="hidden" name='id' id='updateid'>    
            
-          
           <label for="Titulo">TITULO DO POST.</label>
-          <input type="text" id="Titulo" name='tituloDopost' class="form-input">
+          <input type="text" id="Titulo" name='tituloDopost' placeholder="escreva aqui" value="<?=$post->tituloDopost?>" class="form-input">
 
-          <label for="input-image" class="img-selector">IMAGEM</label>
-          <div id="input-image" class="img-btn" type="file" onchange="readURL(this)" name='imagem' accept="image/*"></div>
+          <label for="input-image-edit" class="img-selector">IMAGEM</label>
+          <input id="input-image-edit" class="img-btn" type="file" onchange="readURL(this)" name='imagem'>
           <br>
           <label for="post">REESCREVA O POST AQUI!</label>
-          <textarea type="text" id="post" rows="8" cols="30" name='textoPost' class="form-input"></textarea>
+          <textarea type="text" id="post" rows="8" cols="30" name='textoPost' placeholder="escreva aqui" class="form-input"></textarea>
 
           <button id="confirm-btn" class="cfn-btn">REPOSTAR</button>
         </form>
