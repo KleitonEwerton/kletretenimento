@@ -44,7 +44,7 @@
             <td><?= $user->name ?></td>
             <td><?= $user->email ?></td>
             <td class="icons">
-              <a href="#"><i class="bi bi-pencil-square btn modalclick" data-id=<?= $User->id ?> id="edit" data-modal="modalEdit"></i></a>
+              <a href="#"><i class="bi bi-pencil-square btn modalclick" data-id=<?= $User->id ?> name="id" id="edit" data-modal="modalEdit"></i></a>
               <a href="#"><i class="bi bi-trash-fill btn"></i></a>
             </td>
           </tr>
