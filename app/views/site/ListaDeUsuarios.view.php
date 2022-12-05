@@ -20,7 +20,7 @@
 
   <div class="lista-posts">
     <img class="logo" src="../../../public/assets/logo.png">
-    <h1>EDITAR USUÁRIOS</h1>
+    <h1>GERENCIAMENTO DE USUÁRIOS</h1>
     <div class="serch-bar">
       <ul class="serch-itens">
         <span class="material-icons-sharp btn" data-modal="modalAdd">add</span>
@@ -46,34 +46,46 @@
               <td><?= $user->name ?></td>
               <td><?= $user->email ?></td>
               <td class="icons">
-                <a href="#"><i class="bi bi-pencil-square btn modalclick" data-id=<?= $user->id ?> name="id" id="edit" data-modal="modalEdit"></i></a>
-                <a href="#"><i class="bi bi-trash-fill btn" data-id=<?= $user->id ?> data-modal="modalDel"></i></a>
+                <a href="#"><i class="bi bi-pencil-square btn modalclick" data-id=<?= $user->id ?> name="id" id="edit" data-modal="modalEdit-<?=$user->id?>"></i></a>
+                <a href="#"><i class="bi bi-trash-fill btn" data-id=<?= $user->id ?> name="id" data-modal="modalDel-<?=$user->id?>"></i></a>
+                <a href="#"><i class="bi bi-eye-fill btn" data-id=<?= $user->id ?> name="id" data-modal="modalView-<?=$user->id?>"></i></a>
               </td>
             </tr>
-            <div class="form form-delet" id="modalDel">
+            <div class="form form-delet" id="modalDel-<?=$user->id?>">
               <form class="delet" action="ListaDeUsuarios/deletar" method="POST">
                 <div class='form-container form-delete'>
                   <span class=form-title> DELETAR </span>
                   <p class="delete-text">Tem certeza? tal ação não podera ser desfeita!</p>
                   <input type="hidden" name='id' value="<?= $user->id ?>">
                   <div class="delete-btns">
-                    <button type="button" class='cfn-btn' name='deletar'>CONFIRMAR</button>
-                    <button type="button" class='cfn-btn' name='cancelar'>CANCELAR</button>
+                    <button class="cfn-btn" type="input" name="deletar">CONFIRMAR</button>
                   </div>
                 </div>
               </form>
             </div>
 
-            <div class='form-edit' id="modalEdit">
+            <div class='form-edit' id="modalEdit-<?=$user->id?>">
               <form class='edit' action="ListaDeUsuarios/atualizar" method="POST">
                 <div class='form-container'>
-                  <span class=form-title>Editar</span>
+                  <span class="form-title">Editar</span>
                   <p><input type='text' required class='form-name' name='name' placeholder="Nome" value="<?= $user->name ?>"></p>
                   <input type="hidden" name='id' value="<?= $user->id ?>">
                   <p><input type='text' required class='form-email' name='email' placeholder="Email" value="<?= $user->email ?>"></p>
                   <p><input type='text' required class='form-phone' name='phone' placeholder="Telefone" value="<?= $user->phone ?>"></p>
                   <p><input type='password' required class='form-senha' name='password' placeholder="Senha"></p>
                   <button id="confirm-btn" class="cfn-btn">SALVAR</button>
+                </div>
+              </form>
+            </div>
+
+            <div class="form-view" id="modalView-<?=$user->id?>">
+            <form class='view'>
+                <div class='form-container'>
+                  <span class="form-title">Visualizar</span>
+                  <p><input type='text' disabled class='form-name' value="<?= $user->name ?>"></p>
+                  <p><input type='text' disabled class='form-email' value="<?= $user->email ?>"></p>
+                  <p><input type='text' disabled class='form-phone' value="<?= $user->phone ?>"></p>
+                </div>
               </form>
             </div>
           <?php endforeach; ?>

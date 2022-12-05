@@ -191,6 +191,10 @@
     display:none;
 }
 
+.form-view{
+    display: none;
+}
+
 .form-container{
     color:#348771;
     justify-content: center;

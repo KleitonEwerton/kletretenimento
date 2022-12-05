@@ -64,9 +64,9 @@ class UserController extends Controller
     // deleta um elemento e redireciona para alguma rota
     public function delete()
     {
-        $id = $_POST['id'];
-        $userId = User::destroy($id);
-
+        $id = filter_input(INPUT_POST, 'id', FILTER_SANITIZE_NUMBER_INT);
+        App::get('database')->delete('users', $id);
+        
         return redirect('ListaDeUsuarios');
     }
     
