@@ -193,6 +193,7 @@
 
 .form-container{
     color:#348771;
+    justify-content: center;
     width: 100%;
     font-size: 15px;
     font-family: 'Montserrat', sans-serif;
@@ -200,6 +201,11 @@
 
 
 }
+
+.form-container input{
+    width: 100%;
+}
+
 .form-title{
     font-size: 30px;
 }
@@ -249,7 +255,7 @@
 
 .cfn-btn{
     padding: 20px 10px;
-    width: 100px;
+    width: fit-content;
     border: none;
     border-radius: 15px;
     background: #000;
@@ -331,6 +337,25 @@
     width: 100%;
     height: 100%;
     
+}
+
+.form-delete{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.delete-btns{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 30%;
+}
+
+.delete-text{
+    font-size: medium;
+    color: #209b7c;
+
 }
 
 @keyframes fade-movement{

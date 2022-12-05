@@ -9,7 +9,7 @@ $router->get('ListaDeUsuarios', 'UserController@view');
 
 $router->post('ListaDeUsuarios/criar', 'UserController@create');
 
-$router->get('ListaDeUsuarios/deletar', 'UserController@delete');
+$router->post('ListaDeUsuarios/deletar', 'UserController@delete');
 
 $router->post('ListaDeUsuarios/editar', 'UserController@edit');
 

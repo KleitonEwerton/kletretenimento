@@ -47,16 +47,19 @@
               <td><?= $user->email ?></td>
               <td class="icons">
                 <a href="#"><i class="bi bi-pencil-square btn modalclick" data-id=<?= $user->id ?> name="id" id="edit" data-modal="modalEdit"></i></a>
-                <a href="#"><i class="bi bi-trash-fill btn"></i></a>
+                <a href="#"><i class="bi bi-trash-fill btn" data-id=<?= $user->id ?> data-modal="modalDel"></i></a>
               </td>
             </tr>
-            <div class="form form-delet">
-              <form class="delet">
-                <div class='form-container'>
+            <div class="form form-delet" id="modalDel">
+              <form class="delet" action="ListaDeUsuarios/deletar" method="POST">
+                <div class='form-container form-delete'>
                   <span class=form-title> DELETAR </span>
-                  <span class="material-icons-sharp close">close</span>
-                  <input type="button" class='confirm-delet' name='deletar'>
-                  <input type="button" class='cancel-delet' name='cancelar'>
+                  <p class="delete-text">Tem certeza? tal ação não podera ser desfeita!</p>
+                  <input type="hidden" name='id' value="<?= $user->id ?>">
+                  <div class="delete-btns">
+                    <button type="button" class='cfn-btn' name='deletar'>CONFIRMAR</button>
+                    <button type="button" class='cfn-btn' name='cancelar'>CANCELAR</button>
+                  </div>
                 </div>
               </form>
             </div>
@@ -64,7 +67,6 @@
             <div class='form-edit' id="modalEdit">
               <form class='edit' action="ListaDeUsuarios/atualizar" method="POST">
                 <div class='form-container'>
-                  <span class="material-icons-sharp close">close</span>
                   <span class=form-title>Editar</span>
                   <p><input type='text' required class='form-name' name='name' placeholder="Nome" value="<?= $user->name ?>"></p>
                   <input type="hidden" name='id' value="<?= $user->id ?>">
@@ -85,7 +87,6 @@
   <div class="form-add" id="modalAdd">
     <form class='register' action='ListaDeUsuarios/criar' method='POST'>
       <div class='form-container'>
-        <span class="material-icons-sharp close">close</span>
         <span class=form-title><b>Cadastrar</b></span>
         <p><input type='text' required class='form-name' name='name' placeholder="Nome"></p>
         <p><input type='text' required class='form-email' name='email' placeholder="E-mail"></p>
