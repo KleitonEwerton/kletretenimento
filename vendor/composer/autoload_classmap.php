@@ -11,6 +11,7 @@ return array(
     'App\\Controllers\\HomeController' => $baseDir . '/app/Controllers/HomeController.php',
     'App\\Controllers\\LandingController' => $baseDir . '/app/Controllers/LandingController.php',
     'App\\Controllers\\ListapController' => $baseDir . '/app/Controllers/ListapController.php',
+    'App\\Controllers\\ListapostsController' => $baseDir . '/app/Controllers/ListapostsController.php',
     'App\\Controllers\\LoginController' => $baseDir . '/app/Controllers/LoginController.php',
     'App\\Controllers\\PVUController' => $baseDir . '/app/Controllers/PVUController.php',
     'App\\Controllers\\UserController' => $baseDir . '/app/Controllers/UserController.php',

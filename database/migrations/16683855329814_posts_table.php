@@ -12,6 +12,12 @@ class poststable
         Capsule::schema()->create("posts", function (Blueprint $table) {
             $table->increments("id");
             $table->timestamps();
+            $table->string("author");
+            $table->string("usuario");
+            $table->string("tituloDopost");
+            $table->string("imagem");
+            $table->string("textoPost");
+        
         });
     }
 

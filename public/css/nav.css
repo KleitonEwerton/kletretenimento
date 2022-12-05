@@ -61,7 +61,7 @@ body{
     transition: all 0.5s ease 0s;
 }
 
-button{
+.nav-button{
     padding: 10px 50px;
     background-color: #348771;
     color: #000;
@@ -71,14 +71,14 @@ button{
     transition: all 0.5s ease 0s;
 }
 
-button{
+.nav-button{
     color: #071217;
 
     animation-name: fade-movement;
     animation-duration: 0.5s;
 }
 
-button:hover{
+.nav-button:hover{
     transform: scale(0.9);
     transform: all 0.2s;
     transition: all 0.5s ease 0s;

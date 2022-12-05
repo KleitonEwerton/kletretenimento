@@ -219,10 +219,9 @@
 .form-input:focus{
     box-shadow: 0.5rem 0.5rem #209b7c;
 }
-
 .img-btn{
     display: none;
-}
+} 
 
 .img-selector{
     padding: 20px 10px;
@@ -250,6 +249,8 @@
 }
 
 .cfn-btn{
+    
+    
     padding: 20px 10px;
     width: 100px;
     border: none;
@@ -275,6 +276,10 @@
     opacity: 0;
     top: 0;
     pointer-events: none;
+}
+
+.button {
+    background-color: #348771;
 }
 
 @keyframes fade-movement{

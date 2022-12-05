@@ -5,6 +5,6 @@ namespace App\Controllers;
 class DashController extends Controller
 {
    public function view(){
-    return view('admin/index-dashbord');
+    return view('admin/dashboard');
    }
 }

@@ -20,14 +20,14 @@
              <li class="tl-btn" id="sidebar-btn"><a href="#">&#9776</a></li>
          </ul>
         </nav>
-        <a class="login-btn" href="#"><button>LOGIN</button></a>
+        <a class="login-btn" href="#"><nav-button>LOGIN</button></a>
     </header>
     <nav class="sidebar">
         <ul class="sb-itens">
             <li><a href="#">USUÁRIOS</a></li>
             <li><a href="#">POSTS</a></li>
             <li><a href="#">SOBRE NÓS</a></li>
-            <li><a class="login-btn sb-btn" href="#"><button>LOGIN</button></a></li>
+            <li><a class="login-btn sb-btn" href="#"><nav-button>LOGIN</button></a></li>
         </ul>
     </nav>
 </body>

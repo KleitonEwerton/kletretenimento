@@ -1,6 +1,7 @@
 const fade = document.getElementById("fade");
 const btn = document.getElementsByClassName("btn");
 const container = document.getElementsByClassName("struct-modal");
+const fechar = document.getElementsByClassName("fechar");
 
 const modalBtns = [...btn].filter((el)=>{
     return el.dataset.modal != null;
@@ -19,9 +20,8 @@ const toggleModal = (id) =>{
     }
 }
 
-[...modalBtns, fade].forEach((el)=>{
+[...modalBtns, fade, ...fechar].forEach((el)=>{
     el.addEventListener("click",()=>{
         toggleModal(el.dataset.modal);
     })
 })
-
