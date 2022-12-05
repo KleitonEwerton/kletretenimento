@@ -50,7 +50,6 @@ class UserController extends Controller
     {
         
         $id = $_POST['id'];
-        die(var_dump($id));
         $user = User::find($id);
         $user->update([
             'name'=>$_POST['name'],
