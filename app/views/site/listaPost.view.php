@@ -44,27 +44,16 @@
 
     </div>
     
-    <div class="linkesteste">  
+    <div class="links">
+    <?php foreach ($posts as $post) : ?>
         <a href="museudoamanha.html">
         <div class="primeira">
-          <img src="../../../public/assets/museudoamanhã.jpg" alt="museu do amanhã">
+          <img src="../public/assets/<?=$post->imagem?>" alt="<?= $post->name?>">
         </div>
     </a>
-        
-    <a href="SAL GASTRONOMIA.html">
-        <div class="primeira">
-            <img src="../../../public/assets/prato.jpg">
-        </div>
-    </a>
-        
-    <a href="cristoRedentor.html">
-        <div class="primeira">
-            <img src="../../../public/assets/cristo4.jpeg">
-             
+    <?php endforeach; ?>
     </div>
-    </a>
     
-    </div>
     <?php include __DIR__ .'/../includes/footer.php' ?>
 </body>
 </html>
