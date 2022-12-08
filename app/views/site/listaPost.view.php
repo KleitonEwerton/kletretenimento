@@ -45,7 +45,7 @@ use app\Controllers\testeController;
         <?php foreach ($posts as $post) : ?>
 
             <!-- link pagina-visializaçao unica -->
-            <a href='#'>
+            <a href='./app/views/site/post-visualizacao.view.php'>
                 <div class="primeira">
                     <img src="../public/assets/<?= $post->imagem ?>" alt="<?= $post->tituloDopost ?>">
                 </div>
