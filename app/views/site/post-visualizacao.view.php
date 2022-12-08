@@ -33,7 +33,6 @@
                 no processo judicial do qual virou alvo 
                 por ter desistido da compra.</p>
             
-            <h2>MAIN</h2>
             
             <p>O bilionário Elon Musk voltou atrás e aceitou comprar o Twitter por cerca US$ 44 bilhões (R$ 230 bilhões), o preço original da negociação, reportaram nesta terça-feira (4) os jornais Bloomberg e Washington Post.
                 O empresário e a rede social ainda não se pronunciaram. A reportagem dos jornais foi baseada em fontes que estariam acompanhando a negociação de perto.
@@ -41,17 +40,7 @@
                 O processo judicial começou em julho, depois que ele anunciou que sairia da negociação. Na ocasião, Musk afirmou que deixaria o acordo porque não tinha sido informado corretamente sobre a quantidade de contas falsas e de spam na plataforma.
                 O Twitter, por sua vez, diz que seguiu o que estava previsto e que o empresário foi quem descumpriu a negociação. Por isso, a empresa entrou na Justiça contra Musk.</p>
 
-            <h2>Listagem</h2>
-
-            <ol>
-                <li> Primeiro opção!!</li>
-                <li> Segunda opção!!</li>
-                <li> Terceira opção!!</li>
-                
-
-            </ol>
-        
-            <h2>Conclusão</h2>
+            
             <p>O objetivo da sala é usar a tecnologia como ferramenta e o futebol 
             como linguagem, mesclando conteúdos de Matemática, Língua Portuguesa, Ciências, 
             História e Geografia, para alunos do 1° ao 5° ano do ensino fundamental.

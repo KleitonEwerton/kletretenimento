@@ -22,7 +22,7 @@
         </nav>
         <a class="login-btn" href="#"><button class="nav-button">LOGIN</button></a>
     </header>
-    <nav class="sidebar">
+    <nav class="nav-sidebar">
         <ul class="sb-itens">
             <li><a href="#">USUÁRIOS</a></li>
             <li><a href="#">POSTS</a></li>
