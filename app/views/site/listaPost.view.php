@@ -17,7 +17,6 @@ use app\Controllers\testeController;
 
 <body>
     <?php include __DIR__ . '/../includes/navbar.php' ?>
-
     <div class="search-box">
         <input type="text" class="search-txt" list="pesquisa-salva" placeholder="Pesquisar">
         <a href="#" class="search-btn">
@@ -25,25 +24,19 @@ use app\Controllers\testeController;
 
         </a>
 
-
     </div>
+
     <div class="salva">
         <datalist id="pesquisa-salva">
-
-            <option value="Cinema"></option>
-            <option value="Teatro"></option>
-            <option value="Restaurante"></option>
-            <option value="Ponto turistico"></option>
-            <option value="Praia"></option>
-
+            <?php foreach ($posts as $post) : ?>
+                <option value="<?= $post->tituloDopost ?>"></option>
+            <?php endforeach; ?>
         </datalist>
-
     </div>
 
     <div class="logo">
 
         <img src="../../../public/assets/logo3-sem-fundo.png" alt="logo" height="20" width="20">
-
 
     </div>
 
@@ -62,10 +55,8 @@ use app\Controllers\testeController;
         <div class="modifica">
             <?php require './app/views/includes/pagination.php' ?>
         </div>
-    
+
     </div>
-
-
     <?php include __DIR__ . '/../includes/footer.php' ?>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
