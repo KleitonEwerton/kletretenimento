@@ -5,6 +5,33 @@ namespace App\Controllers;
 class ListapController extends Controller
 {
     public function view(){
-        return view('site/listaPost');
+      
+      $page = 1;
+        
+    //  if(isset($_GET['pagina']) && !empty($_GET['pagina'])) {
+    //    $page = intval($_GET['pagina']);
+
+    //    if($page <= 0){
+    //     return redirect('listaPost');
+    //    }
+    //  }
+      
+      // $itens_per_page = 10;
+      // $start_limit = $itens_per_page * $page - $itens_per_page;
+      // $rows_count = App::get('database')->countAll('posts');
+
+      // if($start_limit > $rows_count){
+      //   return redirect('listaPost');
+      // }
+
+         $total_pages = 5;
+
+      //   $total_pages = ceil( $rows_count / $itens_per_page);
+        //$posts = App::get('database')->selectAll('posts', $start_limit, $itens_per_page);
+      
+      
+        return view('site/listaPost',compact("page","total_pages"));
+
+         // return view('site/listaPost');
     }
 }

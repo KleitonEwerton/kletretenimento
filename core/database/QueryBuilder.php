@@ -12,9 +12,15 @@ class QueryBuilder
     {
         $this->pdo = $pdo;
     }
-public function selectAll($table){
+public function selectAll($table, $start_limit = null, $row_amout = null){
 
       $sql = "SELECT * FROM {$table}";
+
+if($start_limit >= 0 && $row_amout > 0){
+    $sql .= " LIMIT {$start_limit}, {$row_amount}";
+
+
+}
 
       try {
         $stnt = $this->pdo->prepare($sql);
@@ -98,5 +104,21 @@ public function logar($nome, $senha)
         }
     }
 
+public function countAll($table){
+
+  $sql = "SELECT COUNT(*) FROM {$table}";
+  
+  try {
+    $statement = $this->pdo->prepare($sql);
+
+    $statement->execute();
+
+    return inval($statement->fetch(PDO::FETCH_NUM)[0]);
+
+  }catch(Exception $e){
+    die("An error occurred when trying to count from database:{$e->getMessage()}");
+  }
+
+}
 
 }

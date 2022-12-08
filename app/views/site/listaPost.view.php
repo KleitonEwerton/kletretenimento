@@ -14,7 +14,6 @@
 <body>
     <?php include __DIR__ .'/../includes/navbar.php' ?>
     
-   
     <div class="search-box">
         <input type="text" class="search-txt" list="pesquisa-salva" placeholder="Pesquisar">
         <a href="#" class="search-btn">
@@ -36,8 +35,8 @@
     </datalist>
     
 </div>
-    
-    <div class="logo">
+
+<div class="logo">
 
         <img src="../../../public/assets/logo3-sem-fundo.png" alt="logo" height="20" width="20">
         
@@ -45,26 +44,28 @@
     </div>
     
     <div class="linkesteste">  
-        <a href="museudoamanha.html">
+        <a href='./app/views/site/sitefakes/museudoamanha.html'>
         <div class="primeira">
           <img src="../../../public/assets/museudoamanhã.jpg" alt="museu do amanhã">
         </div>
     </a>
         
-    <a href="SAL GASTRONOMIA.html">
+    <a href="./app/views/site/sitefakes/SAL GASTRONOMIA.html">
         <div class="primeira">
             <img src="../../../public/assets/prato.jpg">
         </div>
     </a>
         
-    <a href="cristoRedentor.html">
+    <a href="./app/views/site/sitefakes/cristoRedentor.html">
         <div class="primeira">
             <img src="../../../public/assets/cristo4.jpeg">
              
     </div>
     </a>
     
-    </div>
+   <?php require './app/views/includes/pagination.php' ?>
+</div>
     <?php include __DIR__ .'/../includes/footer.php' ?>
+
 </body>
 </html>
