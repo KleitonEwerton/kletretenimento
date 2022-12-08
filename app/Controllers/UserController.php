@@ -1,6 +1,7 @@
 <?php
 
 namespace App\Controllers;
+
 use App\Models\User;
 use App\Core\App;
 
@@ -15,7 +16,8 @@ class UserController extends Controller
         }*/
     }
 
-    public function view(){
+    public function view()
+    {
         $users = User::all();
         return view('/site/ListaDeUsuarios', compact('users'));
     }
@@ -25,10 +27,10 @@ class UserController extends Controller
     {
         //Exemplo para o registro de um usuario
         $parameters = [
-            'name'=>$_POST['name'],
-            'email'=>$_POST['email'],
-            'phone'=>$_POST['phone'],
-            'password'=>$_POST['password'],
+            'name' => $_POST['name'],
+            'email' => $_POST['email'],
+            'phone' => $_POST['phone'],
+            'password' => $_POST['password'],
         ];
 
         App::get('database')->insert('users', $parameters);
@@ -48,14 +50,14 @@ class UserController extends Controller
     // valida e atualiza os dados preenchidos no front e redireciona para alguma rota caso tudo esteja ok, caso contrario redireciona para a pagina anterior com alguma mensagem de erro
     public function update()
     {
-        
+
         $id = $_POST['id'];
         $user = User::find($id);
         $user->update([
-            'name'=>$_POST['name'],
-            'email'=>$_POST['email'],
-            'phone'=>$_POST['phone'],
-            'password'=>$_POST['password']
+            'name' => $_POST['name'],
+            'email' => $_POST['email'],
+            'phone' => $_POST['phone'],
+            'password' => $_POST['password']
         ]);
 
         return redirect('ListaDeUsuarios');
@@ -66,8 +68,7 @@ class UserController extends Controller
     {
         $id = filter_input(INPUT_POST, 'id', FILTER_SANITIZE_NUMBER_INT);
         App::get('database')->delete('users', $id);
-        
+
         return redirect('ListaDeUsuarios');
     }
-    
 }

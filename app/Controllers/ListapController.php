@@ -3,6 +3,7 @@
 namespace App\Controllers;
 
 use App\Core\App;
+
 class ListapController extends Controller
 {
   public function view()
@@ -18,15 +19,13 @@ class ListapController extends Controller
       }
     }
 
-    $itens_per_page = 1;
+    $itens_per_page = 4;
     $start_limit = $itens_per_page * $page - $itens_per_page;
     $rows_count = App::get('database')->countAll('posts');
 
     if ($start_limit > $rows_count) {
       return redirect('listaPost');
     }
-
-    $total_pages = 5;
 
     $total_pages = ceil($rows_count / $itens_per_page);
     $posts = App::get('database')->selectAll('posts', $start_limit, $itens_per_page);
