@@ -111,10 +111,13 @@ body{
 .linkesteste  {
        text-align: center;
        margin-top: 600px;
-       display: flex;
-       justify-content: center;
-       align-items: center;
-       flex-direction: column;
+       padding-left: 600px;
+       padding-right: 600px;
+       display: grid;
+       grid-template-columns: repeat(3,1fr);
+      
+       justify-items: center;
+       flex-direction:column;
       
 }
 
@@ -143,4 +146,8 @@ body{
     height: 200px;
     border-radius: 20px;
 }
-
+.modifica{
+    position: absolute;
+    top: 99%;
+    left:47%;
+} 

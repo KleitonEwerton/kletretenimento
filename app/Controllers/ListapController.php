@@ -19,7 +19,7 @@ class ListapController extends Controller
       }
     }
 
-    $itens_per_page = 4;
+    $itens_per_page = 6;
     $start_limit = $itens_per_page * $page - $itens_per_page;
     $rows_count = App::get('database')->countAll('posts');
 

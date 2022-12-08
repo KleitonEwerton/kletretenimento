@@ -54,14 +54,18 @@ use app\Controllers\testeController;
             <!-- link pagina-visializaçao unica -->
             <a href='#'>
                 <div class="primeira">
-                    <img src="../public/assets/<?=$post->imagem?>" alt="<?=$post->tituloDopost ?>">
+                    <img src="../public/assets/<?= $post->imagem ?>" alt="<?= $post->tituloDopost ?>">
                 </div>
             </a>
 
         <?php endforeach; ?>
-
-        <?php require './app/views/includes/pagination.php' ?>
+        <div class="modifica">
+            <?php require './app/views/includes/pagination.php' ?>
+        </div>
+    
     </div>
+
+
     <?php include __DIR__ . '/../includes/footer.php' ?>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
