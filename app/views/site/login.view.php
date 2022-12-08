@@ -18,8 +18,8 @@
 				</div>
 				
 				<form method="POST" action="/login/logar">
-					<input type="text" name="nome" placeholder="Usuário" autofocus>
-					<input type="text" name="senha" placeholder="Senha" >
+					<input type="text" name="name" placeholder="Usuário" autofocus>
+					<input type="text" name="password" placeholder="password" >
 					<button type="submit"> entrar <button>
 				</form>
 				<p>Não possui uma conta?<a href="#">Criar conta</a></p>

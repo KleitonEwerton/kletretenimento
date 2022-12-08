@@ -13,11 +13,11 @@ class LoginController extends Controller
     public function entrar(){
         
 
-        $nome = filter_input(INPUT_POST, 'nome', FILTER_SANITIZE_STRING);
-        $senha =  filter_input(INPUT_POST, 'senha', FILTER_SANITIZE_SPECIAL_CHARS);
+        $name = filter_input(INPUT_POST, 'name', FILTER_SANITIZE_STRING);
+        $password =  filter_input(INPUT_POST, 'password', FILTER_SANITIZE_SPECIAL_CHARS);
         
         
-        $redirecionar = App::get('database') -> logar($nome, $senha);
+        $redirecionar = App::get('database') -> logar($name, $password);
 
         if(!empty($redirecionar)) {
             
