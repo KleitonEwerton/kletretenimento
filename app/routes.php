@@ -15,7 +15,7 @@ $router->post('ListaDeUsuarios/editar', 'UserController@edit');
 
 $router->post('ListaDeUsuarios/atualizar', 'UserController@update');
 
-$router->get('landinPage', 'LandingController@view');
+$router->get('landing-page', 'LandingController@view');
 
 $router->get('listaPost', 'ListapController@view');
 
@@ -38,3 +38,5 @@ $router->post('login/logar', 'LoginController@entrar');
 $router->get('post-visualizacao', 'PVUController@view');
 
 $router->get('dashboard', 'DashController@view');
+
+$router->get('', 'LandingController@view');
