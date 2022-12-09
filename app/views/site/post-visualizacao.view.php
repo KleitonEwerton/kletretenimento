@@ -22,6 +22,7 @@
 
         <div class="content">
             <?php foreach ($posts as $post) : ?>
+<<<<<<< HEAD
                 <h1><?= $post->tituloDopost ?></h1>
                 <img src="../../../public/assets/<?= $post->imagem ?>">
                 <figcaption><?= $post->tituloDopost ?></figcaption>
@@ -31,6 +32,23 @@
                 
             <?php endforeach; ?>
         </div>
+=======
+            <h1><?=$post->tituloDopost?></h1>
+            <img src="../../../public/assets/<?=$post->imagem?>">
+            <figcaption><?=$post->tituloDopost?></figcaption>
+            
+            <p><?=$post->textoPost?></p>
+            
+        
+            <?php endforeach; ?>
+        </div>
+
+        
+
+        <?php include __DIR__ .'/../includes/footer.php' ?>
+        </div>
+       
+>>>>>>> 8b0eec9e6c5ab5b266caae3d7e27d8aeb4e1dc84
 
         <?php include __DIR__ . '/../includes/footer.php' ?>
     </div>
