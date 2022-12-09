@@ -8,13 +8,10 @@ class PVUController extends Controller
 {
     public function view()
     {
-        
-        $posts = App::get('database')->selectAll('posts');
-        $tables = [
-            'posts' => $posts,
-        ];
-        
-        return view('site/post-visualizacao', $tables);
+        $id = $_GET['id'];
+        $post = Post::find($id);
+
+        return view('site/post-visualizacao', ['post'=>$post]);
     }
 
 }

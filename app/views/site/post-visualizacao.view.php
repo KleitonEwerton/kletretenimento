@@ -21,7 +21,8 @@
 
 
         <div class="content">
-            <?php foreach ($posts as $post) : ?>
+            
+
                 <h1><?= $post->tituloDopost ?></h1>
                 <img src="../../../public/assets/<?= $post->imagem ?>">
                 <figcaption><?= $post->tituloDopost ?></figcaption>
@@ -29,7 +30,6 @@
                 <p><?= $post->textoPost ?></p>
 
                 
-            <?php endforeach; ?>
         </div>
 
         <?php include __DIR__ . '/../includes/footer.php' ?>
