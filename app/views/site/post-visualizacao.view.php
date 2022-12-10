@@ -18,21 +18,13 @@
             </div>
         </div>
 
-
-
         <div class="content">
 
+            <h1><?= $post->tituloDopost ?></h1>
+            <img src="../../../public/assets/<?= $post->imagem ?>">
+            <figcaption><?= $post->tituloDopost ?></figcaption>
 
-            
-
-
-                <h1><?= $post->tituloDopost ?></h1>
-                <img src="../../../public/assets/<?= $post->imagem ?>">
-                <figcaption><?= $post->tituloDopost ?></figcaption>
-
-                <p><?= $post->textoPost ?></p>
-
-                
+            <p><?= $post->textoPost ?></p>
 
         </div>
 
