@@ -1,6 +1,9 @@
 <?php
 
 namespace App\Controllers;
+use App\Core\App;
+
+use App\Models\Post;
 
 class LandingController extends Controller
 {
@@ -14,12 +17,13 @@ class LandingController extends Controller
     }
 
     public function view(){
-        return view('site/landinPage');
-    }
-
-
-    public function viewPVU(){
-        return view('site/post-visualizacao');
+        $posts = App::get('database')->selectAll('posts');
+        $tables = [
+            'posts' => $posts,
+        ];
+        
+        return view('site/landinPage', $tables);
     }
    
+
 }

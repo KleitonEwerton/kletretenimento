@@ -28,7 +28,7 @@
                 <div class="box">
                     <div class="card">
                         <i class="bi bi-people-fill"></i>
-                        <a class="button" href="#">Gerenciar Usuarios</a>
+                        <a class="button" href="ListaDeUsuarios">Gerenciar Usuarios</a>
                     </div>
                 </div>
             </div>
@@ -36,7 +36,7 @@
                 <div class="box">
                     <div class="card">
                         <i class="bi bi-sticky-fill"></i>
-                        <a class="button" href="#">Gerenciar Posts</a></p>
+                        <a class="button" href="listaposts">Gerenciar Posts</a></p>
                     </div>
                 </div>
             </div>
