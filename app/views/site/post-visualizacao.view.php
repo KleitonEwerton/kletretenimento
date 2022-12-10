@@ -21,7 +21,10 @@
 
 
         <div class="content">
+
+
             
+
 
                 <h1><?= $post->tituloDopost ?></h1>
                 <img src="../../../public/assets/<?= $post->imagem ?>">
@@ -30,6 +33,7 @@
                 <p><?= $post->textoPost ?></p>
 
                 
+
         </div>
 
         <?php include __DIR__ . '/../includes/footer.php' ?>
