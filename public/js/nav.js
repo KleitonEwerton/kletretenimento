@@ -1,5 +1,5 @@
 let sbBtn = document.querySelector("#sidebar-btn");
-let sb = document.querySelector('.sidebar');
+let sb = document.querySelector('.nav-sidebar');
 
 sbBtn.addEventListener('click', () =>{
     if(sb.style.display == 'flex'){

@@ -13,7 +13,6 @@
 </head>
 
 <body class="body">
-  <?php include __DIR__ . '/../includes/navbar.php' ?>
   <?php include __DIR__ . '/../site/sidebar.php' ?>
 
   <div class="lista-posts">
