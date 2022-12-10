@@ -12,15 +12,13 @@ class userstable
     {
         Capsule::schema()->create("users", function (Blueprint $table) {
             $table->increments("id");
-            $table->string("nome");
+            $table->string("name");
             $table->string("email")->unique();
             $table->string("password");
             $table->string("phone");
             $table->enum("sexo", ["M", "F", "NB"])->nullable();
             $table->date("data_nascimento")->nullable();
-            $table->timestamps();
-            $table->string("senha");
-            
+            $table->timestamps();  
         });
     }
 

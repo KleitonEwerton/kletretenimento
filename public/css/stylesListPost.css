@@ -21,7 +21,7 @@ body{
     
 .search-box{
     position: absolute;
-    top: 60%;
+    top: 57%;
     left:50%;
     transform: translate(-50%,-50%);
     background: #00ff8052;
@@ -111,20 +111,20 @@ body{
 .linkesteste  {
        text-align: center;
        margin-top: 600px;
-       display: flex;
-       justify-content: center;
-       align-items: center;
-       flex-direction: column;
-      
-}
+       padding-left: 28.6%;
+       padding-right: 60%;
+       display: grid;
+       grid-template-columns: repeat(3,1fr);
+       justify-items: center;
+       flex-direction:column;
+    }
 
  .linkesteste a{
     color: #00ff8052;
     text-decoration: none;
     text-align: center;
-   
+    
 }
-
 .primeira{
     width: 300px;
     height: 200px;
@@ -144,4 +144,12 @@ body{
     height: 200px;
     border-radius: 20px;
 }
-
+.modifica{
+    text-align: center;
+    margin-top: 40px;
+    padding-left:48.6%;
+    padding-right: 60%;
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    justify-items: center;
+}
