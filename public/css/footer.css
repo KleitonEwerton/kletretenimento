@@ -75,7 +75,7 @@ footer{
     transition: all 0.5s ease 0s;
 }
 
-li, a{
+.ft-itens li, a{
     font-family: "Montserrat", sans-serif;
     color: #348771;
 }
@@ -98,7 +98,7 @@ li, a{
     font-size: 1rem;
 }
     
-.p{
+.footer-text{
     font-family: "Montserrat", sans-serif;
     color: #348771;
     font-size: 14px;
