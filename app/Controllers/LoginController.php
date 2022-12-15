@@ -16,7 +16,7 @@ class LoginController extends Controller
     {
 
 
-        $name = filter_input(INPUT_POST, 'name', FILTER_SANITIZE_STRING);
+        $name = filter_input(INPUT_POST, 'name');
         $password =  filter_input(INPUT_POST, 'password', FILTER_SANITIZE_SPECIAL_CHARS);
 
 
@@ -27,7 +27,6 @@ class LoginController extends Controller
             $_SESSION['id'] = 'ativo';
             return redirect('dashboard');
         } else {
-            echo "<script>alert('Usuario ou senha incorretos!');</script>";
             return view('site/login');
         }
     }
