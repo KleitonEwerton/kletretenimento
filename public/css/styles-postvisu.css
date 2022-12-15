@@ -29,9 +29,6 @@ body{
     right: 0;
     left: 0;
     max-width: 100%;
-   position: absolute;
-   right: 0;
-    
 }
 
 .logo h2{
@@ -53,7 +50,6 @@ body{
     text-align: left;
     padding-left: 20%;
     padding-top: 40px;
-    margin-top: 25px;
     width: 60%;
 
     
@@ -62,8 +58,8 @@ body{
 
 }
 
-.content h1{
-    font-size: 60px;
+.post-title{
+    font-size: 25px;
     color: #9AC3B8;
     
     
@@ -95,14 +91,31 @@ body{
 }
 
 figcaption{
-
+    font-size: 7px;
     color:#9AC3B8;
 }
 
 .content h2 {
     color:#266354;
 }
+@media (max-width:1000px){
+    .logo h2, .logo span{
+        font-size: 2.5rem;
+    }
 
+    .post-title{
+        font-size: 1.25rem;
+    }
+
+    .content img{
+        width: 100%;
+        height: 70%;
+    }
+
+    .content p{
+        font-size: 12px;
+    }
+}
 @media(min-width:800px) {
     
     .logo h2  {
