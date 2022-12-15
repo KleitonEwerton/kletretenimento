@@ -52,19 +52,16 @@
 
 .serch-itens input:focus {
     box-shadow: 0.5rem 0.5rem #209b7c;
-
-
 }
 
-.serch-itens span{
+.serch-itens i{
     color: #fff;
     text-decoration: none;
     list-style: none;
     font-size: 40px;
-    cursor: pointer;
 }
 
-.add:hover{
+.bi-plus:hover{
     transform: scale(0.9);
     transform: all 0.2s;
     transition: all 0.5s ease 0s;
@@ -435,9 +432,17 @@
         width: 100%;
         height: 10%;
     }
+
+    .serch-itens{
+        justify-content: space-between;
+    }
     
     .form-container{
         height: fit-content;
+    }
+
+    .lista-posts h1{
+        font-size: 20px;
     }
     
     }
@@ -455,6 +460,11 @@
         height: fit-content;
     }
     
+    .th-email{
+        word-wrap: break-word !important;
+        max-width: 2rem !important;
+    }
+
     .img-selector{
         width: 60%;
         height: 8%;

@@ -19,10 +19,10 @@
 
   <div class="lista-posts">
     <img class="logo" src="../../../public/assets/logo.png">
-    <h1>GERENCIAMENTO DE USUÁRIOS</h1>
+    <h1 class="title">GERENCIAMENTO DE USUÁRIOS</h1>
     <div class="serch-bar">
       <ul class="serch-itens">
-        <span class="material-icons-sharp btn" data-modal="modalAdd">add</span>
+        <li><a href="#"><i class="bi bi-plus btn" id="add-btn" data-modal="modalAdd"></i></a></li>
         <li><a href="#"><input type="text" placeholder="Pesquisar"></a></li>
       </ul>
     </div>
@@ -43,7 +43,7 @@
               <th scope="row"><?= $user->id ?></th>
               <buttom></buttom>
               <td><?= $user->name ?></td>
-              <td><?= $user->email ?></td>
+              <td style="word-wrap: break-word;" class="th-email"><?= $user->email ?></td>
               <td class="icons">
                 <a href="#"><i class="bi bi-pencil-square btn modalclick" data-id=<?= $user->id ?> name="id" id="edit" data-modal="modalEdit-<?=$user->id?>"></i></a>
                 <a href="#"><i class="bi bi-trash-fill btn" data-id=<?= $user->id ?> name="id" data-modal="modalDel-<?=$user->id?>"></i></a>
