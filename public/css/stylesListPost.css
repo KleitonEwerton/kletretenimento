@@ -110,13 +110,9 @@ body{
 
 .linkesteste  {
        text-align: center;
-       margin-top: 600px;
-       padding-left: 28.6%;
-       padding-right: 60%;
+       margin-top: 450px;
        display: grid;
-       grid-template-columns: repeat(3,1fr);
        justify-items: center;
-       flex-direction:column;
     }
 
  .linkesteste a{
@@ -146,10 +142,7 @@ body{
 }
 .modifica{
     text-align: center;
-    margin-top: 40px;
-    padding-left:48.6%;
-    padding-right: 60%;
+    margin-top: 50px;
     display: grid;
-    grid-template-columns: repeat(1,1fr);
     justify-items: center;
 }

@@ -18,7 +18,7 @@ class ListapController extends Controller
       }
     }
 
-    $itens_per_page = 6;
+    $itens_per_page = 4;
     $start_limit = $itens_per_page * $page - $itens_per_page;
 
     if (isset($_GET['search'])) {
