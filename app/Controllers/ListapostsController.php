@@ -45,7 +45,7 @@ public function edit()
 
  public function update(){
       $id = $_POST['id'];
-      //die(var_dump($_POST));
+    //   die(var_dump($_POST));
       $post = Post::find($id);
       $post->update([
        'usuario' =>$_POST['usuario'],
