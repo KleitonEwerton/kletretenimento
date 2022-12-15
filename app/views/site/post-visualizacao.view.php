@@ -20,8 +20,8 @@
 
         <div class="content">
 
-            <h1><?= $post->tituloDopost ?></h1>
-            <img src="../../../public/assets/<?= $post->imagem ?>">
+            <h1 class="post-title"><?= $post->tituloDopost ?></h1>
+            <img class="post-img" src="../../../public/assets/<?= $post->imagem ?>">
             <figcaption><?= $post->tituloDopost ?></figcaption>
 
             <p><?= $post->textoPost ?></p>
