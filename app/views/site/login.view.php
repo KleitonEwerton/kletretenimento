@@ -17,7 +17,7 @@
 					<img src="../../../public/assets/logo2-sem-fundo.png">
 				</div>
 				
-				<form method="POST" action="/login/logar">
+				<form method="POST" action="/login/entrar">
 					<input type="text" name="nome" placeholder="Usuário" autofocus>
 					<input type="text" name="senha" placeholder="Senha" >
 					<button type="submit"> entrar <button>

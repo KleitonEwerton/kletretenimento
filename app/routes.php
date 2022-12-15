@@ -40,3 +40,5 @@ $router->post('login/logar', 'LoginController@entrar');
 $router->get('post-visualizacao', 'PVUController@view');
 
 $router->get('dashboard', 'DashController@view');
+
+$router->get('login/deslogar', 'LoginController@deslogar');

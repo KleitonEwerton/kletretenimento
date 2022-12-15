@@ -16,9 +16,11 @@
   <body>
   <?php include __DIR__ .'/../site/sidebar.php' ?>
     
+    <form method="GET" action="/login/deslogar">
     <div class="buttomlog">
         <p> <a class="buttom" href="#"> Logout </a></p>
     </div>
+    </form>
     
     <div class="container container-main">
         <div class="title">

@@ -33,7 +33,13 @@ class LoginController extends Controller
     
     }
 
-   
+    public function deslogar()
+    {
+        session_start();
+        session_destroy();
+
+        return view('site/landinPage');
+    }
 
    
 
