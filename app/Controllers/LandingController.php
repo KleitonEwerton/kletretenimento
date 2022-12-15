@@ -17,7 +17,7 @@ class LandingController extends Controller
     }
 
     public function view(){
-        $posts = App::get('database')->selectAll('posts');
+        $posts = App::get('database')->selectAll('posts', 0, 3);
         $tables = [
             'posts' => $posts,
         ];
