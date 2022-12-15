@@ -48,7 +48,7 @@
                     $controle++;
                 ?>
                     <div class="<?= $classe ?>">
-                        <a href='post-visualizacao?id=<?= $post->id ?>'><img src="../../../public/assets/<?= $post->imagem ?>" alt="<?= $post->tituloDopost ?>"></a>
+                        <a href='post-visualizacao?id=<?= $post->id ?>'><img src="../../../public/assets/<?= $post->imagem ?>" alt="<?= $post->tituloDopost ?> class=" slider-img"></a>
                     </div>
                 <?php endforeach; ?>
 
@@ -63,17 +63,13 @@
 
 
 
-            <div class="manual-navegation">
-                <label for="radio1" class="manual-btn"></label>
-                <label for="radio2" class="manual-btn"></label>
-                <label for="radio3" class="manual-btn"></label>
-            </div>
+
 
         </div>
-        <div class="QS-container" id="QuemSomos">
+        <div class="QS-container" id="quemSomos">
             <div class="text-container">
                 <div class="titulo">
-                    <h4>Quem somos?</h4>
+                    <h5>QUEM SOMOS?</h5>
                 </div>
 
                 <div class="texto">
@@ -83,7 +79,7 @@
             </div>
             <div class="text-container">
                 <div class="titulo">
-                    <h5>O que fazemos?</h5>
+                    <h5>O QUE FAZEMOS?</h5>
                 </div>
 
                 <div class="texto">

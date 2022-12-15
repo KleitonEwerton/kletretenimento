@@ -90,10 +90,6 @@ li, a{
     color: #348771;
 }
 
-.nav-sidebar{
-    display: none;
-}
-
 .sb-itens li{
     display: none;
 }
@@ -117,8 +113,8 @@ li, a{
 }
 
 .nav-logo{
-    width: 12%;
-    height: 12%;
+    width: 20%;
+    height: 20%;
 }
 
 .login-btn{
@@ -129,7 +125,7 @@ li, a{
     display: block;
 }
 
-.sidebar{
+.nav-sidebar{
     display: none;
     flex-direction: column;
     position: absolute;
@@ -137,6 +133,7 @@ li, a{
     width: 60%;
     height: 80%;
     background-color: #071217;
+    z-index: 30;
 
     animation-name: sb-mvment;
     animation-duration: 0.5s;
