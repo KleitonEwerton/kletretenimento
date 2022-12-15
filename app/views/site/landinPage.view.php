@@ -71,23 +71,25 @@
 
         </div>
         <div class="QS-container" id="QuemSomos">
-            <div class="titulo">
-                <h4>Quem somos?</h4>
+            <div class="text-container">
+                <div class="titulo">
+                    <h4>Quem somos?</h4>
+                </div>
+
+                <div class="texto">
+                    <p>Somos um grupo de universitários da faculdade federal de Juiz de fora, criado com a finalidade de desenvolver um projeto, para o processo trainee da empresa júnior code.
+                    <p>
+                </div>
             </div>
+            <div class="text-container">
+                <div class="titulo">
+                    <h5>O que fazemos?</h5>
+                </div>
 
-            <div class="texto">
-                <p>Somos um grupo de universitários da faculdade federal de Juiz de fora, criado com a finalidade de desenvolver um projeto, para o processo treine da empresa júnior code.
-                <p>
-            </div>
-
-
-            <div class="titulo">
-                <h5>O que fazemos?</h5>
-            </div>
-
-            <div class="texto">
-                <p>Adiministramos e desenvolvemos esse blogue destinado a pessoas que procuram por algum programa para o fim de semana, damos esse espaço para que membros da comunidade possam anunciar eventos, festas ou qualquer outra categoria de evento que possa animar um pouco do seu dia, criamos essa página sem fins lucrativos, visando apenas ajudar as pessoas entediadas e sem planos para sair.
-                <p>
+                <div class="texto">
+                    <p>Adiministramos e desenvolvemos esse blogue destinado a pessoas que procuram por algum programa para o fim de semana, damos esse espaço para que membros da comunidade possam anunciar eventos, festas ou qualquer outra categoria de evento que possa animar um pouco do seu dia, criamos essa página sem fins lucrativos, visando apenas ajudar as pessoas entediadas e sem planos para sair.
+                    <p>
+                </div>
             </div>
         </div>
     </div>

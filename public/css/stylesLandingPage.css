@@ -56,26 +56,29 @@ body {
 
 
 h2 {
-    padding-left: 350px;
     animation-name:profile-imagem;
     animation-duration: 2s;
 
 }
 
-h3{
-    width: 500px;
-    text-align: center;
-    margin: fill;
+.itens-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
 }
 
 .QS-container{
     display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
+    flex-direction: row;
     align-items: center;
-    margin-top: 50px;
     width: 100%;
+}
 
+.text-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .texto{
@@ -92,17 +95,11 @@ h3{
 
 
 .titulo{
-    border:1px solid rgb(0, 0, 0);
-    box-shadow: 0 0 10px rgb(0, 178, 89);
-    background: rgba(0, 0, 0, 0.44);
     color: #ffffff;
-    text-align: center;
     width: 150px;
     font-size: 150%;
     animation-name:profile-imagem;
     animation-duration: 2s;
-    margin-top: -410px;
-    margin-left: 800px;
     height: 85px;
 
 }
