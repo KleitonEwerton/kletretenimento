@@ -106,8 +106,6 @@ body {
 .linkesteste {
   text-align: center;
   margin-top: 600px;
-  padding-left: 28.6%;
-  padding-right: 60%;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   justify-items: center;
