@@ -16,7 +16,7 @@
   <body>
     
     <div class="buttomlog">
-        <p> <a class="buttom" href="#"> Logout </a></p>
+        <p> <a class="buttom" href="login"> Logout </a></p>
     </div>
     
     <div class="container container-main">

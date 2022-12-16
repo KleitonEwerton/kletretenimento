@@ -102,7 +102,7 @@ class QueryBuilder
 
     public function search($tituloDoposts, $start_limit = null, $row_amout = null)
     {
-        $sql = "select * from posts where tituloDopost='{$tituloDoposts}'";
+        $sql = "select * from posts where tituloDopost like '%{$tituloDoposts}%'";
         if ($start_limit >= 0 && $row_amout > 0) {
             $sql .= " LIMIT {$start_limit}, {$row_amout}";
         }

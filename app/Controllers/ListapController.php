@@ -23,8 +23,8 @@ class ListapController extends Controller
 
     if (isset($_GET['search'])) {
 
-      $rows_count = App::get('database')->countAll('posts');
       $posts = App::get('database')->search($_GET['search'], $start_limit, $itens_per_page);
+      $rows_count = count($posts);
     } else {
       $rows_count = App::get('database')->countAll('posts');
       $posts = App::get('database')->selectAll('posts', $start_limit, $itens_per_page);

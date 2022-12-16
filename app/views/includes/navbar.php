@@ -27,7 +27,7 @@
     <nav class="nav-sidebar">
         <ul class="sb-itens">
 
-            <li><a href="ListaDeUsuarios">USUÁRIOS</a></li>
+            <li><a href="login">USUÁRIOS</a></li>
             <li><a href="listaPost">POSTS</a></li>
             <li><a href="/#quemSomos">SOBRE NÓS</a></li>
             <li><a class="login-btn sb-btn" href="login"><button class="nav-button">LOGIN</button></a></li>
