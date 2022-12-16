@@ -99,17 +99,17 @@
                 <div class="modal-itens">
                   <div class="add-form">
                     <label for="Usuário">USUÁRIO.</label>
-                    <p class=" form showusuario show"><?= $post->usuario ?></p>
+                    <p class=" form-input showusuario show"><?= $post->usuario ?></p>
 
-                    <label for="Titulo">TITULO DO POST.</label>
-                    <p class=" form showtitiluDopost show"><?= $post->tituloDopost ?></p>
-                    <label for="imagem">IMAGEM.</label>
+                    <label  for="Titulo">TITULO DO POST.</label>
+                    <p class=" form-input showtitiluDopost show"><?= $post->tituloDopost ?></p>
+                    <label  for="imagem">IMAGEM.</label>
                     <div class="testes-imagem">
                       <img height="100" src="../public/assets/<?= $post->imagem ?>" alt="IMAGEM NÃO ADICIONADA!!!">
                     </div>
                     <br>
                     <label for="post">TEXTO DO POST</label>
-                    <p class=" form showtextopost show"><?= $post->textoPost ?></p>
+                    <textarea rows="8" cols="30" class=" form-input showtextopost show"><?= $post->textoPost ?></textarea>
                   </div>
                 </div>
               </div>
