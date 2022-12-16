@@ -120,8 +120,8 @@
             <div class="struct-modal" id="modalDelete-<?= $post->id ?>">
               <div class=" form-container">
                 <div class="modal-head">
-                  <h2 id="title">Apagar Post</h2>
-                  <p>Tem certeza que deseja excluir o post?</p>
+                  <h2 id="title" class="delete-title">Apagar Post</h2>
+                  <p class="delete-title">Tem certeza que deseja excluir o post?</p>
                   <div class="row d-flex justify-content-center">
                     <form action="listaposts/deletar" method="POST">
                       <input type="hidden" value="<?= $post->id ?>" name="id">

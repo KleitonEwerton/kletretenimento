@@ -282,6 +282,10 @@
     background-color: #348771;
 }
 
+.delete-title{
+    color: #209b7c;
+}
+
 @keyframes fade-movement{
     0% {transform: translate(0px, -15px); opacity: 0;}
     25% {opacity: 0.25;}
